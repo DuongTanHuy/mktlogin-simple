@@ -4,36 +4,31 @@ import { dividerClasses } from '@mui/material/Divider';
 import { checkboxClasses } from '@mui/material/Checkbox';
 import { menuItemClasses } from '@mui/material/MenuItem';
 import { autocompleteClasses } from '@mui/material/Autocomplete';
-import { getStorage } from 'src/hooks/use-local-storage';
 
 // ----------------------------------------------------------------------
 
-export const paper = ({ theme, bgcolor, dropdown }) => {
-  const resourcePath = process.env.NODE_ENV === 'development' ? '' : getStorage('resourcePath');
-
-  return {
-    ...bgBlur({
-      blur: 20,
-      opacity: 0.9,
-      color: theme.palette.background.paper,
-      ...(!!bgcolor && {
-        color: bgcolor,
-      }),
+export const paper = ({ theme, bgcolor, dropdown }) => ({
+  ...bgBlur({
+    blur: 20,
+    opacity: 0.9,
+    color: theme.palette.background.paper,
+    ...(!!bgcolor && {
+      color: bgcolor,
     }),
-    backgroundImage: `url(${`${resourcePath}/assets/cyan-blur.png`}), url(${resourcePath}/assets/red-blur.png)`,
-    backgroundRepeat: 'no-repeat, no-repeat',
-    backgroundPosition: 'top right, left bottom',
-    backgroundSize: '50%, 50%',
-    ...(theme.direction === 'rtl' && {
-      backgroundPosition: 'top left, right bottom',
-    }),
-    ...(dropdown && {
-      padding: theme.spacing(0.5),
-      boxShadow: theme.customShadows.dropdown,
-      borderRadius: theme.shape.borderRadius * 1.25,
-    }),
-  };
-};
+  }),
+  backgroundImage: `url(${`/assets/cyan-blur.png`}), url(/assets/red-blur.png)`,
+  backgroundRepeat: 'no-repeat, no-repeat',
+  backgroundPosition: 'top right, left bottom',
+  backgroundSize: '50%, 50%',
+  ...(theme.direction === 'rtl' && {
+    backgroundPosition: 'top left, right bottom',
+  }),
+  ...(dropdown && {
+    padding: theme.spacing(0.5),
+    boxShadow: theme.customShadows.dropdown,
+    borderRadius: theme.shape.borderRadius * 1.25,
+  }),
+});
 
 // ----------------------------------------------------------------------
 
