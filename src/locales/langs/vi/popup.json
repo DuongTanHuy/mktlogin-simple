@@ -1,0 +1,29 @@
+{
+  "popup": {
+    "profileGroup": {
+      "actions": {
+        "edit": "Chỉnh sửa",
+        "delete": "Xóa"
+      }
+    },
+    "userGroup": {
+      "actions": {
+        "edit": "Chỉnh sửa",
+        "delete": "Xóa"
+      }
+    },
+    "listMember": {
+      "actions": {
+        "edit": "Chỉnh sửa",
+        "delete": "Xóa",
+        "leave": "Rời khỏi"
+      }
+    },
+    "listInvited": {
+      "actions": {
+        "resend": "Gửi lại",
+        "recall": "Thu hồi"
+      }
+    }
+  }
+}

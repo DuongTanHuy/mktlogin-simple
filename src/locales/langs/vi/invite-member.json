@@ -1,0 +1,22 @@
+{
+  "inviteMember": {
+    "header": "Bạn nhận được lời mời tham gia không gian làm việc!",
+    "subheader": "Chúng tôi sẽ tự động chuyển hướng bạn về trang chủ sau",
+    "profiles": "Hồ sơ",
+    "groups": "Nhóm",
+    "workspaceName": "Tên không gian làm việc",
+    "workspaceRole": "Vai trò",
+    "listProfileAuth": "Danh sách hồ sơ được chia sẽ",
+    "listGroupAuth": "Danh sách nhóm hồ sơ được chia sẽ",
+    "actions": {
+      "accept": "Chấp nhận",
+      "reject": "Từ chối",
+      "back": "Trở về trang chủ"
+    },
+    "response": {
+      "accept": "Đã chấp nhận lời mời",
+      "reject": "Đã từ chối lời mời",
+      "expired": "Lời mời này đã hết hạn"
+    }
+  }
+}

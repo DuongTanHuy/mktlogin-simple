@@ -1,0 +1,206 @@
+{
+  "workflow": {
+    "log": "LOG",
+    "debug": "DEBUG",
+    "workflowType": "Workflow type",
+    "isPublished": "Uploaded market",
+    "myWorkflow": "My workflow",
+    "downloadedWorkflow": "Download workflow",
+    "closeWorkflow": "Are you sure you want to close this workflow?",
+    "updateWorkflow": {
+      "title": "NEW UPDATE",
+      "subTitle": "Please update to the latest version to use this workflow!",
+      "detail": "Version update details"
+    },
+    "pendingWorkflow": {
+      "title": "WORKFLOW IS PENDING APPROVAL",
+      "subTitle": "Workflow approval time within 24 hours, if you wait longer, you can contact us directly.",
+      "groupSupport": "Group support"
+    },
+    "rejectedWorkflow": {
+      "title": "WORKFLOW HAS BEEN REJECTED",
+      "subTitle": "Please unpublish and update the workflow to repost.",
+      "reason": "Reason for rejection:"
+    },
+    "tabsBar": {
+      "title": "Group",
+      "dialog": {
+        "add": {
+          "title": "Create a new group",
+          "label": "Group Name"
+        },
+        "edit": "Edit Group"
+      },
+      "actions": {
+        "add": "Add group",
+        "edit": "Edit",
+        "delete": "Delete Group",
+        "close": "Close",
+        "createGroup": "Create Group",
+        "update": "Update",
+        "script": "Script",
+        "flowchart": "Flowchart"
+      }
+    },
+    "script": {
+      "options": "Options",
+      "noData": "No data",
+      "tooltip": {
+        "noAvailableForDownload": "This feature is not available with downloaded workflows",
+        "noAvailableForEncrypt": "This feature is not available with encrypted workflows",
+        "lastUpdatedTime": "Last updated time",
+        "version": "Version"
+      },
+      "tab": {
+        "readme": "Read me",
+        "runConfig": "Input",
+        "noContent": "No content"
+      },
+      "actions": {
+        "search": "Search",
+        "import": "Import",
+        "editInfo": "Edit Info",
+        "delete": "Delete",
+        "addWorkflow": "Add new workflow",
+        "back": "Back",
+        "cancel": "Cancel",
+        "update": "Update",
+        "resource": "Resource",
+        "variable": "Variable",
+        "table": "Table",
+        "config": "Config",
+        "run": "Run",
+        "starting": "Starting",
+        "stop": "Stop",
+        "record": "Record",
+        "save": "Save",
+        "setting": "Setting",
+        "formatCode": "Format code",
+        "displayOutput": "Display output",
+        "close": "Close",
+        "confirm": "Confirm",
+        "add": "Add",
+        "addFile": "Add json file",
+        "chooseImageFile": "Choose image file",
+        "chooseJsonFile": "Choose json file",
+        "chooseTextFile": "Choose text file",
+        "chooseExcelFile": "Choose excel file",
+        "chooseFolder": "Choose folder",
+        "moreAction": "More action",
+        "share": "Share",
+        "publish": "Publish to marketplace",
+        "published": "Published",
+        "rejected": "Rejected",
+        "pending": "Pending",
+        "createCode": "Create code",
+        "uploadVersion": "Upload version",
+        "saveChange": "Save change",
+        "create": "Create",
+        "undo": "Undo (Ctrl + Z)",
+        "redo": "Redo (Ctrl + Y)"
+      },
+      "dialog": {
+        "import": {
+          "title": "Import workflow",
+          "noOverwrite": "Don't overwrite",
+          "label": {
+            "code": "Active code",
+            "overwrite": "Overwrite workflow"
+          }
+        },
+        "editInfo": {
+          "title": "Edit workflow",
+          "addTitle": "Create workflow",
+          "label": {
+            "name": "Name",
+            "description": "Description",
+            "group": "Group"
+          },
+          "placeholder": {
+            "description": "Enter little description about workflow"
+          }
+        },
+        "delete": {
+          "title": "Are you sure you want to delete this workflow?"
+        },
+        "resource": {
+          "title": "Resource",
+          "label": {
+            "key": "Key",
+            "value": "Value"
+          }
+        },
+        "variable": {
+          "title": "Variable",
+          "subTitle": "Constant variables PROFILE_ID, PROFILE_NAME, GROUP_NAME, PROXY_INFO",
+          "label": {
+            "key": "Variable name",
+            "value": "Value",
+            "defaultValue": "Default Value",
+            "limitedValue": "Limited Value",
+            "obligatory": "Obligatory",
+            "description": "Description",
+            "datatypes": "Data types"
+          },
+          "setting": {
+            "title": "Interface settings",
+            "subTitle": "Tool to help create more user-friendly input interfaces"
+          },
+          "tooltip": {
+            "min": "Access the value of Min using the syntax {KEY}.min , {KEY} is the variable name",
+            "max": "Access the value of Max using the syntax {KEY}.max , {KEY} is the variable name"
+          }
+        },
+        "table": {
+          "title": "Table",
+          "noData": "No data",
+          "label": {
+            "name": "Column name",
+            "value": "Value"
+          },
+          "error": {
+            "required": "Column name is required",
+            "exist": "Column name already exist"
+          }
+        },
+        "config": {
+          "title": "Workflow Config",
+          "label": {
+            "fixedScreenSize": "Fixed Screen Size"
+          },
+          "tooltip": {
+            "isFixedScreenSize": "Should only be activated when image search functions are used in the process.",
+            "isScriptRequest": "Only activate when the process does not require a profile to run."
+          }
+        },
+        "run": {
+          "title": "Select a profile to run",
+          "label": "Select profile",
+          "placeholder": "Enter profile name or ID to search"
+        },
+        "share": {
+          "title": "Share workflow using active code",
+          "label": "Click on generate code to get the activation code",
+          "copy": "Copied"
+        },
+        "setting": {
+          "title": "Terminal Setting",
+          "fontSize": "Font size",
+          "minimap": "Display minimap",
+          "reset": "Reset"
+        }
+      }
+    },
+    "flow": {
+      "actions": {
+        "shareWorkflow": "Share workflow"
+      }
+    },
+    "actions": {
+      "yes": "Yes",
+      "no": "No",
+      "addNew": "Add new",
+      "openWorkflow": "Open workflow"
+    }
+  }
+}

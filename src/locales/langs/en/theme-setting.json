@@ -1,0 +1,13 @@
+{
+  "themeSetting": {
+    "title": "Settings",
+    "mode": "Mode",
+    "contract": "Contract",
+    "direction": "Direction",
+    "layout": "Layout",
+    "stretch": "Stretch",
+    "presets": "Colors",
+    "fullScreen": "Full screen",
+    "exitFullScreen": "Exit full screen"
+  }
+}

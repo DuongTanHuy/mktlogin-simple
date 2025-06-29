@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "overview": "Tổng quan",
+    "profile": "hồ sơ",
+    "automation": "automation",
+    "extension": "extension",
+    "api-doc": "Tài liệu API",
+    "list": "Danh sách",
+    "trash": "Thùng rác",
+    "general-log": "Nhật ký chung",
+    "workspace-setting": "Cài đặt workspace",
+    "member": "thành viên",
+    "setting": "Cài đặt",
+    "synchronizer": "Đồng bộ thao tác",
+    "automation_sub": {
+      "workflow": "Quy trình",
+      "task": "Nhiệm vụ",
+      "schedule": "Lập lịch",
+      "marketplace": "Chợ"
+    },
+    "supportGroup": "Nhóm hỗ trợ",
+    "communityLink": "Liên kết cộng đồng",
+    "doc": "Tài liệu hướng dẫn",
+    "hotLine": "Đường dây nóng"
+  },
+  "header": {
+    "workspace": "Không gian làm việc",
+    "price-list": "Mua gói",
+    "recharge": "Nạp tiền",
+    "support-chanel": "Kênh hỗ trợ"
+  },
+  "balance": {
+    "title": "Số dư",
+    "main": "Số dư chính",
+    "profile": "Số dư hồ sơ",
+    "current-package": "Gói đang dùng",
+    "existing": "Hồ sơ hiện có",
+    "unit": "Hồ sơ"
+  }
+}

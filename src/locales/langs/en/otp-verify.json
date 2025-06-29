@@ -1,0 +1,16 @@
+{
+  "otpVerify": {
+    "header": "Enter the OTP sign in to MKT Login",
+    "label": {
+      "question": "You don't have the OTP in email?"
+    },
+    "fields": {
+      "otp": "OTP"
+    },
+    "actions": {
+      "submit": "Confirm",
+      "back": "Back to sign in",
+      "reSend": "Resend the OTP"
+    }
+  }
+}

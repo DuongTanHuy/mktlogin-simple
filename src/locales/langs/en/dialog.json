@@ -1,0 +1,770 @@
+{
+  "dialog": {
+    "profileGroup": {
+      "addEdit": {
+        "title": {
+          "create": "Create group",
+          "edit": "Edit group"
+        },
+        "fields": {
+          "name": "Group name"
+        }
+      },
+      "delete": {
+        "header": "Delete group",
+        "subheader1": "Are you sure you want to delete this profile group?",
+        "subheader2": "After deleting all profiles in this group will be moved to the Ungrouped group."
+      },
+      "actions": {
+        "create": "Create",
+        "update": "Update",
+        "delete": "Delete",
+        "close": "Close"
+      }
+    },
+    "rpa": {
+      "flowchart": "Flowchart",
+      "script": "Script",
+      "mine": "Mine",
+      "download": "Download",
+      "tabs": {
+        "optional": {
+          "title": "Optional",
+          "labels": {
+            "id": "Profile",
+            "process": "Process",
+            "taskType": "Task Type",
+            "executionFrequency": "Execution Frequency",
+            "startingTime": "Starting Time",
+            "endTime": "End Time",
+            "intervalTime": "Interval Time (minutes)",
+            "executionTime": "Execution Time",
+            "selectm": "Please select a workflow"
+          },
+          "button": {
+            "common": "Common",
+            "scheduled": "Scheduled"
+          },
+          "descriptions": {
+            "startingTime": "Must be greater than current time",
+            "endTime": "Must be after start time. \nIf not selected, the task does not have a specific end time.",
+            "intervalTime": "Time between task executions, unit is minute",
+            "executionTime": "If you want to execute a task on the same day, the execution time should be 10 minutes later than the start time"
+          }
+        },
+        "runConfiguration": {
+          "title": "Run Configuration",
+          "labels": {
+            "numWindows": "Number of windows",
+            "windowSize": "Window size",
+            "ratio": "Scale",
+            "spacing": "Spacing",
+            "open_time_beetween_profiles": "Open time between profiles (ms)",
+            "num_thread": "Number of concurrent threads",
+            "is_visual_mouse": "Show mouse simulation"
+          },
+          "fields": {
+            "numWindows": "Maximum number of windows per row",
+            "windowSize": {
+              "width": "Width (pixel)",
+              "height": "Height (pixel)"
+            },
+            "spacing": "Distance between rows (default is 0 pixel)",
+            "duration": "Open time between profiles(ms)",
+            "scale": "Valid values 0.1 to 1 (default 0.8)"
+          }
+        },
+        "input": {
+          "title": "Input",
+          "key": "Key",
+          "value": "Value",
+          "addJson": "Add JSON file",
+          "noData": "This workflow has no input",
+          "readme": "Open user manual",
+          "userManual": "User manual"
+        },
+        "information": {
+          "title": "Information",
+          "name": "Name",
+          "note": "Note"
+        }
+      },
+      "actions": {
+        "close": "Close",
+        "create": "Create",
+        "schedule": "Schedule",
+        "createAndRun": "Create & Run",
+        "start": "Start"
+      }
+    },
+    "deleteProfile": {
+      "header": "Are you sure?",
+      "header1": "Delete profile?",
+      "subheader": "ID profiles will be deleted:",
+      "subheader1": "Are you sure? Once a profile is deleted, it cannot be recovered!",
+      "actions": {
+        "delete": "Delete",
+        "cancel": "Cancel"
+      }
+    },
+    "restoreProfile": {
+      "header": "Restore profile",
+      "subheader": "Restore profiles with ID:",
+      "actions": {
+        "restore": "Restore",
+        "cancel": "Cancel"
+      }
+    },
+    "renewProfile": {
+      "header": "Renew profile",
+      "header1": "Renew profile",
+      "subheader": "Renew profiles with ID:",
+      "numOfDay": "Renewal days",
+      "numOfMonth": "Renewal months",
+      "totalCost": "Total renewal fee:",
+      "profileBalance": "profile balance",
+      "actions": {
+        "renew": "Renew",
+        "cancel": "Cancel",
+        "confirm": "Confirm"
+      },
+      "enableAutoRenew": {
+        "title": "Enable auto renew",
+        "subTitle": "Enable auto renew for profiles with ID:"
+      },
+      "disableAutoRenew": {
+        "title": "Disable auto renew",
+        "subTitle": "Disable auto renew for profiles with ID:"
+      },
+      "options": {
+        "oneMonth": "1 month (30 days)",
+        "twoMonths": "2 months (60 days)",
+        "threeMonths": "3 months (90 days)",
+        "fourMonths": "4 months (120 days)",
+        "fiveMonths": "5 months (150 days)",
+        "sixMonths": "6 months (180 days)",
+        "sevenMonths": "7 months (210 days)",
+        "eightMonths": "8 months (240 days)",
+        "nineMonths": "9 months (270 days)",
+        "tenMonths": "10 months (300 days)",
+        "elevenMonths": "11 months (330 days)",
+        "twelveMonths": "12 months (360 days)"
+      }
+    },
+    "addBookmark": {
+      "header": "Add bookmark",
+      "subheader": "Add bookmark for profiles with ID:",
+      "list": "List of bookmarks",
+      "labels": {
+        "name": "Name",
+        "url": "URL"
+      },
+      "placeholder": {
+        "name": "Enter bookmark name",
+        "url": "Enter bookmark URL"
+      },
+      "actions": {
+        "add": "Add",
+        "cancel": "Cancel"
+      }
+    },
+    "addTab": {
+      "header": "Add tab",
+      "subheader": "Add tab for profiles with ID:",
+      "list": "List of tabs",
+      "placeholder": "Enter tab URL",
+      "validate": "URL is required",
+      "actions": {
+        "add": "Add",
+        "cancel": "Cancel"
+      }
+    },
+    "deleteTab": {
+      "header": "Delete open tab",
+      "subheader": "Delete tab for profiles with ID:"
+    },
+    "deleteBookmark": {
+      "header": "Delete bookmark",
+      "subheader": "Delete bookmark for profiles with ID:",
+      "labels": {
+        "deleteMode": "Delete mode",
+        "content": "Content",
+        "urlPattern": "URL pattern"
+      },
+      "options": {
+        "all": "Delete all",
+        "deleteByContent": "Delete by URL containing content",
+        "deleteByUrlPattern": "Delete by URL pattern"
+      },
+      "validate": {
+        "content": "Content is required",
+        "urlPattern": "URL pattern is required"
+      },
+      "example": {
+        "title": "Example for URL pattern",
+        "example1": "Delete all URLs belonging to the domain example.com",
+        "example2": "Delete all URLs containing the path /products",
+        "example3": "Delete all https URLs on subdomains of example.com"
+      },
+      "actions": {
+        "delete": "Delete",
+        "cancel": "Cancel"
+      }
+    },
+    "transferProfile": {
+      "header": "Transfer the profile",
+      "subheader": "ID profiles will be transferred:",
+      "subheader1": "You want to transfer this profile to:",
+      "label": "Receiver",
+      "placeholder": "Username or email account of the recipient",
+      "errorMess": "Please enter the recipient's username or email account",
+      "actions": {
+        "transfer": "Transfer",
+        "cancel": "Cancel"
+      }
+    },
+    "moveGroup": {
+      "header": "Move profile group",
+      "subheader": "Profiles with ID will be transferred:",
+      "singleMove": "Are you sure you want to transfer this profile to:",
+      "label": "Select profile group",
+      "actions": {
+        "move": "Move",
+        "cancel": "Cancel"
+      },
+      "error": "Please select a profile group"
+    },
+    "switchWorkspace": {
+      "header": "Change workspace",
+      "subheader": "Profiles with ID will be transferred:",
+      "singleMove": "Are you sure you want to transfer this profile to:",
+      "actions": {
+        "switch": "Move",
+        "cancel": "Cancel"
+      },
+      "label": "Select workspace",
+      "error": "Please select a workspace"
+    },
+    "updateProxy": {
+      "title": "Update Proxy",
+      "subTitle": "Update proxy for profiles with ID:",
+      "label": {
+        "proxy": "Proxies (per proxy per row)"
+      }
+    },
+    "duplicateProfile": {
+      "header": "Duplicate profile",
+      "totalCost": "Total cloning fee",
+      "profileBalance": "profile balance",
+      "labels": {
+        "quantity": "Quantity",
+        "keepPar": "Keep parameters",
+        "insertMode": "Proxy insertion mode",
+        "proxyType": "Proxy type"
+      },
+      "options": {
+        "params": {
+          "groupProfile": "Group profile",
+          "bookmark": "Bookmarks",
+          "timezone": "Timezone",
+          "location": "Location",
+          "userAgent": "User Agent",
+          "proxy": "Proxy"
+        },
+        "insertMode": {
+          "dontInsert": "Don't insert proxy",
+          "noRepeat": "No repeat",
+          "repeat": "Repeat",
+          "pair": "Synchronized",
+          "oneForAll": "One for all"
+        }
+      },
+      "tooltip": {
+        "groupProfile": "The cloned profile will be in the original profile's group",
+        "bookmark": "Cloned profiles will have the bookmarks of the original profile",
+        "timezone": "Cloned profiles will have the same Timezone as the original profile",
+        "location": "Cloned profiles will have the same Location configuration as the original profile",
+        "userAgent": "Cloned profiles will have the same User-Agent configuration as the original profile",
+        "proxy": "Cloned profiles will have the same Proxy configuration as the original profile"
+      },
+      "actions": {
+        "duplicate": "Duplicate",
+        "cancel": "Cancel"
+      }
+    },
+    "updateNote": {
+      "title": "Update notes for multiple profiles",
+      "subTitle": "The profiles with the following IDs will be updated:"
+    },
+    "updateKernel": {
+      "title": "Update browser kernel for multiple profiles",
+      "subTitle": "The profiles with the following IDs will be updated:",
+      "selectChromeVersion": "Select Chrome version",
+      "selectFirefoxVersion": "Select Firefox version"
+    },
+    "addAccountResource": {
+      "title": "Import resource",
+      "subTitle": "Import resource for profiles with ID:",
+      "label": {
+        "resourceType": "Resource type",
+        "format": "Format",
+        "resourceData": "List account",
+        "totalProfile": "Total profile: ",
+        "totalAccount": "Total account: "
+      },
+      "placeholder": {
+        "resourceData": "Per account per line"
+      },
+      "actions": {
+        "add": "Import",
+        "cancel": "Cancel",
+        "addKey": "Add key"
+      }
+    },
+    "exportResource": {
+      "title": {
+        "export": "Export resource",
+        "copy": "Copy resource"
+      },
+      "subTitle": {
+        "export": "Export resource of profiles with ID:",
+        "copy": "Copy resources of profile with ID:"
+      },
+      "label": {
+        "saveFormat": "Save format",
+        "preview": "Preview",
+        "content": "Content..."
+      },
+      "actions": {
+        "export": "Export",
+        "copy": "Copy"
+      }
+    },
+    "bank": {
+      "title": "Scan the QR code or transfer money according to the syntax",
+      "info": "The system will automatically top up within 2 minutes of transferring money.",
+      "accountNumber": "Account number",
+      "accountHolder": "Account holder",
+      "transferContent": "Transfer content",
+      "bankNames": {
+        "acb": "Asia Commercial Joint Stock Bank",
+        "vietcombank": "Joint Stock Commercial Bank For Foreign Trade Of Vietnam"
+      },
+      "actions": {
+        "close": "Close"
+      }
+    },
+    "publicWorkflow": {
+      "title": "Publish workflow to marketplace",
+      "unpublish": "Are you sure you want to unpublish this workflow?",
+      "labels": {
+        "title": "Title",
+        "description": "Description",
+        "avatar": "Upload image",
+        "category": "Select category",
+        "encrypted": "Encrypted code",
+        "usageFee": "Usage fee",
+        "limitEnter": "Limit the number of import",
+        "numOfEntry": "Number of limited import",
+        "isExpiryTime": "Time limit for entering code",
+        "numTime": "Number of hours",
+        "notAvailable": "Payment feature not available yet"
+      },
+      "placeholder": {
+        "title": "Enter the title",
+        "description": "Enter a little description of the process",
+        "guide": "User manual...",
+        "usageFee": "Enter the usage fee"
+      },
+      "note": {
+        "usageFee": "Usage fee per month"
+      },
+      "confirm": {
+        "unpublish": "Are you sure you want to unpublish this workflow?"
+      },
+      "options": {
+        "other": "Other",
+        "encrypted": {
+          "yes": "Encryption",
+          "no": "No encryption"
+        },
+        "limited": "Limited",
+        "unlimited": "Unlimited"
+      },
+      "actions": {
+        "cancel": "Cancel",
+        "publish": "Publish",
+        "update": "Save changes",
+        "unpublish": "Unpublish",
+        "cancelRequest": "Cancel request"
+      }
+    },
+    "publicWorkflowUploadNewVersion": {
+      "message": {
+        "uploadSuccess": "Upload new version successfully",
+        "uploadFailed": "Upload new version failed"
+      }
+    },
+    "uploadVersion": {
+      "title": "Upload version",
+      "labels": {
+        "version": "Version",
+        "changeLog": "ChangeLog"
+      },
+      "placeholder": {
+        "version": "Enter the version",
+        "changeLog": "Enter the change log",
+        "currentVersion": "Current version",
+        "lastUpdate": "Last update: "
+      },
+      "actions": {
+        "cancel": "Cancel",
+        "upload": "Upload"
+      }
+    },
+    "extension": {
+      "enable": {
+        "title": "Enable Extension",
+        "subTitle": "When it is enabled, if you choose this extension while creating a new profile, this extension will be applied to the new profile. Are you sure you want to enable the extension?"
+      },
+      "disable": {
+        "title": "Disable Extension",
+        "subTitle": "When it is disabled, this extension will be removed from all profiles. Are you sure you want to disable the extension?",
+        "extensionName": "Extension name"
+      },
+      "delete": {
+        "title": "Remove Extension",
+        "question": "Are you sure you want to remove this extension?",
+        "warning": "If this extension is removed, it will be uninstalled in all profiles."
+      },
+      "upload": {
+        "title": "Upload Extension",
+        "type": "Type",
+        "uploadFile": {
+          "fields": {
+            "instPackage": "Upload Extension",
+            "icon": "Upload File"
+          },
+          "labels": {
+            "instPackage": "Installation package",
+            "icon": "Icon",
+            "extensionName": "Extension name",
+            "introduction": "Introduction"
+          },
+          "placeholder": {
+            "instPackage": "Support zip format, limit 30M. If the extension file is in crx format, change the file suffix to rar first, unzip it and recompress it to zip format",
+            "icon": "Optional, at least 60*60 pixels, ratio 1:1, support jpg/jpeg/png format, limit 1M",
+            "extensionName": "Required, please fill in the extension name",
+            "introduction": "Optional, please fill in the brief description of the extension"
+          },
+          "fileNotExtension": "The file is not an extension"
+        },
+        "chromeStore": {
+          "labels": {
+            "url": "URL of Extension"
+          },
+          "placeholder": {
+            "url": "Chrome Web Store URL of the extension"
+          },
+          "notes": {
+            "title": "Note",
+            "note1": "1. Non-China Mainland network is required.",
+            "note2": "2. Extensions are provided by the third party, to which all rights are reserved.",
+            "note3": "3. Visit Chrome Web Store and copy the link to the extension."
+          }
+        }
+      },
+      "category": {
+        "title": "Category",
+        "search": "Search",
+        "header": {
+          "name": "Name",
+          "remark": "Remark",
+          "extension": "Extension",
+          "operation": "Operation"
+        },
+        "newCategory": "New category",
+        "addCategory": {
+          "placeholder": {
+            "name": "Category name",
+            "note": "Note",
+            "extension": "Optional, at least 60*60 pixels, ratio 1:1, support jpg/jpeg/png format, limit 1M"
+          }
+        }
+      },
+      "extensionName": "Extension name",
+      "actions": {
+        "ok": "OK",
+        "close": "Close",
+        "cancel": "Cancel",
+        "enable": "Enable",
+        "disable": "Disable",
+        "upload": "Upload file",
+        "chromeStore": "Chrome Web Store"
+      }
+    },
+    "deleteWorkspace": {
+      "title": "Delete workspace?",
+      "subTitle1": "To confirm deletion, please type",
+      "subTitle2": "into the box below",
+      "note": "Note: When deleting a workspace, only profiles are transferred back to \"My Workspace\", everything else will be deleted and cannot be recovered",
+      "placeholder": "Enter the workspace name to confirm",
+      "actions": {
+        "close": "Close",
+        "delete": "Delete workspace"
+      }
+    },
+    "userGroup": {
+      "addEdit": {
+        "add": "Create member group",
+        "edit": "Edit member group",
+        "fields": {
+          "name": "Name",
+          "note": "Note",
+          "licensing": "Licensing"
+        },
+        "placeholder": {
+          "name": "Enter group name",
+          "note": "Introduction of the group",
+          "licensing": "Please grant permissions for functions to member groups. Members of the same group have access to the same functions."
+        }
+      },
+      "delete": {
+        "title": "Delete member group"
+      },
+      "actions": {
+        "close": "Close",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "create": "Create",
+        "update": "Update"
+      }
+    },
+    "member": {
+      "invite": {
+        "invite": "Invite member",
+        "edit": "Update member information",
+        "fields": {
+          "groupName": "Group name",
+          "name": "Name",
+          "email": "Email",
+          "identity": "Identity",
+          "profileAuthorization": "Profile authorization",
+          "groupAuthorization": "Group authorization",
+          "limitInput": "Profile balance limit",
+          "note": "Note"
+        },
+        "placeholder": {
+          "name": "Enter member name",
+          "email": "Enter member email",
+          "identity": {
+            "admin": "Has full rights to manage members and member groups in the workspace.",
+            "manager": "Can add members and edit the access rights of the participating member group.",
+            "member": "Cannot add members or edit the access rights of the member group."
+          },
+          "profile": "profile",
+          "group": "group",
+          "limitInput": "If left blank, there will be no limit on the number of profile balances that the member can use.",
+          "note": "Optional"
+        },
+        "options": {
+          "admin": "Administrator",
+          "manager": "Manager",
+          "member": "Member"
+        }
+      },
+      "delete": {
+        "delete": "Delete member",
+        "leave": "Leave group",
+        "deleteQues": "Are you sure you want to delete this member?",
+        "leaveQues": "Are you sure you want to leave this group?"
+      },
+      "resend": {
+        "title": "Resend invitation",
+        "question": "Are you sure you want to resend the invitation email?"
+      },
+      "recall": {
+        "title": "Recall invitation",
+        "question": "Are you sure you want to recall the invitation?"
+      },
+      "actions": {
+        "close": "Close",
+        "confirm": "Confirm",
+        "cancel": "Cancel",
+        "delete": "Delete",
+        "leave": "Leave",
+        "ok": "OK",
+        "invite": "Invite"
+      }
+    },
+    "askBeforeLeave": {
+      "title": "Changes have not been saved!",
+      "subTitle": "You have unsaved changes. Are you sure you want to leave this page?",
+      "actions": {
+        "stay": "Back to editing",
+        "leave": "Yes, I want to leave"
+      }
+    },
+    "saveBeforeLeave": {
+      "title": "Confirm!",
+      "subTitle": "Do you want to save before leaving?",
+      "actions": {
+        "no": "No",
+        "save": "Save"
+      }
+    },
+    "options": {
+      "once": "Once",
+      "interval": "Interval",
+      "everyday": "Every day",
+      "weekly": "Weekly",
+      "perMonth": "Per month",
+      "monday": "Monday",
+      "tuesday": "Tuesday",
+      "wednesday": "Wednesday",
+      "thursday": "Thursday",
+      "friday": "Friday",
+      "saturday": "Saturday",
+      "sunday": "Sunday",
+      "oneDay": "Day 1",
+      "twoDays": "Day 2",
+      "threeDays": "Day 3",
+      "fourDays": "Day 4",
+      "fiveDays": "Day 5",
+      "sixDays": "Day 6",
+      "sevenDays": "Day 7",
+      "eightDays": "Day 8",
+      "nineDays": "Day 9",
+      "tenDays": "Day 10",
+      "elevenDays": "Day 11",
+      "twelveDays": "Day 12",
+      "thirteenDays": "Day 13",
+      "fourteenDays": "Day 14",
+      "fifteenDays": "Day 15",
+      "sixteenDays": "Day 16",
+      "seventeenDays": "Day 17",
+      "eighteenDays": "Day 18",
+      "nineteenDays": "Day 19",
+      "twentyDays": "Day 20",
+      "twentyOneDays": "Day 21",
+      "twentyTwoDays": "Day 22",
+      "twentyThreeDays": "Day 23",
+      "twentyFourDays": "Day 24",
+      "twentyFiveDays": "Day 25",
+      "twentySixDays": "Day 26",
+      "twentySevenDays": "Day 27",
+      "twentyEightDays": "Day 28",
+      "twentyNineDays": "Day 29",
+      "thirtyDays": "Day 30",
+      "thirtyOneDays": "Day 31"
+    },
+    "updateSystem": {
+      "title": "Update center",
+      "appDownload": "App download",
+      "new": "New",
+      "version": "Version",
+      "note": "Note: The update will close all open profiles and data will not be saved, please close all profiles before updating! ! !",
+      "noAvailable": "No updates available",
+      "actions": {
+        "download": "Download",
+        "install": "Install"
+      }
+    },
+    "downloadBrowser": {
+      "title": "Downloading {{browserName}} browser...",
+      "extracting": "Extracting..."
+    },
+    "loginActivity": {
+      "title": "Account login activity",
+      "labels": {
+        "currentDevice": "You are logged in on this device",
+        "otherDevices": "Login on another device",
+        "current": "Current",
+        "deviceName": "Device name",
+        "os": "OS",
+        "noDevice": "No device",
+        "unknown": "Unknown"
+      },
+      "actions": {
+        "chose": "Select device to log out",
+        "cancel": "Cancel",
+        "choseAll": "Chose all",
+        "unchoseAll": "Unchose all",
+        "logout": "Logout",
+        "device": " device(s)"
+      }
+    },
+    "setTag": {
+      "tag": "Tags",
+      "title": "Set tag",
+      "listTag": "List of tag",
+      "subTitle": "Set tag for profiles with ID:",
+      "setSingleTag": "Set tag for this profile:",
+      "label": "+ Select tag",
+      "errorMess": "Please select a tag",
+      "tagName": "Tag name",
+      "editTag": "Edit tag",
+      "tagColor": "Tag color",
+      "deleteTag": "Delete tag",
+      "subDeleteTag": "Are you sure you want to delete this tag?",
+      "subAddTag": "Enter value to create a new tag",
+      "requiredName": "Tag name is required",
+      "actions": {
+        "newTag": "New tag",
+        "setTag": "Set tag",
+        "add": "Add",
+        "confirm": "Confirm",
+        "cancel": "Cancel",
+        "edit": "Edit",
+        "delete": "Delete",
+        "update": "Update",
+        "create": "Create"
+      }
+    },
+    "removeTag": {
+      "title": "Remove tag",
+      "subTitle": "Remove tag for profiles with ID:"
+    },
+    "removeProxy": {
+      "title": "Remove proxy",
+      "subTitle": "Remove proxy for profiles with ID:",
+      "label": "Note",
+      "placeholder": "Enter note",
+      "actions": {
+        "cancel": "Cancel",
+        "confirm": "Confirm"
+      }
+    },
+    "deleteCookie": {
+      "title": "Delete cookie",
+      "subTitle": "Delete cookie for profiles with ID:",
+      "deleteSingle": "Are you sure you want to delete cookie for this profile?",
+      "note": "Note: cookie data will be permanently deleted and cannot be recovered.",
+      "actions": {
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "delete": "Delete"
+      }
+    },
+    "deleteCache": {
+      "title": "Delete cache",
+      "subTitle": "Delete cache for profiles with ID:",
+      "deleteSingle": "Are you sure you want to delete cache for this profile?",
+      "note": "Note: cache data will be permanently deleted and cannot be recovered.",
+      "error": "Sync mode is off, cannot clear cache!",
+      "actions": {
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "delete": "Delete"
+      }
+    },
+    "customShortcut": {
+      "title": "Custom shortcuts",
+      "subTitle": "You can add commonly used operations to [Shortcuts].",
+      "reset": "Reset",
+      "shortcuts": "Shortcuts",
+      "options": "Options",
+      "more": "More"
+    }
+  }
+}

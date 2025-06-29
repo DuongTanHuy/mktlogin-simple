@@ -1,0 +1,13 @@
+{
+  "themeSetting": {
+    "title": "Cài đặt",
+    "mode": "Chế độ",
+    "contract": "Tương phản",
+    "direction": "Hướng",
+    "layout": "Bố cục",
+    "stretch": "Kéo giản",
+    "presets": "Màu",
+    "fullScreen": "Toàn màn hình",
+    "exitFullScreen": "Thoát toàn màn hình"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "trash": {
+    "actions": {
+      "restore": "Restore",
+      "delete": "Delete"
+    },
+    "labels": {
+      "profileGroup": "Profile group",
+      "selectTime": "Select time period"
+    },
+    "options": {
+      "all": "All",
+      "yesterday": "Yesterday",
+      "today": "Today",
+      "last7days": "Last 7 days",
+      "last30days": "Last 30 days"
+    },
+    "table": {
+      "header": {
+        "stt": "No.",
+        "profileId": "Profile ID",
+        "group": "Group",
+        "name": "Name",
+        "duration": "Duration",
+        "createdAt": "Created At",
+        "deletedAt": "Deleted At"
+      }
+    }
+  }
+}

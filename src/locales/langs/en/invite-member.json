@@ -1,0 +1,22 @@
+{
+  "inviteMember": {
+    "header": "You have received an invitation to join a workspace!",
+    "subheader": "We will automatically redirect you to the home page after",
+    "profiles": "Profiles",
+    "groups": "Groups",
+    "workspaceName": "Workspace name",
+    "workspaceRole": "Role",
+    "listProfileAuth": "List of shared profiles",
+    "listGroupAuth": "Danh sách các nhóm hồ sơ được chia sẻ",
+    "actions": {
+      "accept": "Accept",
+      "reject": "Reject",
+      "back": "Back to home page"
+    },
+    "response": {
+      "accept": "Invitation accepted",
+      "reject": "Invitation declined",
+      "expired": "This invitation has expired"
+    }
+  }
+}

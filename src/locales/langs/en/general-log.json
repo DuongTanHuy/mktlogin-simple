@@ -1,0 +1,49 @@
+{
+  "generalLog": {
+    "table": {
+      "headers": {
+        "stt": "No.",
+        "username": "Implementer",
+        "profile_id": "Profile ID",
+        "profile_name": "Profile name",
+        "action": "Action",
+        "amount": "Transaction amount",
+        "balance": "Balance",
+        "created_at": "Execution Time"
+      }
+    },
+    "labels": {
+      "username": "Username or email",
+      "profileName": "ID or profile name",
+      "action": "Action"
+    },
+    "options": {
+      "profile_creation": "Create profile",
+      "profile_edit": "Update profile",
+      "profile_renew": "Renew profile",
+      "profile_duplicate": "Duplicate profile",
+      "profile_transfer": "Transfer profile",
+      "profile_move_group": "Move profile group",
+      "profile_delete": "Delete profile",
+      "profile_restore": "Restore profile",
+      "profile_update_proxy": "Update profile proxy",
+      "profile_update_note": "Update profile note",
+      "profile_move_workspace": "Move workspace",
+      "profile_update_browser_kernel": "Update browser kernel",
+      "profile_enable_auto_renewal": "Enable auto renewal",
+      "profile_disable_auto_renewal": "Disable auto renewal",
+      "profile_auto_renew": "Auto renew profile",
+      "delete_workspace": "Delete workspace",
+      "system_auto_delete": "System auto delete",
+      "profile_remove_proxy": "Remove proxy",
+      "profile_clear_cookie": "Clear cookie",
+      "profile_update_tag": "Update tag",
+      "profile_add_tag": "Add tag",
+      "profile_remove_tag": "Remove tag",
+      "profile_add_tab": "Add tab",
+      "profile_remove_tab": "Remove tab",
+      "profile_add_bookmark": "Add bookmark",
+      "profile_remove_bookmark": "Remove bookmark"
+    }
+  }
+}

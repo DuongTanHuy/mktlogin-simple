@@ -1,0 +1,38 @@
+{
+  "packages": {
+    "title": "Chọn gói của bạn",
+    "inUse": "Đang dùng",
+    "features": {
+      "title": "Tính năng",
+      "all": "Tất cả",
+      "allFeatures": "Tất cả tính năng",
+      "profileBalance": "số dư hồ sơ"
+    },
+    "actions": {
+      "buyMore": "Mua thêm",
+      "buyPackage": "Mua gói",
+      "chose": "Chọn",
+      "confirmPurchase": "Bạn có muốn xác nhận việc mua gói?",
+      "confirm": "Xác nhận",
+      "cancel": "Hủy",
+      "apply": "Áp dụng",
+      "list": "Danh sách"
+    },
+    "unit": "gói",
+    "discount": {
+      "voucherCode": "Mã giảm giá",
+      "voucherInfo": "Thông tin mã giảm giá",
+      "noVoucher": "Không có mã giảm giá",
+      "totalPayment": "Tổng thanh toán",
+      "listVoucher": "Danh sách mã giảm giá",
+      "placeholder": "Nhập mã giảm giá",
+      "applied": "Đã áp dụng",
+      "duration": "Thời hạn"
+    }
+  },
+  "recharge": {
+    "title": "Chọn ngân hàng để nạp tiền",
+    "info": "Nếu bạn cần hỗ trợ, vui lòng liên hệ số điện thoại 0935.322.178 - 0932.679.984.",
+    "warning": "Không nạp tiền với Vietcombank trong khung giờ 22h00 - 00h00 tránh tình trạng hệ thống không tự động cộng tiền."
+  }
+}

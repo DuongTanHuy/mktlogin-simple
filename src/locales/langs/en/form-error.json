@@ -1,0 +1,30 @@
+{
+  "formError": {
+    "register": {
+      "username": {
+        "error_username_exists": "User name is already exists"
+      },
+      "email": {
+        "error_email_exists": "Email is already exists"
+      }
+    },
+    "profile": {
+      "name": "Profile name is required",
+      "group": "Group is required",
+      "agentDes": "Agent description is required",
+      "kernelVersion": "Browser kernel is required",
+      "proxyType": "Proxy type is required",
+      "proxyHost": "Proxy host is required",
+      "proxyPort": "Proxy port is required",
+      "proxyToken": "Proxy token is required",
+      "invalidBase64": "Invalid proxy token"
+    },
+    "browserConfig": {
+      "name": "Config name is required",
+      "userAgent": "User agent is required",
+      "unmaskedRenderer": "Unmasked renderer is required",
+      "deviceName": "Device name is required",
+      "macAddress": "Mac address is required"
+    }
+  }
+}

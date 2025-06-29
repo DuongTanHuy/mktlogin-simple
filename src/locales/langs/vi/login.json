@@ -1,0 +1,41 @@
+{
+  "login": {
+    "header": "Đăng nhập MKT Login",
+    "fields": {
+      "user": "Tên người dùng hoặc email",
+      "pass": "Mật khẩu"
+    },
+    "actions": {
+      "submit": "Đăng nhập",
+      "forgotPass": "Quên mật khẩu?"
+    },
+    "alternateLogin": {
+      "googleLogin": "Đăng nhập bằng Google"
+    },
+    "label": {
+      "or": "hoặc"
+    },
+    "newUser": {
+      "link": "Người dùng mới?",
+      "action": "Tạo tài khoản"
+    },
+    "terms": {
+      "condition": "Bằng cách đăng nhập, tôi đồng ý với",
+      "termsOfService": "Điều khoản dịch vụ",
+      "and": "và",
+      "privacyPolicy": "Chính sách bảo mật"
+    }
+  },
+  "oauth_login": {
+    "title": "Đăng nhập vào MKTCity",
+    "subTitle": "Đăng nhập bằng MKTLogin",
+    "sentence1": "Nếu bạn tiếp tục, MKTLogin sẽ chia sẻ tên, địa chỉ email, lựa chọn ưu tiên về ngôn ngữ và ảnh hồ sơ của bạn với MKTCity. Hãy xem ",
+    "sentence2": " của MKTLogin.",
+    "redirect": "Đang chuyển hướng đến MKTLogin...",
+    "actions": {
+      "continue": "Tiếp tục",
+      "cancel": "Hủy",
+      "redirect": "Nếu bạn không được chuyển hướng, hãy nhấn vào đây."
+    }
+  }
+}

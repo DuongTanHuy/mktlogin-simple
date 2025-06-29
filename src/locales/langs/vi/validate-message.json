@@ -1,0 +1,84 @@
+{
+  "validate": {
+    "required": "Trường này là bắt buộc",
+    "noContent": "Các hồ sơ đã chọn không có tài nguyên",
+    "invalidFolderPath": "Đường dẫn thư mục không hợp lệ",
+    "invalidVariableName": "Tên biến không hợp lệ",
+    "limit": {
+      "min": "Giới hạn phải lớn hơn hoặc bằng 1",
+      "valid": "Giới hạn phải là một số hợp lệ"
+    },
+    "usage_fee": {
+      "number": "Phí sử dụng phải là một số",
+      "integer": "Phí sử dụng phải là một số nguyên",
+      "min": "Phí sử dụng phải lớn hơn hoặc bằng 0"
+    },
+    "file": {
+      "1mb": "Dung lượng tập tin phải nhỏ hơn 1MB",
+      "2mb": "Dung lượng tập tin phải nhỏ hơn 2MB"
+    },
+    "version": "Phiên bản phải có định dạng x.x.x",
+    "username": "Tên người dùng tối đa 20 ký tự",
+    "password": {
+      "min": "Mật khẩu phải có ít nhất 10 ký tự",
+      "uppercase": "Mật khẩu phải chứa ít nhất một chữ cái viết hoa",
+      "lowercase": "Mật khẩu phải chứa ít nhất một chữ cái viết thường",
+      "number": "Mật khẩu phải chứa ít nhất một số",
+      "special": "Mật khẩu phải chứa ít nhất một ký tự đặc biệt",
+      "match": "Mật khẩu không khớp"
+    },
+    "wrongOldPassword": "Mật khẩu cũ không đúng",
+    "term": "Vui lòng chấp nhận điều khoản và chính sách",
+    "email": "Email phải là một địa chỉ email hợp lệ",
+    "profile": {
+      "run": "Vui lòng chọn một hồ sơ để chạy"
+    },
+    "quantity": {
+      "number": "Số lượng phải là một số",
+      "integer": "Số lượng phải là một số nguyên",
+      "min": "Số lượng phải lớn hơn 0"
+    },
+    "scale": {
+      "number": "Tỉ lệ phải là một số",
+      "min": "Tỉ lệ phải lớn hơn hoặc bằng 0.1",
+      "max": "Tỉ lệ phải nhỏ hơn hoặc bằng 1"
+    },
+    "windowSize": {
+      "width": {
+        "number": "Chiều rộng cửa sổ phải là một số",
+        "min": "Chiều rộng cửa sổ phải lớn hơn hoặc bằng 500"
+      },
+      "height": {
+        "number": "Chiều cao cửa sổ phải là một số",
+        "min": "Chiều cao cửa sổ phải lớn hơn hoặc bằng 100"
+      },
+      "spacing": {
+        "min": "Khoảng cách phải lớn hơn hoặc bằng 0",
+        "max": "Khoảng cách phải nhỏ hơn hoặc bằng 100",
+        "number": "Khoảng cách phải là một số"
+      },
+      "duration": {
+        "number": "Thời gian kéo dài phải là một số",
+        "min": "Thời gian kéo dài phải lớn hơn hoặc bằng 1000"
+      },
+      "num_thread": {
+        "number": "Số luồng phải là một số",
+        "min": "Số luồng phải lớn hơn hoặc bằng 1"
+      }
+    },
+    "fontSize": {
+      "number": "Cỡ chữ phải là một số",
+      "range": "Cỡ chữ từ 8 đến 30"
+    },
+    "endTime": "Thời gian kết thúc phải lớn hơn thời gian bắt đầu",
+    "invalidProxy": "Proxy không hợp lệ",
+    "invalidKey": "Khóa không hợp lệ",
+    "notMatchFormat": "không đúng định dạng:",
+    "invalidEmail": "có địa chỉ email không hợp lệ",
+    "invalidQuantity": "Số lượng tài khoản phải bằng số lượng hồ sơ",
+    "someThingWentWrong": "Đã xảy ra lỗi",
+    "enterGroupName": "Nhập tên nhóm",
+    "invalidAccount": "Tên người dùng hoặc mật khẩu không đúng",
+    "authFailed": "Ủy quyền thất bại"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "register": {
+    "header": "Create new account",
+    "fields": {
+      "user": "User name",
+      "email": "Email",
+      "pass": "Password",
+      "passRepeat": "Repeat Password",
+      "code": "Referral code"
+    },
+    "terms": {
+      "condition": "I have read and agree to the",
+      "termsOfService": "Terms of Service",
+      "and": "and",
+      "privacyPolicy": "Privacy Policy"
+    },
+    "actions": {
+      "create": "Create account",
+      "googleLogin": "Continue with Google"
+    },
+    "existingUser": {
+      "question": "Already have an account?",
+      "signIn": "Sign in"
+    },
+    "label": {
+      "or": "or"
+    }
+  }
+}

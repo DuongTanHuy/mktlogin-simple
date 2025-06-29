@@ -1,0 +1,306 @@
+{
+  "group": {
+    "profile": "Nhóm hồ sơ",
+    "new": "Mới",
+    "all": "Tất cả",
+    "ungrouped": "Không có nhóm"
+  },
+  "profileStatus": {
+    "all": "Tất cả",
+    "valid": "Còn hạn",
+    "expired": "Hết hạn"
+  },
+  "resourceStatus": {
+    "live": "Còn sống",
+    "die": "Đã chết",
+    "checkpoint": "Checkpoint",
+    "notLoggedIn": "Chưa đăng nhập"
+  },
+  "actions": {
+    "search": "Tìm kiếm",
+    "status": "Trạng thái hồ sơ",
+    "displayMode": "Chế độ hiển thị",
+    "delete": "Xóa",
+    "renew": "Gia hạn",
+    "send": "Chuyển đi",
+    "switch-group": "Chuyển nhóm",
+    "arrange": "Sắp xếp",
+    "reload": "Làm mới",
+    "create": "Tạo hồ sơ",
+    "open": "Mở",
+    "close": "Đóng",
+    "syncing": "Đồng bộ",
+    "edit": "Chỉnh sửa",
+    "duplicate": "Nhân bản",
+    "proxyUpdate": "Nhập proxy",
+    "addResource": "Nhập tài nguyên",
+    "exportResource": "Xuất tài nguyên",
+    "copyResource": "Sao chép tài nguyên",
+    "profile": "Hồ sơ",
+    "hide": "Ẩn bớt",
+    "displayWindow": "Hiển thị cửa sổ",
+    "updateNote": "Cập nhật ghi chú",
+    "updateKernel": "Cập nhật Browser Kernel",
+    "switchWorkspace": "Chuyển workspace",
+    "resourceStatus": "Trạng thái tài nguyên",
+    "copyId": "Sao chép Profile ID",
+    "moreAction": "Hành động khác",
+    "enableAutoRenew": "Bật tự động gia hạn",
+    "disableAutoRenew": "Tắt tự động gia hạn",
+    "copyProxy": "Sao chép proxy",
+    "addBookmark": "Thêm dấu trang",
+    "deleteBookmark": "Xóa dấu trang",
+    "addTabs": "Thêm tab",
+    "deleteTabs": "Xóa tab mở",
+    "deleteCookie": "Xóa cookie",
+    "clearCache": "Xóa bộ nhớ đệm",
+    "clear": "Xóa",
+    "confirm": "Xác nhận",
+    "cancel": "Hủy",
+    "customShortcut": "Tùy chỉnh phím tắt"
+  },
+  "quickAction": {
+    "expiredProfile": "Các hồ sơ được chọn đã hết hạn",
+    "advancedSearch": "Vui lòng nhập điêu kiện tìm kiếm",
+    "selectGroup": "+ Chọn nhóm",
+    "name": {
+      "title": "Cập nhật tên",
+      "placeholder": "Nhập tên mới",
+      "error": "Tên là bắt buộc",
+      "label": "Tên hồ sơ"
+    },
+    "note": {
+      "title": "Cập nhật ghi chú",
+      "placeholder": "Nhập ghi chú mới",
+      "label": "Ghi chú"
+    },
+    "proxy": {
+      "title": "Cập nhật proxy",
+      "labels": {
+        "type": "Loại proxy",
+        "host": "Host",
+        "port": "Port",
+        "username": "Tên người dùng",
+        "password": "Mật khẩu"
+      },
+      "error": {
+        "host": "Host là bắt buộc",
+        "port": "Port là bắt buộc"
+      }
+    },
+    "uid": {
+      "title": "Cập nhật uid",
+      "placeholder": "Nhập uid mới",
+      "label": "Uid"
+    },
+    "username": {
+      "title": "Cập nhật tên người dùng",
+      "placeholder": "Nhập tên mới",
+      "label": "Tên người dùng"
+    },
+    "password": {
+      "title": "Cập nhật mật khẩu",
+      "placeholder": "Nhập mật khẩu mới",
+      "label": "Mật khẩu"
+    },
+    "twoFa": {
+      "title": "Cập nhật 2Fa",
+      "placeholder": "Nhập 2Fa mới",
+      "label": "2Fa"
+    },
+    "email": {
+      "title": "Cập nhật email",
+      "placeholder": "Nhập email mới",
+      "label": "Email"
+    },
+    "emailPass": {
+      "title": "Cập nhật mật khẩu email",
+      "placeholder": "Nhập mật khẩu email mới",
+      "label": "Mật khẩu email"
+    },
+    "emailRecovery": {
+      "title": "Cập nhật email khôi phục",
+      "placeholder": "Nhập email khôi phục mới",
+      "label": "Email khôi phục"
+    },
+    "token": {
+      "title": "Cập nhật token",
+      "placeholder": "Nhập token mới",
+      "label": "Token"
+    },
+    "cookie": {
+      "title": "Cập nhật cookie",
+      "placeholder": "Nhập cookie mới",
+      "label": "Cookie"
+    },
+    "phone": {
+      "title": "Cập nhật số điện thoại",
+      "placeholder": "Nhập số điện thoại mới",
+      "label": "Số điện thoại"
+    },
+    "actions": {
+      "close": "Đóng",
+      "update": "Cập nhật"
+    }
+  },
+  "tooltip": {
+    "reload": "Làm mới danh sách hồ sơ",
+    "arrange": "Sắp xếp cửa sổ các hồ sơ đang mở",
+    "openProfile": "Mở hồ sơ",
+    "closeProfile": "Đóng hồ sơ",
+    "profileExpired": "Hồ sơ đã hết hạn, sẽ bị xóa vĩnh viễn sau 30 ngày"
+  },
+  "create-method": {
+    "new": "Tạo Mới",
+    "multi": "Tạo Nhanh",
+    "import-file": "Nhập Tệp",
+    "batch-create": "Tạo Nhanh"
+  },
+  "form": {
+    "action": {
+      "create": "Tạo",
+      "import": "Nhập",
+      "update": "Cập nhật",
+      "cancel": "Hủy",
+      "check": "Kiểm tra",
+      "change": "Thay đổi",
+      "apply": "Áp dụng"
+    },
+    "tooltip": {
+      "create-group": "Nhập tên nhóm mới"
+    },
+    "proxy": {
+      "noProxy": "Không sử dụng",
+      "subTitle": "Không sử dụng proxy cho hồ sơ này"
+    },
+    "openTab": {
+      "title": "URL mở Tab",
+      "placeholder": "Nhập URL"
+    },
+    "placeholder": {
+      "advanceSearch": "Các ID cách nhau bởi dấu phẩy, khoảng trắng hoặc mỗi dòng 1 ID",
+      "isAny": "là bất kỳ",
+      "anyOf": "chứa bất kỳ",
+      "allOf": "chứa tất cả"
+    },
+    "label": {
+      "column-setting": "Cài đặt cột",
+      "group": "Nhóm",
+      "name": "Tên",
+      "note": "Ghi chú",
+      "duration": "Thời hạn",
+      "last-opening": "Lần mở cuối",
+      "act": "Hành động",
+      "operating-system": "Hệ điều hành",
+      "new-fingerprint": "Dấu vân tay mới",
+      "timezone": "Múi giờ",
+      "location": "Vị trí",
+      "language": "Ngôn ngữ",
+      "app_language": "Ngôn ngữ trình duyệt",
+      "screen-resolution": "Độ phân giải màn hình",
+      "media-device": "Thiết bị truyền thông",
+      "device-memory": "Bộ nhớ thiết bị",
+      "device-name": "Tên thiết bị",
+      "mac-address": "Địa chỉ MAC",
+      "hardware-acceleration": "Tăng tốc phần cứng",
+      "display-image": "Hiển thị hình ảnh",
+      "sound": "Âm thanh",
+      "proxy-type": "Loại proxy",
+      "advanced-settings": "Cài đặt nâng cao",
+      "add-languages": "Thêm ngôn ngữ",
+      "font": "Phông chữ",
+      "watch-scan-allow": "Tùy chọn, cho phép các cổng được quét",
+      "date": "ngày",
+      "username": "Tên người dùng",
+      "password": "Mật khẩu",
+      "emailPassword": "Mật khẩu email",
+      "recoveryEmail": "Email khôi phục",
+      "phone": "Số điện thoại",
+      "status": "Trạng thái",
+      "startTime": "Ngày/Tháng/Năm Giờ:Phút",
+      "executionTime": "Giờ:Phút",
+      "audioContext": "Bối cảnh âm thanh",
+      "mediaDevice": "Thiết bị truyền thông",
+      "doNotTrack": "Không theo dõi",
+      "based_on_ip": "Dựa trên địa chỉ IP",
+      "based_on_language": "Dựa trên ngôn ngữ",
+      "created_at": "Ngày tạo"
+    },
+    "value": {
+      "timezone": "Dựa trên địa chỉ IP",
+      "local": "Múi giờ địa phương",
+      "options": {
+        "replace": "Thay thế",
+        "real": "Thực",
+        "disable": "Vô hiệu hóa",
+        "ask": "Hỏi",
+        "allow": "Cho phép",
+        "longitude": "Kinh độ",
+        "latitude": "Vĩ độ",
+        "accuracy": "Độ chính xác (m)",
+        "custom": "Tùy chỉnh",
+        "random": "Ngẫu nhiên",
+        "noise": "Nhiễu",
+        "unmaskedVendor": "Hiển thị nhà cung cấp",
+        "unmaskedRenderer": "Hiển thị trình kết xuất",
+        "matchWebGl": "Trùng với WebGL",
+        "close": "đóng",
+        "default": "Mặc định",
+        "block": "Chặn",
+        "open": "Mở"
+      }
+    }
+  },
+  "table": {
+    "pagination": {
+      "rowPerPage": "Số dòng mỗi trang:",
+      "of": "trên"
+    },
+    "selected": "đã chọn"
+  },
+  "profileImport": {
+    "listProfile": "Danh sách hồ sơ",
+    "nodata": "Không có hồ sơ",
+    "totalValid": "Tổng số hồ sơ hợp lệ",
+    "totalInvalid": "Tổng số hồ sơ không hợp lệ",
+    "total": "Tổng số hồ sơ",
+    "browserConfig": "Cấu hình trình duyệt",
+    "labels": {
+      "profileName": "Tên hồ sơ",
+      "proxyType": "Loại proxy",
+      "proxy": "Proxy",
+      "yourConfig": "Cấu hình của bạn",
+      "default": "Mặc định"
+    },
+    "actions": {
+      "uploadFile": "Tải lên file excel",
+      "downloadTemplate": "Tải về mẫu",
+      "add": "Thêm cấu hình"
+    }
+  },
+  "browserConfig": {
+    "create": "Tạo cấu hình trình duyệt",
+    "update": "Cập nhật cấu hình trình duyệt",
+    "question": "Bạn có chắc chắn?",
+    "subQuestion": "Bạn có muốn xóa cấu hình trình duyệt này không?",
+    "label": {
+      "name": "Tên cấu hình",
+      "browserLanguage": "Ngôn ngữ trình duyệt"
+    },
+    "actions": {
+      "cancel": "Hủy",
+      "update": "Cập nhật",
+      "create": "Tạo"
+    }
+  },
+  "openProfile": {
+    "title": "Không thể mở hồ sơ trên trình duyệt!",
+    "actionTitle": "Không thể sử dụng chức năng này trên trình duyệt!",
+    "detail": "Vui lòng cài đặt ứng dụng MKTLogin trên máy tính để sử dụng chức năng này.",
+    "action": {
+      "download": "Tải về",
+      "later": "Để sau"
+    }
+  },
+  "noData": "Không có dữ liệu"
+}

@@ -1,0 +1,66 @@
+{
+  "accSetting": {
+    "actions": {
+      "setting": "Cài đặt tài khoản",
+      "logout": "Đăng xuất"
+    },
+    "tabs": {
+      "general": {
+        "title": "Chung",
+        "avatar": "Hình đại diện",
+        "subheader": "Cho phép *.jpeg, *.jpg, *.png, *.gif dung lượng tối đa 3.1 MB",
+        "accInfo": "Thông tin tài khoản",
+        "labels": {
+          "name": "Tên tài khoản",
+          "email": "Địa chỉ email",
+          "firstName": "Tên",
+          "lastName": "Họ"
+        },
+        "actions": {
+          "save": "Lưu thay đổi"
+        }
+      },
+      "security": {
+        "pass": "Mật khẩu",
+        "subPass": "Thay đổi mật khẩu của bạn",
+        "loginActivity": "Hoạt động đăng nhập",
+        "subLoginActivity": "Danh sách các thiết bị đã đăng nhập",
+        "title": "Bảo mật",
+        "header": "Thay đổi mật khẩu",
+        "subheader": "Vui lòng nhập mật khẩu đúng định dạng",
+        "fields": {
+          "oldPassword": "Mật khẩu cũ",
+          "newPassword": "Mật khẩu mới",
+          "confirmPassword": "Xác nhận mật khẩu mới"
+        },
+        "actions": {
+          "loginLocation": "Nơi bạn đã đăng nhập",
+          "changePass": "Đổi mật khẩu",
+          "save": "Lưu mật khẩu mới",
+          "cancel": "Hủy"
+        }
+      },
+      "accLink": {
+        "title": "Liên kết ứng dụng",
+        "table": {
+          "header": {
+            "name": "Tên",
+            "email": "Địa chỉ email",
+            "app": "Ứng dụng",
+            "status": "Trạng thái",
+            "linkDate": "Ngày liên kết",
+            "action": "Hành động"
+          },
+          "noData": "Không có dữ liệu",
+          "rowPerPage": "Số hàng mỗi trang"
+        },
+        "fields": {
+          "app": "Ứng dụng"
+        },
+        "actions": {
+          "authorization": "Ủy quyền ứng dụng"
+        }
+      }
+    }
+  }
+}

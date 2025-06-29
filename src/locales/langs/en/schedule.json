@@ -1,0 +1,35 @@
+{
+  "schedule": {
+    "table": {
+      "header": {
+        "name": "Name",
+        "task": "Task",
+        "note": "Note",
+        "schedule": "Schedule",
+        "status": "Status",
+        "startAt": "Start at",
+        "endAt": "End at",
+        "lastRun": "Last run",
+        "action": "Action"
+      }
+    },
+    "delete": {
+      "title": "Are you sure you want to delete this schedule?"
+    },
+    "tooltip": {
+      "enable": "Click to enable",
+      "disable": "Click to disable"
+    },
+    "notify": {
+      "enable": "Turned on",
+      "disable": "Turned off"
+    },
+    "actions": {
+      "enable": "Enable",
+      "disable": "Disable",
+      "delete": "Delete",
+      "edit": "Edit",
+      "back": "Back"
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "workspaceSetting": {
+    "tabs": {
+      "general": "Chung",
+      "information": "Thông tin"
+    },
+    "workspaceName": {
+      "title": "Tên không gian làm việc",
+      "subTitle": "Không gian làm việc mặc định được đánh dấu bởi",
+      "defaultWorkspace": "Đây là không gian làm việc mặc định"
+    },
+    "workspaceDes": {
+      "title": "Mô tả không gian làm việc"
+    },
+    "authMethod": {
+      "title": "Phương pháp phân quyền",
+      "options": {
+        "byGroup": "Chia theo nhóm",
+        "byProfile": "Chia theo hồ sơ"
+      },
+      "placeholder": {
+        "byGroup": "Cấp cho người dùng quyền truy cập vào các nhóm hồ sơ cụ thể",
+        "byProfile": "Cấp cho người dùng quyền truy cập vào hồ sơ cụ thể"
+      }
+    },
+    "createMode": {
+      "title": "Chế độ tạo quy trình",
+      "options": {
+        "flowChart": "Sơ đồ",
+        "script": "Mã Javascript"
+      },
+      "placeholder": {
+        "flowChart": "Sử dụng giao diện kéo thả của Flowchart",
+        "script": "Sử dụng các lệnh lập trình ngôn ngữ Javascript"
+      }
+    },
+    "deleteWorkspace": {
+      "title": "Xóa không gian làm việc",
+      "placeholder": "Sau khi xóa, không gian làm việc sẽ biến mất vĩnh viễn cùng với dữ liệu của nó"
+    },
+    "updateWorkspace": {
+      "title": "Cập nhật tên workspace",
+      "placeholder": {
+        "name": "Nhập tên mới cho workspace",
+        "des": "Nhập mô tả mới cho workspace"
+      }
+    },
+    "createWorkspace": {
+      "title": "Tạo không gian làm việc",
+      "label": {
+        "name": "Tên",
+        "des": "Mô tả",
+        "authMethod": "Phương pháp phân quyền"
+      }
+    },
+    "actions": {
+      "save": "Lưu thay đổi",
+      "update": "Cập nhật",
+      "createNew": "Tạo mới",
+      "close": "Đóng",
+      "create": "Tạo"
+    }
+  }
+}

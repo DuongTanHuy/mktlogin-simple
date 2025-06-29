@@ -1,0 +1,84 @@
+{
+  "validate": {
+    "required": "This field is required",
+    "noContent": "The selected profile has no resources",
+    "invalidFolderPath": "Invalid folder path",
+    "invalidVariableName": "Invalid variable name",
+    "limit": {
+      "min": "Limit must be greater than or equal to 1",
+      "valid": "Limit must be a valid number"
+    },
+    "usage_fee": {
+      "number": "Usage fee must be a number",
+      "integer": "Usage fee must be an integer",
+      "min": "Usage fee must be greater than or equal to 0"
+    },
+    "file": {
+      "1mb": "File size must be less than 1MB",
+      "2mb": "File size must be less than 2MB"
+    },
+    "version": "Version must be in format x.x.x",
+    "username": "Maximum user name is 20 characters",
+    "password": {
+      "min": "Password must be at least 10 characters long",
+      "uppercase": "Password must contain at least one uppercase letter",
+      "lowercase": "Password must contain at least one lowercase letter",
+      "number": "Password must contain at least one number",
+      "special": "Password must contain at least one special character",
+      "match": "Passwords do not match"
+    },
+    "wrongOldPassword": "Old password is incorrect",
+    "term": "You must agree to the terms and policy",
+    "email": "Email must be a valid email address",
+    "profile": {
+      "run": "Please select a profile to run"
+    },
+    "quantity": {
+      "number": "Quantity must be a number",
+      "integer": "Quantity must be an integer",
+      "min": "Quantity must be greater than 0"
+    },
+    "scale": {
+      "number": "Scale must be a number",
+      "min": "Scale must be greater than or equal to 0.1",
+      "max": "Scale must be less than or equal to 1"
+    },
+    "windowSize": {
+      "width": {
+        "number": "Window width must be a number",
+        "min": "Window width must be greater than or equal to 500"
+      },
+      "height": {
+        "number": "Window height must be a number",
+        "min": "Window height must be greater than or equal to 100"
+      },
+      "spacing": {
+        "min": "Spacing must be greater than or equal to 0",
+        "max": "Spacing must be less than or equal to 100",
+        "number": "Spacing must be a number"
+      },
+      "duration": {
+        "number": "Duration must be a number",
+        "min": "Duration must be greater than or equal to 1000"
+      },
+      "num_thread": {
+        "number": "Number of threads must be a number",
+        "min": "Number of threads must be greater than or equal to 1"
+      }
+    },
+    "fontSize": {
+      "number": "Font size must be a number",
+      "range": "Font size from 8 to 30"
+    },
+    "endTime": "End time must be greater than start time",
+    "invalidProxy": "Invalid proxy",
+    "invalidKey": "Invalid key",
+    "notMatchFormat": "does not match the format:",
+    "invalidEmail": "has a malformed email address",
+    "invalidQuantity": "The number of accounts must be equal to the number of profiles",
+    "someThingWentWrong": "Something went wrong",
+    "enterGroupName": "Please enter group name",
+    "invalidAccount": "User name or password is incorrect",
+    "authFailed": "Authorization failed"
+  }
+}

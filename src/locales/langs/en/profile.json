@@ -1,0 +1,306 @@
+{
+  "group": {
+    "profile": "Profile group",
+    "new": "New",
+    "all": "All",
+    "ungrouped": "Ungrouped"
+  },
+  "profileStatus": {
+    "all": "All",
+    "valid": "Valid",
+    "expired": "Expired"
+  },
+  "resourceStatus": {
+    "live": "Live",
+    "die": "Die",
+    "checkpoint": "Checkpoint",
+    "notLoggedIn": "Not logged in"
+  },
+  "actions": {
+    "search": "Search",
+    "status": "Profile status",
+    "displayMode": "Display mode",
+    "delete": "Delete",
+    "renew": "Renew",
+    "send": "Transfer",
+    "switch-group": "Move group",
+    "arrange": "Arrange",
+    "reload": "Reload",
+    "create": "Create profile",
+    "open": "Open",
+    "close": "Close",
+    "syncing": "Syncing",
+    "edit": "Edit",
+    "duplicate": "Duplicate",
+    "proxyUpdate": "Update proxy",
+    "addResource": "Import resource",
+    "exportResource": "Export resource",
+    "copyResource": "Copy resource",
+    "profile": "Profile",
+    "hide": "Hide",
+    "displayWindow": "Display window",
+    "updateNote": "Update note",
+    "updateKernel": "Update Browser Kernel",
+    "switchWorkspace": "Change workspace",
+    "resourceStatus": "Resource status",
+    "copyId": "Copy ID",
+    "moreAction": "More actions",
+    "enableAutoRenew": "Enable auto renew",
+    "disableAutoRenew": "Disable auto renew",
+    "copyProxy": "Copy proxy",
+    "addBookmark": "Add bookmark",
+    "deleteBookmark": "Delete bookmark",
+    "addTabs": "Add tabs",
+    "deleteTabs": "Delete open tabs",
+    "deleteCookie": "Delete cookie",
+    "clearCache": "Clear cache",
+    "clear": "Clear",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "customShortcut": "Custom shortcut"
+  },
+  "quickAction": {
+    "expiredProfile": "The selected profile has expired",
+    "advancedSearch": "Please enter search conditions",
+    "selectGroup": "+ Select group",
+    "name": {
+      "title": "Update name",
+      "placeholder": "Enter new name",
+      "error": "Name is required",
+      "label": "Profile name"
+    },
+    "note": {
+      "title": "Update note",
+      "placeholder": "Enter new note",
+      "label": "Note"
+    },
+    "proxy": {
+      "title": "Update proxy",
+      "labels": {
+        "type": "Proxy type",
+        "host": "Host",
+        "port": "Port",
+        "username": "Username",
+        "password": "Password"
+      },
+      "error": {
+        "host": "Host is required",
+        "port": "Port is required"
+      }
+    },
+    "uid": {
+      "title": "Update uid",
+      "placeholder": "Enter new uid",
+      "label": "Uid"
+    },
+    "username": {
+      "title": "Update username",
+      "placeholder": "Enter new username",
+      "label": "Username"
+    },
+    "password": {
+      "title": "Update password",
+      "placeholder": "Enter new password",
+      "label": "Password"
+    },
+    "twoFa": {
+      "title": "Update 2Fa",
+      "placeholder": "Enter new 2Fa",
+      "label": "2Fa"
+    },
+    "email": {
+      "title": "Update email",
+      "placeholder": "Enter new email",
+      "label": "Email"
+    },
+    "emailPass": {
+      "title": "Update email password",
+      "placeholder": "Enter new email password",
+      "label": "Email password"
+    },
+    "emailRecovery": {
+      "title": "Update recovery email",
+      "placeholder": "Enter new recovery email",
+      "label": "Recovery email"
+    },
+    "token": {
+      "title": "Update token",
+      "placeholder": "Enter new token",
+      "label": "Token"
+    },
+    "cookie": {
+      "title": "Update cookie",
+      "placeholder": "Enter new cookie",
+      "label": "Cookie"
+    },
+    "phone": {
+      "title": "Update phone",
+      "placeholder": "Enter new phone",
+      "label": "Phone"
+    },
+    "actions": {
+      "close": "Close",
+      "update": "Update"
+    }
+  },
+  "tooltip": {
+    "reload": "Refresh profile list",
+    "arrange": "Arrange windows of open profiles",
+    "openProfile": "Open profile",
+    "closeProfile": "Close profile",
+    "profileExpired": "Profile has expired and will be deleted after 30 days"
+  },
+  "create-method": {
+    "new": "Single Create",
+    "multi": "Multiple Create",
+    "import-file": "Import File",
+    "batch-create": "Batch Create"
+  },
+  "form": {
+    "action": {
+      "create": "Create",
+      "import": "Import",
+      "update": "Update",
+      "cancel": "Cancel",
+      "check": "Check",
+      "change": "Change",
+      "apply": "Apply"
+    },
+    "tooltip": {
+      "create-group": "Enter a new group name"
+    },
+    "proxy": {
+      "noProxy": "No proxy",
+      "subTitle": "Do not use proxies for this profile"
+    },
+    "openTab": {
+      "title": "URL to open Tab",
+      "placeholder": "Enter URL"
+    },
+    "placeholder": {
+      "advanceSearch": "IDs are separated by commas, spaces or 1 ID per line",
+      "isAny": "is any",
+      "anyOf": "any of",
+      "allOf": "all of"
+    },
+    "label": {
+      "column-setting": "Column setting",
+      "group": "Group",
+      "name": "Name",
+      "note": "Note",
+      "duration": "Duration",
+      "last-opening": "Last opening",
+      "act": "Action",
+      "operating-system": "Operating System",
+      "new-fingerprint": "New fingerprint",
+      "timezone": "Timezone",
+      "location": "Location",
+      "language": "Language",
+      "app_language": "App language",
+      "screen-resolution": "Screen resolution",
+      "media-device": "Media device",
+      "device-memory": "Device memory",
+      "device-name": "Device name",
+      "mac-address": "MAC address",
+      "hardware-acceleration": "Hardware acceleration",
+      "display-image": "Display image",
+      "sound": "Sound",
+      "proxy-type": "Proxy type",
+      "advanced-settings": "Advanced settings",
+      "add-languages": "Add languages",
+      "font": "Fonts",
+      "watch-scan-allow": "Optionally, allow ports to be scanned",
+      "date": "day(s)",
+      "username": "Username",
+      "password": "Password",
+      "emailPassword": "Email password",
+      "recoveryEmail": "Recovery email",
+      "phone": "Phone",
+      "status": "Status",
+      "startTime": "Month/Day/Year Hour:Minute",
+      "executionTime": "Hour:Minute",
+      "audioContext": "Audio context",
+      "mediaDevice": "Media device",
+      "doNotTrack": "Do not track",
+      "based_on_ip": "Based on IP address",
+      "based_on_language": "Based on language",
+      "created_at": "Created at"
+    },
+    "value": {
+      "timezone": "Based on IP address",
+      "local": "Local timezone",
+      "options": {
+        "replace": "Replace",
+        "real": "Real",
+        "disable": "Disable",
+        "ask": "Ask",
+        "allow": "Allow",
+        "longitude": "Longitude",
+        "latitude": "Latitude",
+        "accuracy": "Accuracy (m)",
+        "custom": "Custom",
+        "random": "Random",
+        "noise": "Noise",
+        "unmaskedVendor": "Unmasked vendor",
+        "unmaskedRenderer": "Unmasked renderer",
+        "matchWebGl": "Match WebGL",
+        "close": "Close",
+        "default": "Default",
+        "block": "Block",
+        "open": "Open"
+      }
+    }
+  },
+  "table": {
+    "pagination": {
+      "rowPerPage": "Rows per page:",
+      "of": "of"
+    },
+    "selected": "selected"
+  },
+  "profileImport": {
+    "listProfile": "List profile",
+    "nodata": "No profile data",
+    "totalValid": "Total number of valid profiles",
+    "totalInvalid": "Total number of invalid profiles",
+    "total": "Total profiles",
+    "browserConfig": "Browser configuration",
+    "labels": {
+      "profileName": "Profile name",
+      "proxyType": "Proxy type",
+      "proxy": "Proxy",
+      "yourConfig": "Your config",
+      "default": "Default"
+    },
+    "actions": {
+      "uploadFile": "Upload file excel",
+      "downloadTemplate": "Download template file",
+      "add": "Add config"
+    }
+  },
+  "browserConfig": {
+    "create": "Create browser config",
+    "update": "Update browser config",
+    "question": "Are you sure?",
+    "subQuestion": "Do you want to delete this config?",
+    "label": {
+      "name": "Config name",
+      "browserLanguage": "Browser language"
+    },
+    "actions": {
+      "cancel": "Cancel",
+      "update": "Update",
+      "create": "Create"
+    }
+  },
+  "openProfile": {
+    "title": "Can't open profile in browser!",
+    "actionTitle": "This function cannot be used on the browser!",
+    "detail": "Please install MKTLogin application on your computer to use this function.",
+    "action": {
+      "download": "Download",
+      "later": "Later"
+    }
+  },
+  "noData": "No data"
+}

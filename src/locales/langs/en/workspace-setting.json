@@ -1,0 +1,64 @@
+{
+  "workspaceSetting": {
+    "tabs": {
+      "general": "General",
+      "information": "Information"
+    },
+    "workspaceName": {
+      "title": "Workspace name",
+      "subTitle": "The default workspace is marked by",
+      "defaultWorkspace": "This is the default workspace"
+    },
+    "workspaceDes": {
+      "title": "Workspace description"
+    },
+    "authMethod": {
+      "title": "Authentication method",
+      "options": {
+        "byGroup": "By profile group",
+        "byProfile": "By profile"
+      },
+      "placeholder": {
+        "byGroup": "Grant users access to specific profile groups",
+        "byProfile": "Grant users access to a specific profile"
+      }
+    },
+    "createMode": {
+      "title": "Workflow creation mode",
+      "options": {
+        "flowChart": "Flowchart",
+        "script": "Script"
+      },
+      "placeholder": {
+        "flowChart": "Using the drag-and-drop interface of Flowchart",
+        "script": "Using programming commands in the JavaScript language"
+      }
+    },
+    "deleteWorkspace": {
+      "title": "Delete workspace",
+      "placeholder": "After deletion, the workspace will disappear permanently along with its data"
+    },
+    "updateWorkspace": {
+      "title": "Update workspace name",
+      "placeholder": {
+        "name": "Enter the new workspace name",
+        "des": "Enter the new workspace description"
+      }
+    },
+    "createWorkspace": {
+      "title": "Create new workspace",
+      "label": {
+        "name": "Name",
+        "des": "Description",
+        "authMethod": "Authentication method"
+      }
+    },
+    "actions": {
+      "save": "Save changes",
+      "update": "Update",
+      "createNew": "Create new",
+      "close": "Close",
+      "create": "Create"
+    }
+  }
+}

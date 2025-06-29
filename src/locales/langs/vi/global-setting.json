@@ -1,0 +1,32 @@
+{
+  "globalSetting": {
+    "title": "Cài đặt chung",
+    "browserSetting": {
+      "title": "Cài đặt trình duyệt",
+      "label": {
+        "syncCookie": "Đồng bộ cookie",
+        "syncIndexedDB": "Đồng bộ IndexedDB",
+        "syncLocalStorage": "Đồng bộ local storage",
+        "syncBookmark": "Đồng bộ Bookmark",
+        "syncPassword": "Đồng bộ mật khẩu đã lưu",
+        "disableNotification": "Tắt thông báo",
+        "disableLocation": "Tắt vị trí"
+      }
+    },
+    "taskSetting": {
+      "title": "Cài đặt nhiệm vụ",
+      "label": {
+        "saveLogRunTask": "Lưu log chạy nhiệm vụ"
+      }
+    },
+    "appSetting": {
+      "title": "Cài đặt ứng dụng",
+      "label": {
+        "folderPath": "Đường dẫn lưu trữ dữ liệu hồ sơ"
+      }
+    },
+    "actions": {
+      "save": "Lưu thay đổi"
+    }
+  }
+}

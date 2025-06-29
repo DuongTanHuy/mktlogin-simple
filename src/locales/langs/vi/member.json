@@ -1,0 +1,39 @@
+{
+  "member": {
+    "search": "Tìm kiếm",
+    "userGroup": {
+      "title": "Nhóm thành viên"
+    },
+    "list": {
+      "title": "Thành viên",
+      "headers": {
+        "name": "Tên",
+        "email": "Email",
+        "role": "Quyền hạn",
+        "note": "Ghi chú",
+        "actions": "Hành động"
+      }
+    },
+    "invited": {
+      "title": "Đã mời",
+      "headers": {
+        "name": "Tên",
+        "email": "Email",
+        "role": "Quyền hạn",
+        "note": "Ghi chú",
+        "inviteDate": "Ngày mời",
+        "actions": "Hành động"
+      }
+    },
+    "accessPermission": "Quyền truy cập",
+    "tooltips": {
+      "notPermission": "Không được phép",
+      "notInvite": "Tạo nhóm làm việc trước khi sử dụng tính năng này"
+    },
+    "actions": {
+      "new": "Mới",
+      "invite": "Mời thành viên",
+      "save": "Lưu"
+    }
+  }
+}

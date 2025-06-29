@@ -1,0 +1,49 @@
+{
+  "generalLog": {
+    "table": {
+      "headers": {
+        "stt": "STT",
+        "username": "Người thực hiện",
+        "profile_id": "ID hồ sơ",
+        "profile_name": "Tên hồ sơ",
+        "action": "Hành động",
+        "amount": "Số tiền giao dịch",
+        "balance": "Số dư cuối",
+        "created_at": "Thời gian thực hiện"
+      }
+    },
+    "labels": {
+      "username": "Tên tài khoản hoặc email",
+      "profileName": "ID hoặc tên hồ sơ",
+      "action": "Hành động"
+    },
+    "options": {
+      "profile_creation": "Tạo hồ sơ",
+      "profile_edit": "Cập nhật hồ sơ",
+      "profile_renew": "Gia hạn hồ sơ",
+      "profile_duplicate": "Nhân bản hồ sơ",
+      "profile_transfer": "Chuyển hồ sơ",
+      "profile_move_group": "Chuyển nhóm hồ sơ",
+      "profile_delete": "Xóa hồ sơ",
+      "profile_restore": "Khôi phục hồ sơ",
+      "profile_update_proxy": "Cập nhật proxy",
+      "profile_update_note": "Cập nhật ghi chú",
+      "profile_move_workspace": "Chuyển workspace",
+      "profile_update_browser_kernel": "Cập nhật browser kernel",
+      "profile_enable_auto_renew": "Bật tự động gia hạn",
+      "profile_disable_auto_renew": "Tắt tự động gia hạn",
+      "profile_auto_renew": "Tự động gia hạn hồ sơ",
+      "delete_workspace": "Xóa workspace",
+      "system_auto_delete": "Hệ thống tự động xóa",
+      "profile_remove_proxy": "Xóa proxy",
+      "profile_clear_cookie": "Xóa cookie",
+      "profile_update_tag": "Cập nhật tag",
+      "profile_add_tag": "Thêm tag",
+      "profile_remove_tag": "Xóa tag",
+      "profile_add_tab": "Thêm tab",
+      "profile_remove_tab": "Xóa tab",
+      "profile_add_bookmark": "Thêm bookmark",
+      "profile_remove_bookmark": "Xóa bookmark"
+    }
+  }
+}

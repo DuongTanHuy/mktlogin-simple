@@ -1,0 +1,38 @@
+{
+  "packages": {
+    "title": "Chose your package",
+    "inUse": "In use",
+    "features": {
+      "title": "Features",
+      "all": "All",
+      "allFeatures": "All features",
+      "profileBalance": "Profile balance"
+    },
+    "actions": {
+      "buyMore": "Buy more",
+      "buyPackage": "Buy package",
+      "chose": "Chose",
+      "confirmPurchase": "Do you want to confirm the purchase of the package?",
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "apply": "Apply",
+      "list": "List"
+    },
+    "unit": "package",
+    "discount": {
+      "voucherCode": "Voucher code",
+      "voucherInfo": "Voucher information",
+      "noVoucher": "No voucher",
+      "totalPayment": "Total payment",
+      "listVoucher": "List of vouchers",
+      "placeholder": "Enter voucher code",
+      "applied": "Applied",
+      "duration": "Duration"
+    }
+  },
+  "recharge": {
+    "title": "Chose bank to recharge",
+    "info": "If you need assistance, please contact phone number 0935.322.178 - 0932.679.984.",
+    "warning": "Do not deposit money with Vietcombank during the hours of 10:00 pm - 00:00 am to avoid the system not automatically adding money."
+  }
+}

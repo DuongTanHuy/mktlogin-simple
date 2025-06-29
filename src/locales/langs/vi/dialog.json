@@ -1,0 +1,770 @@
+{
+  "dialog": {
+    "profileGroup": {
+      "addEdit": {
+        "title": {
+          "create": "Tạo nhóm",
+          "edit": "Sửa nhóm"
+        },
+        "fields": {
+          "name": "Tên nhóm"
+        }
+      },
+      "delete": {
+        "header": "Xóa nhóm",
+        "subheader1": "Bạn có chắc chắn muốn xóa nhóm hồ sơ này không?",
+        "subheader2": "Sau khi xóa tất cả các hồ sơ trong nhóm này sẽ được chuyển sang nhóm Ungrouped."
+      },
+      "actions": {
+        "create": "Tạo",
+        "update": "Cập nhật",
+        "delete": "Xóa",
+        "close": "Đóng"
+      }
+    },
+    "rpa": {
+      "flowchart": "Sơ đồ",
+      "script": "Mã JS",
+      "mine": "Của tôi",
+      "download": "Tải về",
+      "tabs": {
+        "optional": {
+          "title": "Tùy chọn",
+          "labels": {
+            "id": "Hồ sơ",
+            "process": "Quy trình",
+            "taskType": "Loại nhiệm vụ",
+            "executionFrequency": "Tần suất thực hiện",
+            "startingTime": "Thời gian bắt đầu",
+            "endTime": "Thời gian kết thúc",
+            "intervalTime": "Khoảng thời gian (phút)",
+            "executionTime": "Thời gian thực hiện",
+            "selectWorkflow": "Vui lòng chọn quy trình"
+          },
+          "button": {
+            "common": "Thực hiện ngay",
+            "scheduled": "Lên lịch thực hiện"
+          },
+          "descriptions": {
+            "startingTime": "Phải lớn hơn thời điểm hiện tại",
+            "endTime": "Phải sau thời gian bắt đầu. \nNếu không chọn nghĩa là nhiệm vụ không có thời gian kết thúc cụ thể.",
+            "intervalTime": "Thời gian giữa các lần thực hiện tác vụ, đơn vị là phút",
+            "executionTime": "Nếu bạn muốn thực hiện một nhiệm vụ trong cùng một ngày, thời gian thực hiện nên là 10 phút sau thời điểm bắt đầu"
+          }
+        },
+        "runConfiguration": {
+          "title": "Cấu hình chạy",
+          "labels": {
+            "numWindows": "Số cửa sổ",
+            "windowSize": "Kích thước cửa sổ",
+            "ratio": "Tỉ lệ kích thước cửa sổ",
+            "spacing": "Khoảng cách",
+            "open_time_beetween_profiles": "Thời gian mở giữa các hồ sơ (ms)",
+            "num_thread": "Số luồng chạy đồng thời",
+            "is_visual_mouse": "Hiển thị mô phỏng chuột"
+          },
+          "fields": {
+            "numWindows": "Số lượng cửa sổ tối đa trên một hàng",
+            "windowSize": {
+              "width": "Chiều rộng (pixel)",
+              "height": "Chiều cao (pixel)"
+            },
+            "spacing": "Khoảng cách giữa các hàng (mặc định 0 pixel)",
+            "duration": "Thời gian mở giữa các hồ sơ (ms)",
+            "scale": "Giá trị hợp lệ từ 0.1 đến 1 (mặc định 0.8)"
+          }
+        },
+        "input": {
+          "title": "Đầu vào",
+          "key": "Khóa",
+          "value": "Giá trị",
+          "addJson": "Thêm tệp JSON",
+          "noData": "Quy trình này không có đầu vào",
+          "readme": "Mở hướng dẫn sử dụng",
+          "userManual": "Hướng dẫn sử dụng"
+        },
+        "information": {
+          "title": "Thông tin",
+          "name": "Tên",
+          "note": "Ghi chú"
+        }
+      },
+      "actions": {
+        "close": "Đóng",
+        "create": "Tạo",
+        "schedule": "Lên lịch",
+        "createAndRun": "Tạo & chạy",
+        "start": "Bắt đầu"
+      }
+    },
+    "deleteProfile": {
+      "header": "Bạn có chắc chắn không?",
+      "header1": "Xóa hồ sơ?",
+      "subheader": "Các hồ sơ ID sẽ bị xóa:",
+      "subheader1": "Bạn có chắc chắn không? Một khi hồ sơ bị xóa, nó sẽ không thể phục hồi được!",
+      "actions": {
+        "delete": "Xóa",
+        "cancel": "Hủy"
+      }
+    },
+    "restoreProfile": {
+      "header": "Khôi phục hồ sơ",
+      "subheader": "Các hồ sơ ID sẽ được khôi phục:",
+      "actions": {
+        "restore": "Khôi phục",
+        "cancel": "Hủy"
+      }
+    },
+    "renewProfile": {
+      "header": "Gia hạn hồ sơ",
+      "header1": "Gia hạn hồ sơ",
+      "subheader": "Gia hạn các hồ sơ có ID:",
+      "numOfDay": "Số ngày gia hạn",
+      "numOfMonth": "Số tháng gia hạn",
+      "totalCost": "Tổng phí gia hạn:",
+      "profileBalance": "số dư hồ sơ",
+      "actions": {
+        "renew": "Gia hạn",
+        "cancel": "Hủy",
+        "confirm": "Xác nhận"
+      },
+      "enableAutoRenew": {
+        "title": "Bật tự động gia hạn",
+        "subTitle": "Bật tự động gia hạn cho các hồ sơ có ID:"
+      },
+      "disableAutoRenew": {
+        "title": "Tắt tự động gia hạn",
+        "subTitle": "Tắt tự động gia hạn cho các hồ sơ có ID:"
+      },
+      "options": {
+        "oneMonth": "1 tháng (30 ngày)",
+        "twoMonths": "2 tháng (60 ngày)",
+        "threeMonths": "3 tháng (90 ngày)",
+        "fourMonths": "4 tháng (120 ngày)",
+        "fiveMonths": "5 tháng (150 ngày)",
+        "sixMonths": "6 tháng (180 ngày)",
+        "sevenMonths": "7 tháng (210 ngày)",
+        "eightMonths": "8 tháng (240 ngày)",
+        "nineMonths": "9 tháng (270 ngày)",
+        "tenMonths": "10 tháng (300 ngày)",
+        "elevenMonths": "11 tháng (330 ngày)",
+        "twelveMonths": "12 tháng (360 ngày)"
+      }
+    },
+    "addBookmark": {
+      "header": "Thêm dấu trang",
+      "subheader": "Thêm dấu trang cho các hồ sơ có ID:",
+      "list": "Danh sách dấu trang",
+      "labels": {
+        "name": "Tên",
+        "url": "URL"
+      },
+      "placeholder": {
+        "name": "Nhập tên dấu trang",
+        "url": "Nhập URL dấu trang"
+      },
+      "actions": {
+        "add": "Thêm",
+        "cancel": "Hủy"
+      }
+    },
+    "addTab": {
+      "header": "Thêm tab",
+      "subheader": "Thêm tab cho các hồ sơ có ID:",
+      "list": "Danh sách URL tab",
+      "placeholder": "Nhập URL tab",
+      "validate": "URL là bắt buộc",
+      "actions": {
+        "add": "Thêm",
+        "cancel": "hủy"
+      }
+    },
+    "deleteTab": {
+      "header": "Xóa tab mở",
+      "subheader": "Xóa tab cho các hồ sơ có ID:"
+    },
+    "deleteBookmark": {
+      "header": "Xóa dấu trang",
+      "subheader": "Xóa dấu trang cho các hồ sơ có ID:",
+      "labels": {
+        "deleteMode": "Chế độ xóa",
+        "content": "Nội dung",
+        "urlPattern": "Mẫu URL"
+      },
+      "options": {
+        "all": "Xóa tất cả",
+        "deleteByContent": "Xóa theo URL có chứa nội dung",
+        "deleteByUrlPattern": "Xóa theo mẫu URL"
+      },
+      "validate": {
+        "content": "Nội dung là bắt buộc",
+        "urlPattern": "Mẫu URL là bắt buộc"
+      },
+      "example": {
+        "title": "Ví dụ về mẫu URL",
+        "example1": "Xóa tất cả URL thuộc tên miền example.com",
+        "example2": "Xóa tất cả URL chứa đường dẫn /products",
+        "example3": "Xóa tất cả URL https trên tên miền phụ của example.com"
+      },
+      "actions": {
+        "delete": "Xóa",
+        "cancel": "Hủy"
+      }
+    },
+    "transferProfile": {
+      "header": "Chuyển hồ sơ đi",
+      "subheader": "Các hồ sơ có ID sẽ bị chuyển đi:",
+      "subheader1": "Bạn muốn chuyển hồ sơ này đến:",
+      "label": "Người nhận",
+      "placeholder": "Tên tài khoản hoặc email tài khoản người nhận",
+      "errorMess": "Vui lòng nhập tài khoản hoặc email người nhận",
+      "actions": {
+        "transfer": "Chuyển",
+        "cancel": "Hủy"
+      }
+    },
+    "moveGroup": {
+      "header": "Chuyển nhóm hồ sơ",
+      "subheader": "Các hồ sơ có ID sẽ bị chuyển đi:",
+      "singleMove": "Bạn có chắc chắn muốn chuyển hồ sơ này đến:",
+      "label": "Chọn nhóm hồ sơ",
+      "actions": {
+        "move": "Chuyển",
+        "cancel": "Hủy"
+      },
+      "error": "Vui lòng chọn nhóm hồ sơ"
+    },
+    "switchWorkspace": {
+      "header": "Chuyển không gian làm việc",
+      "subheader": "Các hồ sơ có ID sẽ bị chuyển đi:",
+      "singleMove": "Bạn có chắc chắn muốn chuyển hồ sơ này đến:",
+      "actions": {
+        "switch": "Chuyển",
+        "cancel": "Hủy"
+      },
+      "label": "Chọn không gia làm việc",
+      "error": "Vui lòng chọn một không gia làm việc"
+    },
+    "updateProxy": {
+      "title": "Cập nhật Proxy",
+      "subTitle": "Cập nhật proxy cho các hồ sơ có ID:",
+      "label": {
+        "proxy": "Danh sách Proxy (mỗi proxy trên một dòng)"
+      }
+    },
+    "duplicateProfile": {
+      "header": "Nhân bản hồ sơ",
+      "totalCost": "Tổng phí nhân bản",
+      "profileBalance": "số dư hồ sơ",
+      "labels": {
+        "quantity": "Số lượng",
+        "keepPar": "Giữ lại các thông số",
+        "insertMode": "Chế độ chèn proxy",
+        "proxyType": "Loại proxy"
+      },
+      "options": {
+        "params": {
+          "groupProfile": "Nhóm hồ sơ",
+          "bookmark": "Dấu trang",
+          "timezone": "Múi giờ",
+          "location": "Vị trí",
+          "userAgent": "User Agent",
+          "proxy": "Proxy"
+        },
+        "insertMode": {
+          "dontInsert": "Không chèn proxy",
+          "noRepeat": "Không lặp lại",
+          "repeat": "Lặp lại",
+          "pair": "Đồng Bộ",
+          "oneForAll": "Một cho tất cả"
+        }
+      },
+      "tooltip": {
+        "groupProfile": "Hồ sơ nhân bản sẽ nằm trong nhóm của hồ sơ gốc",
+        "bookmark": "Các hồ sơ được nhân bản sẽ có các bookmarks (dấu trang) của hồ sơ gốc",
+        "timezone": "Các hồ sơ được nhân bản sẽ có Timezone (múi giờ) giống hồ sơ gốc",
+        "location": "Các hồ sơ được nhân bản sẽ có cấu hình Location (vị trí) giống với hồ sơ gốc",
+        "userAgent": "Các hồ sơ được nhân bản sẽ có cấu hình User-Agent giống với hồ sơ gốc",
+        "proxy": "Các hồ sơ được nhân bản sẽ có cấu hình Proxy giống với hồ sơ gốc"
+      },
+      "actions": {
+        "duplicate": "Nhân bản",
+        "cancel": "Hủy"
+      }
+    },
+    "updateNote": {
+      "title": "Cập nhật ghi chú cho nhiều hồ sơ",
+      "subTitle": "Các hố sơ có ID sau sẽ được cập nhật:"
+    },
+    "updateKernel": {
+      "title": "Cập nhật browser kernel cho nhiều hồ sơ",
+      "subTitle": "Các hồ sơ có ID sau sẽ được cập nhật:",
+      "selectChromeVersion": "Chọn phiên bản Chrome",
+      "selectFirefoxVersion": "Chọn phiên bản Firefox"
+    },
+    "addAccountResource": {
+      "title": "Nhập tài nguyên",
+      "subTitle": "Nhập tài nguyên cho các hồ sơ có ID:",
+      "label": {
+        "resourceType": "Loại tài nguyên",
+        "format": "Định dạng",
+        "resourceData": "Danh sách tài khoản",
+        "totalProfile": "Tổng số hồ sơ: ",
+        "totalAccount": "Tổng số tài khoản: "
+      },
+      "placeholder": {
+        "resourceData": "Mỗi tài khoản trên một dòng"
+      },
+      "actions": {
+        "add": "Nhập",
+        "cancel": "Hủy bỏ",
+        "addKey": "Thêm khóa"
+      }
+    },
+    "exportResource": {
+      "title": {
+        "export": "Xuất tài nguyên",
+        "copy": "Sao chép tài nguyên"
+      },
+      "subTitle": {
+        "export": "Xuất tài nguyên của các hồ sơ có ID:",
+        "copy": "Sao chép tài nguyên của các hồ sơ có ID:"
+      },
+      "label": {
+        "saveFormat": "Lưu định dạng",
+        "preview": "Xem trước",
+        "content": "Nội dung"
+      },
+      "actions": {
+        "export": "Xuất",
+        "copy": "Sao chép"
+      }
+    },
+    "bank": {
+      "title": "Quét mã QR hoặc chuyển khoản theo cú pháp",
+      "info": "Hệ thống sẽ tự động nạp tiền trong vòng 2 phút kể từ khi chuyển khoản.",
+      "accountNumber": "Số tài khoản",
+      "accountHolder": "Họ tên chủ tài khoản",
+      "transferContent": "Nội dung chuyển khoản",
+      "bankNames": {
+        "acb": "Ngân hàng thương mại cổ phần Á Châu",
+        "vietcombank": "Ngân hàng thương mại cổ phần Ngoại thương Việt Nam"
+      },
+      "actions": {
+        "close": "Đóng"
+      }
+    },
+    "publicWorkflow": {
+      "title": "Đăng quy trình lên chợ",
+      "unpublish": "Bạn có chắc chắn muốn gỡ xuống quy trình này không?",
+      "labels": {
+        "title": "Tiêu đề",
+        "description": "Mô tả",
+        "avatar": "Tải hình ảnh",
+        "category": "Chọn danh mục",
+        "encrypted": "Mã hóa quy trình",
+        "usageFee": "Phí tải về",
+        "limitEnter": "Giới hạn số lần nhập",
+        "numOfEntry": "Số lần giới hạn nhập",
+        "isExpiryTime": "Giới hạn thời gian nhập mã",
+        "numTime": "Số giờ",
+        "notAvailable": "Tính năng thu phí chưa khả dụng"
+      },
+      "placeholder": {
+        "title": "Nhập tiêu đề",
+        "description": "Nhập một chút miêu tả về quy trình",
+        "guide": "Hướng dẫn sử dụng...",
+        "usageFee": "Nhập phí tải về"
+      },
+      "note": {
+        "usageFee": "Phí sử dụng cho mỗi tháng"
+      },
+      "confirm": {
+        "unpublish": "Bạn có chắc chắn muốn gỡ xuống quy trình này không?"
+      },
+      "options": {
+        "other": "Khác",
+        "encrypted": {
+          "yes": "Mã hóa",
+          "no": "Không mã hóa"
+        },
+        "limited": "Có giới hạn",
+        "unlimited": "Không giới hạn"
+      },
+      "actions": {
+        "cancel": "Hủy",
+        "publish": "Đăng",
+        "update": "Lưu thay đổi",
+        "unpublish": "Gỡ xuống",
+        "cancelRequest": "Huỷ yêu cầu"
+      }
+    },
+    "publicWorkflowUploadNewVersion": {
+      "message": {
+        "uploadSuccess": "Tải lên phiên bản mới thành công",
+        "uploadFailed": "Tải lên phiên bản mới thất bại"
+      }
+    },
+    "uploadVersion": {
+      "title": "Tải lên phiên bản mới",
+      "labels": {
+        "version": "Phiên bản",
+        "changeLog": "Nội dung cập nhật"
+      },
+      "placeholder": {
+        "version": "Nhập số phiên bản",
+        "changeLog": "Nhập nội dung cập nhật",
+        "currentVersion": "Phiên bản hiện tại",
+        "lastUpdate": "Cập nhật lần cuối: "
+      },
+      "actions": {
+        "cancel": "Hủy",
+        "upload": "Cập nhật"
+      }
+    },
+    "extension": {
+      "enable": {
+        "title": "Bật tiện ích",
+        "subTitle": "Khi được kích hoạt, nếu bạn chọn tiện ích  này khi tạo hồ sơ mới, tiện ích sẽ được áp dụng cho hồ sơ mới. Bạn có chắc chắn muốn kích hoạt tiện ích này không?"
+      },
+      "disable": {
+        "title": "Tắt tiện ích",
+        "subTitle": "Khi bị vô hiệu hóa, tiện ích này sẽ được loại bỏ khỏi tất cả các hồ sơ. Bạn có chắc chắn muốn vô hiệu hóa tiện ích này không?",
+        "extensionName": "Tên tiện ích"
+      },
+      "delete": {
+        "title": "Xóa tiện ích",
+        "question": "Bạn có chắc chắn muốn gỡ bỏ tiện ích mở rộng này không?",
+        "warning": "Nếu tiện ích mở rộng này được gỡ bỏ, nó sẽ được gỡ cài đặt khỏi tất cả các hồ sơ."
+      },
+      "upload": {
+        "title": "Tải lên tiện ích",
+        "type": "Loại",
+        "uploadFile": {
+          "fields": {
+            "instPackage": "Tải lên tiện ích",
+            "icon": "Tải lên file"
+          },
+          "labels": {
+            "instPackage": "Gói cài đặt",
+            "icon": "Biểu tượng",
+            "extensionName": "Tên tiện ích",
+            "introduction": "Giới thiệu"
+          },
+          "placeholder": {
+            "instPackage": "Hỗ trợ định dạng zip, giới hạn 30M. Nếu tệp tiện ích mở rộng ở định dạng crx, hãy đổi đuôi tệp thành rar trước, giải nén nó và nén lại thành định dạng zip",
+            "icon": "Tùy chọn, ít nhất 60*60 pixel, tỉ lệ 1:1, hỗ trợ định dạng jpg/jpeg/png, giới hạn 1M",
+            "extensionName": "Bắt buộc, vui lòng điền tên tiện ích mở rộng",
+            "introduction": "Tùy chọn, vui lòng điền mô tả ngắn gọn về tiện ích mở rộng"
+          },
+          "fileNotExtension": "Tệp không phải là tiện ích mở rộng"
+        },
+        "chromeStore": {
+          "labels": {
+            "url": "URL của tiện ích"
+          },
+          "placeholder": {
+            "url": "URL Chrome Web Store của tiện ích"
+          },
+          "notes": {
+            "title": "Chú ý",
+            "note1": "1. Yêu cầu mạng ngoài đại lục Trung Quốc.",
+            "note2": "2. Tiện ích mở rộng được cung cấp bởi bên thứ ba, tất cả quyền được bảo lưu.",
+            "note3": "3. Truy cập Chrome Web Store và sao chép liên kết của tiện ích mở rộng."
+          }
+        }
+      },
+      "category": {
+        "title": "Danh mục",
+        "search": "Tìm kiếm",
+        "header": {
+          "name": "Tên",
+          "remark": "Ghi chú",
+          "extension": "Tiện ích",
+          "operation": "Hoạt động"
+        },
+        "newCategory": "Thêm danh mục",
+        "addCategory": {
+          "placeholder": {
+            "name": "Tên danh mục",
+            "note": "Ghi chú",
+            "extension": "Tùy chọn, kích thước tối thiểu 60*60 pixel, tỉ lệ 1:1, hỗ trợ định dạng jpg/jpeg/png, giới hạn kích thước tệp là 1M."
+          }
+        }
+      },
+      "extensionName": "Tên tiện ích",
+      "actions": {
+        "ok": "OK",
+        "close": "Đóng",
+        "cancel": "Hủy",
+        "enable": "Bật",
+        "disable": "Tắt",
+        "upload": "Tải lên file",
+        "chromeStore": "Chrome Web Store",
+        "upload_to": "Tải lên"
+      }
+    },
+    "deleteWorkspace": {
+      "title": "Xóa không gian làm việc?",
+      "subTitle1": "Để xác nhận xóa, hãy gõ",
+      "subTitle2": "vào ô bên dưới",
+      "note": "Lưu ý : Khi xóa không gian làm việc chỉ có hồ sơ được chuyển về \"My Workspace\", còn lại mọi thứ sẽ bị xóa và không thể khôi phục",
+      "placeholder": "Nhập tên không gian làm việc để xác nhận",
+      "actions": {
+        "close": "Đóng",
+        "delete": "Xóa không gian làm việc"
+      }
+    },
+    "userGroup": {
+      "addEdit": {
+        "add": "Tạo nhóm thành viên",
+        "edit": "Chỉnh sửa nhóm thành viên",
+        "fields": {
+          "name": "Tên",
+          "note": "Ghi chú",
+          "licensing": "Cấp phép"
+        },
+        "placeholder": {
+          "name": "Nhập tên nhóm",
+          "note": "Giới thiệu nhóm",
+          "licensing": "Vui lòng cấp quyền cho các chức năng cho nhóm thành viên. Thành viên cùng một nhóm có quyền truy cập vào các chức năng giống nhau."
+        }
+      },
+      "delete": {
+        "title": "Xóa nhóm thành viên"
+      },
+      "actions": {
+        "close": "Đóng",
+        "cancel": "Hủy",
+        "delete": "Xóa",
+        "create": "Tạo",
+        "update": "Cập nhật"
+      }
+    },
+    "member": {
+      "invite": {
+        "invite": "Mời thành viên",
+        "edit": "Cập nhật thông tin thành viên",
+        "fields": {
+          "groupName": "Tên nhóm",
+          "name": "Tên",
+          "email": "Email",
+          "identity": "Vai trò",
+          "profileAuthorization": "Hồ sơ chia sẽ",
+          "groupAuthorization": "Nhóm hồ sơ chia sẽ",
+          "limitInput": "Giới hạn số dư hồ sơ",
+          "note": "Ghi chú"
+        },
+        "placeholder": {
+          "name": "Nhập tên thành viên",
+          "email": "Nhập email thành viên",
+          "identity": {
+            "admin": "Có đầy đủ các quyền quản lý thành viên, nhóm thành viên trong workspace.",
+            "manager": "Có thể thêm thành viên và chỉnh sửa quyền truy cập của nhóm thành viên đang tham gia.",
+            "member": "Không thể thêm thành viên và chỉnh sửa quyền truy cập của nhóm thành viên."
+          },
+          "profile": "hồ sơ",
+          "group": "nhóm",
+          "limitInput": "Nếu để trống sẽ không giới hạn số dư hồ sơ mà thành viên sử dụng",
+          "note": "Không bắt buộc"
+        },
+        "options": {
+          "admin": "Quản trị",
+          "manager": "Quản lý",
+          "member": "Thành viên"
+        }
+      },
+      "delete": {
+        "delete": "Xóa thành viên",
+        "leave": "Rời nhóm",
+        "deleteQues": "Bạn chắc chắn muốn xóa thành viên này?",
+        "leaveQues": "Bạn chắc chắn muốn rời khỏi nhóm này?"
+      },
+      "resend": {
+        "title": "Gửi lại lời mời",
+        "question": "Bạn chắc chắn muốn gửi lại lời mời này?"
+      },
+      "recall": {
+        "title": "Thu hồi lời mời",
+        "question": "Bạn chắc chắn muốn thu hồi lời mời này?"
+      },
+      "actions": {
+        "close": "Đóng",
+        "confirm": "Xác nhận",
+        "cancel": "Hủy",
+        "delete": "Xóa",
+        "leave": "Rời khỏi",
+        "ok": "OK",
+        "invite": "Mời"
+      }
+    },
+    "askBeforeLeave": {
+      "title": "Thay đổi chưa lưu!",
+      "subTitle": "Các thay đổi bạn đã thực hiện có thể không được lưu. Bạn có muốn thoát không?",
+      "actions": {
+        "stay": "Trở lại chỉnh sửa",
+        "leave": "Có, tôi muốn thoát"
+      }
+    },
+    "saveBeforeLeave": {
+      "title": "Xác nhận!",
+      "subTitle": "Bạn có muốn lưu thay đổi trước khi thoát không?",
+      "actions": {
+        "no": "Không",
+        "save": "Lưu"
+      }
+    },
+    "options": {
+      "once": "Một lần",
+      "interval": "Khoảng thời gian",
+      "everyday": "Hàng ngày",
+      "weekly": "Hàng tuần",
+      "perMonth": "Hàng tháng",
+      "monday": "Thứ hai",
+      "tuesday": "Thứ ba",
+      "wednesday": "Thứ tư",
+      "thursday": "Thứ năm",
+      "friday": "Thứ sáu",
+      "saturday": "Thứ bảy",
+      "sunday": "Chủ nhật",
+      "oneDay": "Ngày 1",
+      "twoDays": "Ngày 2",
+      "threeDays": "Ngày 3",
+      "fourDays": "Ngày 4",
+      "fiveDays": "Ngày 5",
+      "sixDays": "Ngày 6",
+      "sevenDays": "Ngày 7",
+      "eightDays": "Ngày 8",
+      "nineDays": "Ngày 9",
+      "tenDays": "Ngày 10",
+      "elevenDays": "Ngày 11",
+      "twelveDays": "Ngày 12",
+      "thirteenDays": "Ngày 13",
+      "fourteenDays": "Ngày 14",
+      "fifteenDays": "Ngày 15",
+      "sixteenDays": "Ngày 16",
+      "seventeenDays": "Ngày 17",
+      "eighteenDays": "Ngày 18",
+      "nineteenDays": "Ngày 19",
+      "twentyDays": "Ngày 20",
+      "twentyOneDays": "Ngày 21",
+      "twentyTwoDays": "Ngày 22",
+      "twentyThreeDays": "Ngày 23",
+      "twentyFourDays": "Ngày 24",
+      "twentyFiveDays": "Ngày 25",
+      "twentySixDays": "Ngày 26",
+      "twentySevenDays": "Ngày 27",
+      "twentyEightDays": "Ngày 28",
+      "twentyNineDays": "Ngày 29",
+      "thirtyDays": "Ngày 30",
+      "thirtyOneDays": "Ngày 31"
+    },
+    "updateSystem": {
+      "title": "Cập nhật hệ thống",
+      "appDownload": "Tải ứng dụng",
+      "new": "Mới",
+      "version": "Phiên bản",
+      "note": "Lưu ý: Bản cập nhật sẽ đóng hết hồ sơ đang mở và dữ liệu sẽ không được lưu lại, vui lòng đóng hết hồ sơ trước khi cập nhật! ! !",
+      "noAvailable": "Không có cập nhật mới",
+      "actions": {
+        "download": "Tải về",
+        "install": "Cài đặt"
+      }
+    },
+    "downloadBrowser": {
+      "title": "Đang tải trình duyệt {{browserName}} về...",
+      "extracting": "Đang giải nén..."
+    },
+    "loginActivity": {
+      "title": "Hoạt động đăng nhập tài khoản",
+      "labels": {
+        "currentDevice": "Bạn đang đăng nhập trên thiết bị này",
+        "otherDevices": "Lần đăng nhập trên thiết bị khác",
+        "current": "Hiện tại",
+        "deviceName": "Tên thiết bị",
+        "os": "Hệ điều hành",
+        "noDevice": "Không có thiết bị",
+        "unknown": "Không xác định"
+      },
+      "actions": {
+        "chose": "Chọn thiết bị để đăng xuất",
+        "cancel": "Hủy",
+        "choseAll": "Chọn tất cả",
+        "unchoseAll": "Bỏ chọn",
+        "logout": "Đăng xuất",
+        "device": " thiết bị"
+      }
+    },
+    "setTag": {
+      "tag": "Thẻ",
+      "title": "Thêm thẻ",
+      "listTag": "Danh sách thẻ",
+      "subTitle": "Thêm thẻ cho các hồ sơ có ID:",
+      "label": "+ Chọn thẻ",
+      "errorMess": "Vui lòng chọn ít nhất một thẻ",
+      "tagName": "Tên thẻ",
+      "editTag": "Chỉnh sửa thẻ",
+      "tagColor": "Màu thẻ",
+      "deleteTag": "Xóa thẻ",
+      "subDeleteTag": "Bạn có chắc chắn muốn xóa thẻ này không?",
+      "subAddTag": "Nhập giá trị để thêm thẻ mới",
+      "requiredName": "Tên thẻ là bắt buộc",
+      "actions": {
+        "newTag": "Thêm thẻ mới",
+        "setTag": "Thêm thẻ",
+        "add": "Thêm",
+        "confirm": "Xác nhận",
+        "cancel": "Hủy",
+        "edit": "Chỉnh sửa",
+        "delete": "Xóa",
+        "update": "Cập nhật",
+        "create": "Tạo"
+      }
+    },
+    "removeTag": {
+      "title": "Gỡ thẻ",
+      "subTitle": "Gỡ thẻ của các hồ sơ có ID:"
+    },
+    "removeProxy": {
+      "title": "Gỡ proxy",
+      "subTitle": "Gỡ proxy của các hồ sơ có ID:",
+      "label": "Ghi chú",
+      "placeholder": "Nhập ghi chú",
+      "actions": {
+        "cancel": "Hủy",
+        "confirm": "Xác nhận"
+      }
+    },
+    "deleteCookie": {
+      "title": "Xóa cookie",
+      "subTitle": "Xóa cookie của các hồ sơ có ID:",
+      "deleteSingle": "Bạn có chắc chắn muốn xóa cookie của hồ sơ này không?",
+      "note": "Lưu ý: dữ liệu cookie sẽ bị xóa vĩnh viễn và không thể khôi phục.",
+      "actions": {
+        "cancel": "Hủy",
+        "confirm": "Xác nhận",
+        "delete": "Xóa"
+      }
+    },
+    "deleteCache": {
+      "title": "Xóa bộ nhớ đệm",
+      "subTitle": "Xóa bộ nhớ đệm của các hồ sơ có ID:",
+      "deleteSingle": "Bạn có chắc chắn muốn xóa bộ nhớ đệm của hồ sơ này không?",
+      "note": "Lưu ý: dữ liệu bộ nhớ đệm sẽ bị xóa vĩnh viễn và không thể khôi phục.",
+      "error": "Chế độ đồng bộ đang tắt, không thể xóa bộ nhớ đệm!",
+      "actions": {
+        "cancel": "Hủy",
+        "confirm": "Xác nhận",
+        "delete": "Xóa"
+      }
+    },
+    "customShortcut": {
+      "title": "Tùy chỉnh phím tắt",
+      "subTitle": "Bạn có thể thêm các thao tác thường dùng vào [Phím tắt].",
+      "reset": "Đặt lại",
+      "shortcuts": "Phím tắt",
+      "options": "Tùy chọn",
+      "more": "Thêm"
+    }
+  }
+}

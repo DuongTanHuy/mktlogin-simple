@@ -1,0 +1,206 @@
+{
+  "workflow": {
+    "log": "Nhật Ký",
+    "debug": "Trình Gỡ Lỗi",
+    "workflowType": "Loại quy trình",
+    "isPublished": "Đã đăng chợ",
+    "myWorkflow": "Quy trình của tôi",
+    "downloadedWorkflow": "Quy trình tài về",
+    "closeWorkflow": "Bạn có chắc muốn đóng quy trình này?",
+    "updateWorkflow": {
+      "title": "BẢNG CẬP NHẬT MỚI",
+      "subTitle": "Vui lòng cập nhật lên bản mới nhật để sử dụng quy trình này !",
+      "detail": "Chi tiết cập nhật phiên bản"
+    },
+    "pendingWorkflow": {
+      "title": "QUY TRÌNH ĐANG CHỜ PHÊ DUYỆT",
+      "subTitle": "Thời gian phê duyệt quy trình trong vòng 24h, nếu bạn chờ lâu hơn có thể liên hệ trực tiếp qua chúng tôi.",
+      "groupSupport": "Nhóm hỗ trợ"
+    },
+    "rejectedWorkflow": {
+      "title": "QUY TRÌNH ĐÃ BỊ TỪ CHỐI",
+      "subTitle": "Vui lòng gỡ xuống và cập nhật lại quy trình để đăng lại.",
+      "reason": "Lý do từ chối:"
+    },
+    "tabsBar": {
+      "title": "Nhóm",
+      "dialog": {
+        "add": {
+          "title": "Tạo nhóm mới",
+          "label": "Tên nhóm"
+        },
+        "edit": "Sửa nhóm"
+      },
+      "actions": {
+        "add": "Thêm nhóm",
+        "edit": "Sửa",
+        "delete": "Xóa",
+        "close": "Đóng",
+        "createGroup": "Tạo nhóm",
+        "update": "Cập nhật",
+        "script": "Mã JS",
+        "flowchart": "Sơ đồ"
+      }
+    },
+    "script": {
+      "options": "Tùy chọn",
+      "noData": "Không có dữ liệu",
+      "tooltip": {
+        "noAvailableForDownload": "Tính năng này không khả dụng với quy trình được tải về",
+        "noAvailableForEncrypt": "Tính năng này không khả dụng với quy trình được mã hóa",
+        "lastUpdatedTime": "Thời gian cập nhật cuối cùng",
+        "version": "Phiên bản"
+      },
+      "tab": {
+        "readme": "Hướng dẫn sử dụng",
+        "runConfig": "Đầu vào",
+        "noContent": "Không có nội dung"
+      },
+      "actions": {
+        "search": "Tìm kiếm",
+        "import": "Nhập",
+        "editInfo": "Chỉnh sửa thông tin",
+        "delete": "Xóa",
+        "addWorkflow": "Thêm quy trình mới",
+        "back": "Quay lại",
+        "cancel": "Hủy",
+        "update": "Cập nhật",
+        "resource": "Tài nguyên",
+        "variable": "Biến",
+        "table": "Bảng",
+        "config": "Cấu hình",
+        "run": "Chạy",
+        "starting": "Đang khởi động",
+        "stop": "Dừng",
+        "record": "Ghi lại",
+        "save": "Lưu",
+        "setting": "Cài đặt",
+        "formatCode": "Sắp xếp mã",
+        "displayOutput": "Hiển thị kết quả",
+        "close": "Đóng",
+        "confirm": "Xác nhận",
+        "add": "Thêm",
+        "addFile": "Thêm tệp json",
+        "chooseImageFile": "Chọn tệp hình ảnh",
+        "chooseJsonFile": "Chọn tệp json",
+        "chooseTextFile": "Chọn tệp văn bản",
+        "chooseExcelFile": "Chọn tệp excel",
+        "chooseFolder": "Chọn thư mục",
+        "moreAction": "Hành động khác",
+        "share": "Chia sẻ",
+        "publish": "Đăng chợ",
+        "published": "Đã công khai",
+        "rejected": "Bị từ chối",
+        "pending": "Chờ phê duyệt",
+        "createCode": "Tạo mã",
+        "uploadVersion": "Tải lên phiên bản",
+        "saveChange": "Lưu lại",
+        "create": "Tạo",
+        "undo": "Hoàn tác (Ctrl + Z)",
+        "redo": "Làm lại (Ctrl + Y)"
+      },
+      "dialog": {
+        "import": {
+          "title": "Nhập quy trình",
+          "noOverwrite": "Không ghi đè",
+          "label": {
+            "code": "Mã kích hoạt",
+            "overwrite": "Ghi đè quy trình"
+          }
+        },
+        "editInfo": {
+          "title": "Chỉnh sửa quy trình",
+          "addTitle": "Tạo quy trình mới",
+          "label": {
+            "name": "Tên",
+            "description": "Mô tả",
+            "group": "Nhóm"
+          },
+          "placeholder": {
+            "description": "Nhập một chút miêu tả về quy trình"
+          }
+        },
+        "delete": {
+          "title": "Bạn có chắc muốn xóa quy trình này?"
+        },
+        "resource": {
+          "title": "Tài nguyên",
+          "label": {
+            "key": "Khóa",
+            "value": "Giá trị"
+          }
+        },
+        "variable": {
+          "title": "Biến",
+          "subTitle": "Hằng số PROFILE_ID, PROFILE_NAME, GROUP_NAME, PROXY_INFO",
+          "label": {
+            "key": "Tên biến",
+            "value": "Giá trị",
+            "defaultValue": "Giá trị mặc định",
+            "limitedValue": "Giá trị giới hạn",
+            "obligatory": "Bắt buộc",
+            "description": "Mô tả",
+            "datatypes": "Kiểu dữ liệu"
+          },
+          "setting": {
+            "title": "Thiết lập giao diện",
+            "subTitle": "Công cụ giúp tạo ra giao diện đầu vào thân thiện hơn với người dùng"
+          },
+          "tooltip": {
+            "min": "Truy cập giá trị của Min bằng cú pháp {KEY}.min , {KEY} là tên biến",
+            "max": "Truy cập giá trị của Max bằng cú pháp {KEY}.max , {KEY} là tên biến"
+          }
+        },
+        "table": {
+          "title": "Bảng",
+          "noData": "Không có dữ liệu",
+          "label": {
+            "name": "Tên cột",
+            "value": "Giá trị"
+          },
+          "error": {
+            "required": "Tên cột không được để trống",
+            "exist": "Tên cột đã tồn tại"
+          }
+        },
+        "config": {
+          "title": "Cấu hình quy trình",
+          "label": {
+            "fixedScreenSize": "Cố định kích thước màn hình"
+          },
+          "tooltip": {
+            "isFixedScreenSize": "Chỉ nên bật khi quy trình có sử dụng các hàm tìm kiếm hình ảnh",
+            "isScriptRequest": "Chỉ bật khi quy trình không cần sử dụng hồ sơ để chạy"
+          }
+        },
+        "run": {
+          "title": "Chọn một hồ sơ để chạy",
+          "label": "Chọn hồ sơ",
+          "placeholder": "Nhập tên hoặc ID hồ sơ để tìm kiếm"
+        },
+        "share": {
+          "title": "Chia sẻ quy trình bằng mã kích hoạt",
+          "label": "Click vào \"Tạo mã\" để lấy mã kích hoạt",
+          "copy": "Đã sao chép"
+        },
+        "setting": {
+          "title": "Cài đặt",
+          "fontSize": "Cỡ chữ",
+          "minimap": "Hiển thị minimap",
+          "reset": "Đặt lại"
+        }
+      }
+    },
+    "flow": {
+      "actions": {
+        "shareWorkflow": "Chia sẻ quy trình"
+      }
+    },
+    "actions": {
+      "yes": "Có",
+      "no": "Không",
+      "addNew": "Thêm mới",
+      "openWorkflow": "Mở quy trình"
+    }
+  }
+}

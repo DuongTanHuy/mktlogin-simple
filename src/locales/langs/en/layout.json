@@ -1,0 +1,40 @@
+{
+  "nav": {
+    "overview": "Overview",
+    "profile": "profile",
+    "automation": "automation",
+    "extension": "extension",
+    "api-doc": "API docs",
+    "list": "List",
+    "trash": "Trash",
+    "general-log": "General log",
+    "workspace-setting": "Workspace setting",
+    "member": "member",
+    "setting": "Setting",
+    "synchronizer": "Synchronizer",
+    "automation_sub": {
+      "workflow": "Workflow",
+      "task": "Task",
+      "schedule": "Schedule",
+      "marketplace": "Marketplace"
+    },
+    "supportGroup": "Support group",
+    "communityLink": "Social link",
+    "doc": "User manual",
+    "hotLine": "Hotline"
+  },
+  "header": {
+    "workspace": "Workspace",
+    "price-list": "Buy package",
+    "recharge": "Recharge",
+    "support-chanel": "Support Center"
+  },
+  "balance": {
+    "title": "Balance",
+    "main": "Balance",
+    "profile": "Profile balance",
+    "current-package": "Package",
+    "existing": "Browser profiles",
+    "unit": "Profile"
+  }
+}

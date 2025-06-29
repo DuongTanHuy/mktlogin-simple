@@ -1,0 +1,40 @@
+{
+  "login": {
+    "header": "Sign in to MKT Login",
+    "fields": {
+      "user": "User name or email",
+      "pass": "Password"
+    },
+    "actions": {
+      "submit": "Login",
+      "forgotPass": "Forgot password?"
+    },
+    "alternateLogin": {
+      "googleLogin": "Continue with Google"
+    },
+    "label": {
+      "or": "or"
+    },
+    "newUser": {
+      "link": "New user?",
+      "action": "Create an account"
+    },
+    "terms": {
+      "condition": "By signing in, I agree to",
+      "termsOfService": "Terms of Service",
+      "and": "and",
+      "privacyPolicy": "Privacy Policy"
+    }
+  },
+  "oauth_login": {
+    "title": "Sign in to MKTCity",
+    "subTitle": "Sign in by MKTLogin",
+    "sentence1": "If you continue, MKTLogin will share your name, email address, language preferences, and profile photo with MKTCity. See MKTLogin's ",
+    "redirect": "Redirecting to MKTLogin...",
+    "actions": {
+      "continue": "Continue",
+      "cancel": "Cancel",
+      "redirect": "If you weren't redirected, click here."
+    }
+  }
+}

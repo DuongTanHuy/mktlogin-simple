@@ -1,0 +1,39 @@
+{
+  "member": {
+    "search": "Search",
+    "userGroup": {
+      "title": "Member group"
+    },
+    "list": {
+      "title": "Members",
+      "headers": {
+        "name": "Name",
+        "email": "Email",
+        "role": "Role",
+        "note": "Note",
+        "actions": "Actions"
+      }
+    },
+    "invited": {
+      "title": "Invited",
+      "headers": {
+        "name": "Name",
+        "email": "Email",
+        "role": "Role",
+        "note": "Note",
+        "inviteDate": "Invite Date",
+        "actions": "Actions"
+      }
+    },
+    "accessPermission": "Access Permissions",
+    "tooltips": {
+      "notPermission": "Not permission",
+      "notInvite": "Create a workgroup before using this feature"
+    },
+    "actions": {
+      "new": "New",
+      "invite": "Invite member",
+      "save": "Save"
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "task": {
+    "table": {
+      "header": {
+        "name": "Tên",
+        "workflows": "Quy trình",
+        "profile": "Hồ sơ",
+        "note": "Ghi chú",
+        "lastRun": "Lần chạy cuối",
+        "lastRunTime": "Thời gian chạy cuối",
+        "lastRunStatus": "Trạng thái chạy cuối",
+        "createAt": "Ngày tạo",
+        "action": "Hành động"
+      },
+      "status": {
+        "success": "Thành công",
+        "failed": "Thất bại"
+      }
+    },
+    "editTask": {
+      "task": "Nhiệm vụ",
+      "config": "Cấu hình chạy",
+      "information": {
+        "title": "Thông tin",
+        "name": "Tên",
+        "note": "Ghi chú"
+      },
+      "input": {
+        "title": "Đầu vào",
+        "noVariable": "Không có biến",
+        "key": "Khóa",
+        "value": "Giá trị",
+        "addFile": "Thêm tệp"
+      },
+      "profile": {
+        "title": "Hồ sơ",
+        "alreadyAdded": "Đã thêm",
+        "expired": "Không thể chọn hồ sơ hết hạn",
+        "table": {
+          "header": {
+            "name": "Tên",
+            "proxyType": "Loại proxy",
+            "proxy": "Proxy",
+            "userName": "Tên người dùng",
+            "password": "Mật khẩu",
+            "action": "Hành động"
+          }
+        }
+      },
+      "actions": {
+        "saveAndRun": "Lưu & Chạy",
+        "save": "Lưu",
+        "runTask": "Chạy nhiệm vụ",
+        "addProfile": "Thêm hồ sơ",
+        "cancel": "Hủy"
+      }
+    },
+    "editLog": {
+      "log": "Nhật ký",
+      "table": {
+        "header": {
+          "result": "Kết quả",
+          "profile": "Hồ sơ",
+          "startAt": "Bắt đầu lúc",
+          "duration": "Thời gian chạy",
+          "status": "Trạng thái"
+        }
+      },
+      "output": "Đầu ra",
+      "logs": "Nhật ký",
+      "profile": "Hồ sơ",
+      "status": {
+        "success": "Hoàn thành",
+        "failed": "Thất bại",
+        "running": "Đang chạy"
+      },
+      "actions": {
+        "detail": "Chi tiết",
+        "export": "Xuất",
+        "goToApp": "Đến ứng dụng"
+      }
+    },
+    "logs": {
+      "title": "Danh sách nhật ký của",
+      "table": {
+        "header": {
+          "no": "STT",
+          "profileId": "Profile ID",
+          "name": "Tên",
+          "startAt": "Bắt đầu lúc",
+          "endAt": "Hồ sơ kết thúc lúc",
+          "duration": "Thời gian chạy",
+          "status": "Trạng thái",
+          "action": "Hành động"
+        }
+      },
+      "status": {
+        "running": "Đang chạy"
+      },
+      "action": {
+        "detail": "Chi tiết"
+      }
+    },
+    "schedule": {
+      "title": "Lên lịch",
+      "taskName": "Tên nhiệm vụ"
+    },
+    "delete": {
+      "title": "Xóa nhiệm vụ",
+      "message": "Bạn có chắc chắn muốn xóa nhiệm vụ này không?"
+    },
+    "deleteMulti": {
+      "title": "Bạn có chắc chắn?",
+      "message": "Các nhiệu vụ có id sau sẽ bị xóa"
+    },
+    "dialog": {
+      "addProfile": {
+        "title": "Thêm nhanh hồ sơ",
+        "header": {
+          "group": "Nhóm",
+          "name": "Tên",
+          "updateAt": "Ngày cập nhật",
+          "duration": "Thời hạn"
+        }
+      },
+      "updateTask": {
+        "title": "Xác nhận cập nhật lên phiên bản",
+        "content": "Nội dung cập nhật:",
+        "notContent": "Không có nội dung cập nhật"
+      }
+    },
+    "actions": {
+      "run": "Chạy",
+      "stop": "Dừng",
+      "edit": "Chỉnh sửa",
+      "schedule": "Lên lịch",
+      "logs": "Nhật ký",
+      "delete": "Xóa",
+      "close": "Đóng",
+      "add": "Thêm",
+      "search": "Tìm kiếm",
+      "confirm": "Xác nhận",
+      "cancel": "Hủy",
+      "update": "Cập nhật",
+      "reload": "Làm mới"
+    }
+  }
+}

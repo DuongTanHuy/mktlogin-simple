@@ -1,0 +1,26 @@
+{
+  "extension": {
+    "team": {
+      "title": "Team's Extension"
+    },
+    "recommended": {
+      "title": "Recommended for you",
+      "question": "Did not find extensions you want?",
+      "link": "Look up in Chrome Web Store."
+    },
+    "actions": {
+      "upload": "Upload extension",
+      "remove": "Remove",
+      "update": "Update",
+      "category": "Category",
+      "add": "Add"
+    },
+    "labels": {
+      "search": "Search"
+    },
+    "nodata": {
+      "title": "No data",
+      "subtitle": "Please go to 'Recommended for you' or upload the extension by 'Upload Extension'"
+    }
+  }
+}

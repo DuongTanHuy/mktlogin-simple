@@ -1,0 +1,132 @@
+{
+  "synchronizer": {
+    "console": "Console",
+    "actions": {
+      "startSync": "Start sync Ctrl+Alt+S",
+      "stopSync": "Stop sync Ctrl+Alt+S",
+      "restart": "Restart Ctrl+Alt+R",
+      "submitFeedback": "Submit feedback",
+      "uniformSize": "Uniform size",
+      "viewWindow": "View window",
+      "titleWindow": "Title windows Ctrl+Alt+Z",
+      "customLayout": "Custom layout Ctrl+Alt+Z",
+      "clearText": "Clear text",
+      "pastText": "Past text",
+      "random": "Random",
+      "typeAsHuman": "Type as human",
+      "addMoreTextGroup": "Add more text group",
+      "sameTabs": "Same tabs",
+      "closeOtherTabs": "Close other tabs",
+      "closeCurrentTab": "Close current tab",
+      "closeBlankTabs": "Close blank tabs",
+      "open": "Open",
+      "cancel": "Cancel",
+      "ok": "OK",
+      "save": "Save",
+      "restore": "Restore"
+    },
+    "restoreNote": "Click Restore Window/Close Window to restore the action bar to its original position",
+    "table": {
+      "header": {
+        "no": "Profile ID",
+        "group": "Group",
+        "profileName": "Profile name",
+        "status": "Status",
+        "action": "Action"
+      }
+    },
+    "window": {
+      "title": "Windows",
+      "labels": {
+        "windowLayout": "Window layout",
+        "monitor": "Monitor",
+        "layout": "Layout",
+        "overlapped": "Overlapped",
+        "grid": "Grid",
+        "position": "Position",
+        "size": "Size",
+        "space": "Space",
+        "number": "Number",
+        "row": "/row"
+      },
+      "text": "Automatic layout of selected windows according to monitor resolution"
+    },
+    "text": {
+      "title": "Text",
+      "tooltip": {
+        "click": "Set up the \"Click speed\" in Settings to complete better simulations",
+        "typing": "Set up the \"Typing speed\" in Settings to complete better simulations"
+      },
+      "labels": {
+        "simulateActions": "Simulate actions",
+        "clickDelay": "Click delay",
+        "typingDelay": "Typing delay",
+        "speed": "Speed (ms)",
+        "delay": "Delay (ms)",
+        "randomNumber": "Random number",
+        "range": "Range",
+        "identicalText": "Identical text",
+        "designatedText": "Designated text",
+        "textGroup": "Text group",
+        "enterInOrder": "Enter in order",
+        "enterRandomly": "Enter randomly",
+        "designated": "Designated"
+      },
+      "placeholder": {
+        "identicalText": "Please enter",
+        "enterInOrder": "Please input your text, separated by lines"
+      }
+    },
+    "tabs": {
+      "title": "Tabs",
+      "infoMess": "TYhis feature is now only available fot Chrome 111 and above.",
+      "labels": {
+        "visitWebsite": "Visit website",
+        "toggle": "Open link in current tab"
+      },
+      "placeholder": {
+        "visitWebsite": "Please enter URLs, separated by lines"
+      }
+    },
+    "dialog": {
+      "feedback": {
+        "title": "Feedback",
+        "labels": {
+          "score": "Score",
+          "feedback": "Feedback",
+          "phone": "Phone number"
+        },
+        "placeholder": {
+          "score": "5 points is very satisfied",
+          "feedback": "Please fill in your feedback (such as function suggestions, etc.)",
+          "phone": "Optional"
+        },
+        "note": "In order to better understand the opinions, it is recommended to fill in the contact information"
+      },
+      "setting": {
+        "title": "Setting",
+        "labels": {
+          "keyboard": "Keyboard",
+          "typeAtOnce": "Type at once",
+          "mouse": "Mouse",
+          "clickAtOnce": "Click at once",
+          "scrollAtOnce": "Scroll at once",
+          "moveAtOnce": "Move at once",
+          "simulateActions": "Simulate actions",
+          "typingSpeed": "Typing speed",
+          "clickSpeed": "Click speed",
+          "randomFrom": "Random value from",
+          "to": "to",
+          "ms": "ms",
+          "color": "Theme color (Main window is color when starting sync)",
+          "hotkey": "Hotkey",
+          "startSync": "Start sync",
+          "stopSync": "Stop sync",
+          "restart": "Restart",
+          "console": "Console",
+          "titleWindows": "Title windows"
+        }
+      }
+    }
+  }
+}

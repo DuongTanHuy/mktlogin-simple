@@ -1,0 +1,148 @@
+{
+  "task": {
+    "table": {
+      "header": {
+        "name": "Name",
+        "workflows": "Workflows",
+        "profile": "Profile",
+        "note": "Note",
+        "lastRun": "Last run",
+        "lastRunTime": "Last run time",
+        "lastRunStatus": "Last run status",
+        "createAt": "Create at",
+        "action": "Action"
+      },
+      "status": {
+        "success": "success",
+        "failed": "Failed"
+      }
+    },
+    "editTask": {
+      "task": "Task",
+      "config": "Run Configuration",
+      "information": {
+        "title": "Information",
+        "name": "Name",
+        "note": "Note"
+      },
+      "input": {
+        "title": "Input",
+        "noVariable": "No variable",
+        "key": "Key",
+        "value": "Value",
+        "addFile": "Add json file"
+      },
+      "profile": {
+        "title": "Profile",
+        "alreadyAdded": "Already added",
+        "expired": "Cannot select expired profile",
+        "table": {
+          "header": {
+            "name": "Name",
+            "proxyType": "Proxy type",
+            "proxy": "Proxy",
+            "userName": "User name",
+            "password": "Password",
+            "action": "Action"
+          }
+        }
+      },
+      "actions": {
+        "saveAndRun": "Save & Run",
+        "save": "Save",
+        "runTask": "Run task",
+        "addProfile": "Add profile",
+        "cancel": "Cancel"
+      }
+    },
+    "editLog": {
+      "log": "Log",
+      "table": {
+        "header": {
+          "result": "Result",
+          "profile": "Profile",
+          "startAt": "Started at",
+          "duration": "Duration",
+          "status": "Status"
+        }
+      },
+      "output": "Output",
+      "logs": "Logs",
+      "profile": "Profile",
+      "status": {
+        "success": "Success",
+        "failed": "Failed",
+        "running": "Running"
+      },
+      "actions": {
+        "detail": "Detail",
+        "export": "Export",
+        "goToApp": "Go to app"
+      }
+    },
+    "logs": {
+      "title": "Logs list of",
+      "table": {
+        "header": {
+          "no": "No",
+          "profileId": "Profile ID",
+          "name": "Name",
+          "startAt": "Start at",
+          "endAt": "Profile finished at",
+          "duration": "Duration",
+          "status": "Status",
+          "action": "Action"
+        }
+      },
+      "status": {
+        "running": "Running"
+      },
+      "action": {
+        "detail": "Detail"
+      }
+    },
+    "schedule": {
+      "title": "Schedule",
+      "taskName": "Task name"
+    },
+    "delete": {
+      "title": "Delete task",
+      "message": "Are you sure you want to delete this task?"
+    },
+    "deleteMulti": {
+      "title": "Are you sure?",
+      "message": "Tasks with the following ids will be deleted:"
+    },
+    "dialog": {
+      "addProfile": {
+        "title": "Quickly add profile",
+        "header": {
+          "group": "Group",
+          "name": "Name",
+          "updateAt": "Update at",
+          "duration": "Duration"
+        }
+      },
+      "updateTask": {
+        "title": "Confirm update to version",
+        "content": "Update content:",
+        "notContent": "No content"
+      }
+    },
+    "actions": {
+      "run": "Run",
+      "stop": "Stop",
+      "edit": "Edit",
+      "schedule": "Schedule",
+      "logs": "Logs",
+      "delete": "Delete",
+      "close": "Close",
+      "add": "Add",
+      "search": "Search",
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "update": "Update",
+      "reload": "Reload"
+    }
+  }
+}

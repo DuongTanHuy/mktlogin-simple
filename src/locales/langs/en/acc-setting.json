@@ -1,0 +1,66 @@
+{
+  "accSetting": {
+    "actions": {
+      "setting": "Account setting",
+      "logout": "Logout"
+    },
+    "tabs": {
+      "general": {
+        "title": "General",
+        "avatar": "Avatar",
+        "subheader": "Allowed *.jpeg, *.jpg, *.png, *.gif max size of 3.1 MB",
+        "accInfo": "Account information",
+        "labels": {
+          "name": "Account name",
+          "email": "Email address",
+          "firstName": "First name",
+          "lastName": "Last name"
+        },
+        "actions": {
+          "save": "Save changes"
+        }
+      },
+      "security": {
+        "pass": "Password",
+        "subPass": "Change your password",
+        "loginActivity": "Login activity",
+        "subLoginActivity": "List of logged in devices",
+        "title": "Security",
+        "header": "Change password",
+        "subheader": "Please enter the password in the correct format",
+        "fields": {
+          "oldPassword": "Old password",
+          "newPassword": "New password",
+          "confirmPassword": "Confirm new password"
+        },
+        "actions": {
+          "loginLocation": "Where you are logged in",
+          "changePass": "Change password",
+          "save": "Save new password",
+          "cancel": "Cancel"
+        }
+      },
+      "accLink": {
+        "title": "Account link",
+        "table": {
+          "header": {
+            "name": "Name",
+            "email": "Email",
+            "app": "Application",
+            "status": "Status",
+            "linkDate": "Link date",
+            "action": "Action"
+          },
+          "noData": "No data",
+          "rowPerPage": "Rows per page"
+        },
+        "fields": {
+          "app": "Application"
+        },
+        "actions": {
+          "authorization": "Authorization"
+        }
+      }
+    }
+  }
+}

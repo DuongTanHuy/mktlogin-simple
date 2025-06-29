@@ -1,0 +1,29 @@
+{
+  "popup": {
+    "profileGroup": {
+      "actions": {
+        "edit": "Edit",
+        "delete": "Delete"
+      }
+    },
+    "userGroup": {
+      "actions": {
+        "edit": "Edit",
+        "delete": "Delete"
+      }
+    },
+    "listMember": {
+      "actions": {
+        "edit": "Edit",
+        "delete": "Delete",
+        "leave": "Leave"
+      }
+    },
+    "listInvited": {
+      "actions": {
+        "resend": "Resend",
+        "recall": "Recall"
+      }
+    }
+  }
+}

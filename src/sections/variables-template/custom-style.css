@@ -1,0 +1,40 @@
+.item-flow-template {
+  position: relative;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  cursor: move;
+  width: 100%;
+}
+
+.group-option,
+.grid-option {
+  min-height: 130px;
+}
+
+.grid-option > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.is-child-grid {
+  display: flex;
+  flex: 1;
+  height: 'auto';
+}
+
+.is-selecting {
+  border: 1px solid red !important;
+}
+
+.drag-handle {
+  width: 100%;
+  /* Tăng kích thước vùng có thể kéo */
+  height: 400px;
+  cursor: grab;
+}
+
+.isSelecting {
+  border-style: solid !important;
+  border-color: #0d936e !important;
+}

@@ -1,0 +1,26 @@
+{
+  "extension": {
+    "team": {
+      "title": "Tiện ích nhóm"
+    },
+    "recommended": {
+      "title": "Được đề xuất",
+      "question": "Bạn không tìm thấy tiện ích mà bạn muốn?",
+      "link": "Tra cứu trong Cửa hàng Chrome trực tuyến."
+    },
+    "actions": {
+      "upload": "Tải lên tiện ích",
+      "remove": "Xóa",
+      "update": "Cập nhật",
+      "category": "Danh mục",
+      "add": "Thêm"
+    },
+    "labels": {
+      "search": "Tìm kiếm"
+    },
+    "nodata": {
+      "title": "Không có dữ liệu",
+      "subtitle": "Vui lòng đi tới 'Được đề xuất cho bạn' hoặc tải tiện ích mở rộng lên bằng cách 'Tải lên tiện ích'"
+    }
+  }
+}

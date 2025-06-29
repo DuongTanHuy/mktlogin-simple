@@ -1,0 +1,29 @@
+{
+  "register": {
+    "header": "Tạo tài khoản mới",
+    "fields": {
+      "user": "Tên người dùng",
+      "email": "Địa chỉ email",
+      "pass": "Mật khẩu",
+      "passRepeat": "Nhập lại mật khẩu",
+      "code": "Mã giới thiệu"
+    },
+    "terms": {
+      "condition": "Tôi đã đọc và đồng ý với",
+      "termsOfService": "Điều khoản dịch vụ",
+      "and": "và",
+      "privacyPolicy": "Chính sách bảo mật"
+    },
+    "actions": {
+      "create": "Tạo tài khoản",
+      "googleLogin": "Đăng nhập bằng Google"
+    },
+    "existingUser": {
+      "question": "Đã có tài khoản?",
+      "signIn": "Đăng nhập"
+    },
+    "label": {
+      "or": "hoặc"
+    }
+  }
+}

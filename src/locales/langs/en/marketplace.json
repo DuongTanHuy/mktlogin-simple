@@ -1,0 +1,44 @@
+{
+  "marketplace": {
+    "categories": "Categories",
+    "createBy": "create by",
+    "sortBy": "Sort by",
+    "workflow": "Workflow",
+    "updateAt": "Update at",
+    "postDate": "Post date",
+    "lastUpdate": "Last update",
+    "publishedDate": "Published date",
+    "fee": "Fee",
+    "unit": "VND/Month",
+    "options": {
+      "latest": "Latest",
+      "popular": "Popular",
+      "oldest": "Oldest",
+      "all": "All",
+      "other": "Other"
+    },
+    "notify": {
+      "subtracted": {
+        "sentence1": "You will be deducted",
+        "sentence2": "VND when downloading this process. Are you sure?"
+      },
+      "download": {
+        "success": "Download workflow successfully!",
+        "error": "Download workflow failed!"
+      },
+      "update": {
+        "success": "Update new version successfully!",
+        "error": "Update new version failed!"
+      },
+      "insufficient": "Insufficient balance!",
+      "notFound": "Workflow not found!"
+    },
+    "actions": {
+      "back": "Back",
+      "report": "Report",
+      "view": "View",
+      "download": "Download",
+      "update": "Update"
+    }
+  }
+}

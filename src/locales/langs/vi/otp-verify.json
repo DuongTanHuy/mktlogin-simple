@@ -1,0 +1,16 @@
+{
+  "otpVerify": {
+    "header": "Nhập OTP để đăng nhập vào MKT Login",
+    "label": {
+      "question": "Bạn không nhận được OTP qua email?"
+    },
+    "fields": {
+      "otp": "OTP"
+    },
+    "actions": {
+      "submit": "Xác nhận",
+      "back": "Trở về trang đăng nhập",
+      "reSend": "Gửi lại OTP"
+    }
+  }
+}

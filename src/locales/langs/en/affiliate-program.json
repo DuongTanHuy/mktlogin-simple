@@ -1,0 +1,18 @@
+{
+  "affiliateProgram": {
+    "title": "Affiliate program",
+    "userInvited": "User invited",
+    "totalEarned": "Total earned",
+    "affiliateLevel": "Affiliate level",
+    "level": "Level",
+    "commissionRate": "Commission rate",
+    "yourBalance": "Your balance",
+    "yourReferralCode": "Your referral code",
+    "yourReferralLink": "Your referral link",
+    "buyer": "buyer",
+    "buyers": "buyer(s)",
+    "commissionPercentage": "Commission percentage",
+    "condition": "Condition",
+    "withdrawFunds": "Withdraw funds"
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "synchronizer": {
+    "console": "Bảng Điều Khiển",
+    "actions": {
+      "startSync": "Bắt đầu đồng bộ Ctrl+Alt+S",
+      "stopSync": "Dừng đồng bộ Ctrl+Alt+S",
+      "restart": "Khởi động lại Ctrl+Alt+R",
+      "submitFeedback": "Gửi phản hồi",
+      "uniformSize": "Kích cỡ đồng nhất",
+      "viewWindow": "Xem cửa sổ",
+      "titleWindow": "Tiêu đề cửa sổ Ctrl+Alt+Z",
+      "customLayout": "Tùy chỉnh bố cục Ctrl+Alt+Z",
+      "clearText": "Xóa văn bản",
+      "pastText": "Dán văn bản",
+      "random": "Ngẫu nhiên",
+      "typeAsHuman": "Gõ như con người",
+      "addMoreTextGroup": "Thêm nhóm văn bản",
+      "sameTabs": "Hợp nhất tab",
+      "closeOtherTabs": "Đóng các tab khác",
+      "closeCurrentTab": "Đóng tab hiện tại",
+      "closeBlankTabs": "Đóng tab trống",
+      "open": "Mở",
+      "cancel": "Hủy",
+      "ok": "OK",
+      "save": "Lưu",
+      "restore": "Khôi phục"
+    },
+    "restoreNote": "Nhấp vào Khôi phục cửa sổ/Đóng cửa sổ để khôi phục thanh hành động về vị trí ban đầu",
+    "table": {
+      "header": {
+        "no": "ID hồ sơ",
+        "group": "Nhóm",
+        "profileName": "Tên hồ sơ",
+        "status": "Trạng thái",
+        "action": "Hành động"
+      }
+    },
+    "window": {
+      "title": "Cửa sổ",
+      "labels": {
+        "windowLayout": "Bố cục cửa sổ",
+        "monitor": "Màn hình",
+        "layout": "Bố cục",
+        "overlapped": "Chồng lên",
+        "grid": "Lưới",
+        "position": "Vị trí",
+        "size": "Kích thước",
+        "space": "Không gian",
+        "number": "Số lượng",
+        "row": "/hàng"
+      },
+      "text": "Sắp xếp tự động các cửa sổ đã chọn theo độ phân giải màn hình"
+    },
+    "text": {
+      "title": "Văn bản",
+      "tooltip": {
+        "click": "Thiết lập \"Tốc độ nhấp chuột\" trong Cài đặt để hoàn thành mô phỏng tốt hơn",
+        "typing": "Thiết lập \"Tốc độ gõ\" trong Cài đặt để hoàn thành mô phỏng tốt hơn"
+      },
+      "labels": {
+        "simulateActions": "Mô phỏng hành động",
+        "clickDelay": "Độ trễ nhấp chuột",
+        "typingDelay": "Độ trễ gõ phím",
+        "speed": "Tốc độ (ms)",
+        "delay": "Độ trễ (ms)",
+        "randomNumber": "Số ngẫu nhiên",
+        "range": "Phạm vi",
+        "identicalText": "Văn bản giống nhau",
+        "designatedText": "Văn bản chỉ định",
+        "textGroup": "Nhóm văn bản",
+        "enterInOrder": "Nhập theo thứ tự",
+        "enterRandomly": "Nhập ngẫu nhiên",
+        "designated": "Được chỉ định"
+      },
+      "placeholder": {
+        "identicalText": "Vui lòng nhập",
+        "enterInOrder": "Vui lòng nhập văn bản của bạn, được phân tách theo dòng"
+      }
+    },
+    "tabs": {
+      "title": "Tab",
+      "infoMess": "Tính năng này hiện chỉ có sẵn cho Chrome phiên bản 111 trở lên.",
+      "labels": {
+        "visitWebsite": "Truy cập trang web",
+        "toggle": "Mở link trong tab mới"
+      },
+      "placeholder": {
+        "visitWebsite": "Vui lòng nhập URL, phân tách bằng dòng"
+      }
+    },
+    "dialog": {
+      "feedback": {
+        "title": "Phản hồi",
+        "labels": {
+          "score": "Điểm",
+          "feedback": "Phản hồi",
+          "phone": "Số điện thoại"
+        },
+        "placeholder": {
+          "score": "5 điểm là rất hài lòng",
+          "feedback": "Vui lòng điền phản hồi của bạn (chẳng hạn như đề xuất chức năng, v.v.)",
+          "phone": "Tùy chọn"
+        },
+        "note": "Để hiểu rõ hơn ý kiến, khuyến khích điền thông tin liên lạc"
+      },
+      "setting": {
+        "title": "Cài đặt",
+        "labels": {
+          "keyboard": "Bàn phím",
+          "typeAtOnce": "Gõ ngay lập tức",
+          "mouse": "Chuột",
+          "clickAtOnce": "Nhấp ngay lập tức",
+          "scrollAtOnce": "Cuộn ngay lập tức",
+          "moveAtOnce": "Di chuyển ngay lập tức",
+          "simulateActions": "Mô phỏng hành động",
+          "typingSpeed": "Tốc độ gõ",
+          "clickSpeed": "Tốc độ nhấp chuột",
+          "randomFrom": "Giá trị ngẫu nhiên từ",
+          "to": "đến",
+          "ms": "ms",
+          "color": "Màu sắc chủ đề (Cửa sổ chính có màu khi bắt đầu đồng bộ)",
+          "hotkey": "Phím nóng",
+          "startSync": "Bắt đầu đồng bộ",
+          "stopSync": "Dừng đồng bộ",
+          "restart": "Khởi động lại",
+          "console": "Bảng điều khiển",
+          "titleWindows": "Tiêu đề cửa sổ"
+        }
+      }
+    }
+  }
+}

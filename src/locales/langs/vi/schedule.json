@@ -1,0 +1,35 @@
+{
+  "schedule": {
+    "table": {
+      "header": {
+        "name": "Tên",
+        "task": "Nhiệm vụ",
+        "note": "Ghi chú",
+        "schedule": "Lịch trình",
+        "status": "Trạng thái",
+        "startAt": "Ngày bắt đầu",
+        "endAt": "Ngày kết thúc",
+        "lastRun": "Lần chạy cuối",
+        "action": "Hành động"
+      }
+    },
+    "delete": {
+      "title": "Bạn có chăc chắn muốn xóa lịch trình này?"
+    },
+    "tooltip": {
+      "enable": "Click để bật",
+      "disable": "Click để tắt"
+    },
+    "notify": {
+      "enable": "Đã bật",
+      "disable": "Đã tắt"
+    },
+    "actions": {
+      "enable": "Bật",
+      "disable": "Tắt",
+      "delete": "Xóa",
+      "edit": "Chỉnh sửa",
+      "back": "Quay lại"
+    }
+  }
+}

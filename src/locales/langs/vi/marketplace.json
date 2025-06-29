@@ -1,0 +1,44 @@
+{
+  "marketplace": {
+    "categories": "Danh mục",
+    "createBy": "tạo bởi",
+    "sortBy": "Sắp xếp theo",
+    "workflow": "Quy trình",
+    "updateAt": "Ngày cập nhật",
+    "postDate": "Ngày đăng",
+    "lastUpdate": "Cập nhật gần nhất",
+    "publishedDate": "Ngày đăng",
+    "fee": "Phí",
+    "unit": "VND/Tháng",
+    "options": {
+      "latest": "Mới nhất",
+      "popular": "Phổ biến",
+      "oldest": "Cũ nhất",
+      "all": "Tất cả",
+      "other": "Khác"
+    },
+    "notify": {
+      "subtracted": {
+        "sentence1": "Bạn sẽ bị trừ",
+        "sentence2": "VND khi tải quy trình này này. Bạn có chắc chắn không?"
+      },
+      "download": {
+        "success": "Tải quy trình thành công!",
+        "error": "Tải quy trình thất bại!"
+      },
+      "update": {
+        "success": "Cập nhật phiên bản mới thành công!",
+        "error": "Cập nhật phiên bản mới thất bại!"
+      },
+      "insufficient": "Số dư không đủ!",
+      "notFound": "Không tìm thấy quy trình!"
+    },
+    "actions": {
+      "back": "Quay về",
+      "report": "Báo cáo",
+      "view": "Xem",
+      "download": "Tải về",
+      "update": "Cập nhật"
+    }
+  }
+}

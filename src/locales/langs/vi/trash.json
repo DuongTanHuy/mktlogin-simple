@@ -1,0 +1,30 @@
+{
+  "trash": {
+    "actions": {
+      "restore": "Khôi phục",
+      "delete": "Xóa"
+    },
+    "labels": {
+      "profileGroup": "Nhóm hồ sơ",
+      "selectTime": "Chọn khoảng thời gian"
+    },
+    "options": {
+      "all": "Tất cả",
+      "yesterday": "Hôm qua",
+      "today": "Hôm nay",
+      "last7days": "7 ngày trước",
+      "last30days": "30 ngày trước"
+    },
+    "table": {
+      "header": {
+        "stt": "STT",
+        "profileId": "ID hồ sơ",
+        "group": "Nhóm",
+        "name": "Tên",
+        "duration": "Thời hạn",
+        "createdAt": "Ngày tạo",
+        "deletedAt": "Ngày xóa"
+      }
+    }
+  }
+}

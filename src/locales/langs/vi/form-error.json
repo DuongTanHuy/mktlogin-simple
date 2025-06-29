@@ -1,0 +1,30 @@
+{
+  "formError": {
+    "register": {
+      "username": {
+        "error_username_exists": "Tên tài khoản đã tồn tại"
+      },
+      "email": {
+        "error_email_exists": "Email đã tồn tại"
+      }
+    },
+    "profile": {
+      "name": "Tên hồ sơ là bắt buộc",
+      "group": "Nhóm là bắt buộc",
+      "agentDes": "UserAgent đang rỗng, vui lòng chọn UA khác",
+      "kernelVersion": "Phiên bản nhân trình duyệt là bắt buộc",
+      "proxyType": "Loại proxy là bắt buộc",
+      "proxyHost": "Proxy IP là bắt buộc",
+      "proxyPort": "Proxy port là bắt buộc",
+      "proxyToken": "Proxy token là bắt buộc",
+      "invalidBase64": "Proxy token không hợp lệ"
+    },
+    "browserConfig": {
+      "name": "Tên thiết lập là bắt buộc",
+      "userAgent": "User agent là bắt buộc",
+      "unmaskedRenderer": "Unmasked renderer là bắt buộc",
+      "deviceName": "Tên thiết bị là bắt buộc",
+      "macAddress": "Địa chỉ MAC là bắt buộc"
+    }
+  }
+}

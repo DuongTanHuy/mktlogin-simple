@@ -1,0 +1,32 @@
+{
+  "globalSetting": {
+    "title": "Global Setting",
+    "browserSetting": {
+      "title": "Browser Setting",
+      "label": {
+        "syncCookie": "Sync cookie",
+        "syncIndexedDB": "Sync indexedDB",
+        "syncLocalStorage": "Sync local storage",
+        "syncBookmark": "Sync bookmark",
+        "syncPassword": "Sync saved password",
+        "disableNotification": "Disable notification",
+        "disableLocation": "Disable location"
+      }
+    },
+    "taskSetting": {
+      "title": "Task Setting",
+      "label": {
+        "saveLogRunTask": "Save log run task"
+      }
+    },
+    "appSetting": {
+      "title": "Application Setting",
+      "label": {
+        "folderPath": "Profile data storage path"
+      }
+    },
+    "actions": {
+      "save": "Save change"
+    }
+  }
+}
