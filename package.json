@@ -14,7 +14,8 @@
     "clear-all": "rm -rf node_modules .next out dist build",
     "re-start": "rm -rf node_modules .next out dist build && yarn install && yarn start",
     "re-build": "rm -rf node_modules .next out dist build && yarn install && yarn build",
-    "re-build-test": "rm -rf node_modules .next out dist build && npm install && npm run build"
+    "re-build-test": "rm -rf node_modules .next out dist build && npm install && npm run build",
+    "analyze": "source-map-explorer 'build/static/js/*.js'"
   },
   "eslintConfig": {
     "extends": [
@@ -117,6 +118,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-unused-imports": "^3.0.0",
     "prettier": "^3.0.3",
+    "source-map-explorer": "^2.5.3",
     "stream": "^0.0.2",
     "typescript": "^5.2.2"
   },

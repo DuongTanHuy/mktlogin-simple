@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useFormContext, Controller } from 'react-hook-form';
 // @mui
-import { DesktopTimePicker } from '@mui/x-date-pickers';
+import { DesktopTimePicker } from '@mui/x-date-pickers/DesktopTimePicker';
 
 // ----------------------------------------------------------------------
 
