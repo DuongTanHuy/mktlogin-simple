@@ -43,7 +43,7 @@ import { useMultiBoolean } from 'src/hooks/use-multiple-boolean';
 import DeleteGroupMemberDialog from 'src/sections/member/action-dialog/delete-workgroup';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import SplitPane, { Pane } from 'split-pane-react';
-import { getAutomationScripts } from 'src/api/automation.api';
+// import { getAutomationScripts } from 'src/api/automation.api';
 import OptionsScriptForm from 'src/components/options-cript-form';
 import { useBoolean } from 'src/hooks/use-boolean';
 import Scrollbar from 'src/components/scrollbar';
@@ -51,6 +51,7 @@ import WorkGroupButton from 'src/pages/dashboard/member/work-group-button';
 import { generateLogicScript } from 'src/utils/handle-bar-support';
 import { useAuthContext } from 'src/auth/hooks';
 import { useLocales } from 'src/locales';
+import { automation_script_options } from 'src/utils/mock';
 // ----------------------------------------------------------------------
 
 export default function Page() {
@@ -107,7 +108,7 @@ export default function Page() {
 
   useEffect(() => {
     const getScriptOptions = async () => {
-      const _res = await getAutomationScripts();
+      const _res = automation_script_options;
       const { data } = _res;
       const list = [];
 

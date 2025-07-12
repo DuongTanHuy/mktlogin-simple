@@ -45,7 +45,7 @@ import { useEventListener } from 'src/hooks/use-event-listener';
 import { LoadingButton } from '@mui/lab';
 import { ERROR_CODE, GROUP_INVISIBLE, IS_BROWSER_DOWNLOADING } from 'src/utils/constance';
 import { generateLogicScript } from 'src/utils/handle-bar-support';
-import { getAutomationScripts } from 'src/api/automation.api';
+// import { getAutomationScripts } from 'src/api/automation.api';
 import SplitPane from 'split-pane-react/esm/SplitPane';
 import { Pane } from 'split-pane-react';
 import Scrollbar from 'src/components/scrollbar';
@@ -53,6 +53,7 @@ import OptionsScriptForm from 'src/components/options-cript-form';
 import { useSettingsContext } from 'src/components/settings';
 import PendingWorkflowDialog from 'src/components/custom-dialog/pending-workflow-dialog';
 import RejectedWorkflowDialog from 'src/components/custom-dialog/rejected-workflow-dialog';
+import { automation_script_options } from 'src/utils/mock';
 import RunningAutomation from '../automation/running';
 import LogList from '../automation/log';
 import VScodeSetting from './code-editer/theme/settings';
@@ -639,7 +640,7 @@ export default function CreateEditScriptView() {
 
   useEffect(() => {
     const getScriptOptions = async () => {
-      const _res = await getAutomationScripts();
+      const _res = automation_script_options;
       const { data } = _res;
       const list = [];
 
