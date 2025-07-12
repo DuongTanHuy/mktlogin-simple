@@ -62,6 +62,7 @@ import RejectedWorkflowDialog from 'src/components/custom-dialog/rejected-workfl
 import UpdateVersionDialog from 'src/components/custom-dialog/update-version-dialog';
 import DownloadDialog from 'src/components/custom-dialog/download-dialog';
 import Resource from 'src/components/resource';
+import ShowJavascriptForm from 'src/sections/workspace/show-javascript-form';
 import Variables from 'src/components/variable';
 import TableDialog from 'src/components/custom-dialog/table-dialog';
 import LogList from '../automation/log';
@@ -80,7 +81,7 @@ import customElementExistNode from './components/custom-element-exist-node';
 import WorkflowEngine from './workflow-engine';
 import FlowChartView from './flow-view';
 import TabFlowRunning from '../script/code-editer/tab-flow-running';
-import AddNewWorkflow from '../workspace/add-new-workflow';
+// import AddNewWorkflow from '../workspace/add-new-workflow';
 import Sidebar from './components/sidebar';
 import FlowButton from './flow-button';
 import { checkRunWorkflowPermissionApi, getProfileByIdApi } from '../../api/profile.api';
@@ -223,7 +224,8 @@ export default function FlowView({ tabData, tabId }) {
   const [reactFlowInstance, setReactFlowInstance] = useState(null);
 
   const addForm = useBoolean();
-  const [savingPayload, setSavingPayload] = useState(null);
+  const [scriptContent, setScriptContent] = useState('');
+  const [, setSavingPayload] = useState(null);
 
   const [openOutput, setOpenOutput] = useState(false);
 
@@ -2068,37 +2070,38 @@ export default function FlowView({ tabData, tabId }) {
     }
   }, []);
 
-  const onConfirmSave = (data) => {
-    eventBus.emit('saveTabData', {
-      id: tabId,
-      data: {
-        workflowName: data.name,
-        idFlowChart: data.id,
-        nodes,
-        edges,
-        variables: variableFlow?.list,
-        table,
-        designData: data.design_data,
-        outputLogs,
-      },
-    });
-  };
+  // const onConfirmSave = (data) => {
+  //   eventBus.emit('saveTabData', {
+  //     id: tabId,
+  //     data: {
+  //       workflowName: data.name,
+  //       idFlowChart: data.id,
+  //       nodes,
+  //       edges,
+  //       variables: variableFlow?.list,
+  //       table,
+  //       designData: data.design_data,
+  //       outputLogs,
+  //     },
+  //   });
+  // };
 
   // eslint-disable-next-line consistent-return
   const saveFlowChart = useCallback(
     async (ruleset) => {
       if (!validateFlowChart(nodes, edges)) return false;
 
-      // const engine = new WorkflowEngine({
-      //   drawflow: {
-      //     nodes,
-      //     edges,
-      //   },
-      // });
+      const engine = new WorkflowEngine({
+        drawflow: {
+          nodes,
+          edges,
+        },
+      });
 
-      // engine.init();
+      engine.init();
 
       // console.log(engine.script);
+      setScriptContent(engine.script);
 
       let design_data = '';
 
@@ -3268,13 +3271,18 @@ export default function FlowView({ tabData, tabId }) {
               handleSubmitForm={handleRun}
             />
             {/* {addForm.value && ( */}
-            <AddNewWorkflow
+            <ShowJavascriptForm
+              open={addForm.value}
+              scriptContent={scriptContent}
+              onClose={addForm.onFalse}
+            />
+            {/* <AddNewWorkflow
               open={addForm.value}
               onClose={addForm.onFalse}
               payload={savingPayload}
               mode="flowchart"
               onConfirmSave={onConfirmSave}
-            />
+            /> */}
             {/* )} */}
 
             <CustomMenuContext
