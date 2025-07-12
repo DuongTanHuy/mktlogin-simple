@@ -33,6 +33,11 @@ export default function ShowJavascriptForm({ open, onClose, scriptContent }) {
     setEditorRef(editor);
   }, []);
 
+  const handleClose = () => {
+    openFull.onFalse();
+    onClose();
+  };
+
   useEffect(() => {
     const handleFormatCode = () => {
       editorRef
@@ -48,7 +53,7 @@ export default function ShowJavascriptForm({ open, onClose, scriptContent }) {
   }, [scriptContent, editorRef, open]);
 
   return (
-    <Dialog fullWidth maxWidth="sm" open={open} onClose={onClose}>
+    <Dialog fullWidth maxWidth="sm" open={open} onClose={handleClose}>
       <DialogTitle sx={{ pb: 2 }}>
         <Stack direction="row" alignItems="center" justifyContent="space-between">
           <Stack direction="row" spacing={2} alignItems="center">
@@ -72,7 +77,7 @@ export default function ShowJavascriptForm({ open, onClose, scriptContent }) {
               <Typography variant="h5">Javascript Code</Typography>
             </Stack>
           </Stack>
-          <IconButton onClick={onClose}>
+          <IconButton onClick={handleClose}>
             <Iconify icon="ion:close" />
           </IconButton>
         </Stack>
@@ -133,7 +138,7 @@ export default function ShowJavascriptForm({ open, onClose, scriptContent }) {
                 <Stack spacing={1}>
                   <Stack direction="row" alignItems="center" justifyContent="space-between">
                     <Typography variant="h5">Javascript code</Typography>
-                    <IconButton onClick={onClose}>
+                    <IconButton onClick={handleClose}>
                       <Iconify icon="ic:round-close" />
                     </IconButton>
                   </Stack>
