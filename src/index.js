@@ -4,8 +4,6 @@ import { BrowserRouter } from 'react-router-dom';
 import { HelmetProvider } from 'react-helmet-async';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 //
-import { ErrorBoundary } from 'react-error-boundary';
-import Page500 from 'src/sections/error/500-view';
 import App from './App';
 
 // ----------------------------------------------------------------------
@@ -17,9 +15,7 @@ root.render(
     <HelmetProvider>
       <BrowserRouter>
         <Suspense>
-          <ErrorBoundary fallback={<Page500 />}>
-            <App />
-          </ErrorBoundary>
+          <App />
         </Suspense>
       </BrowserRouter>
     </HelmetProvider>

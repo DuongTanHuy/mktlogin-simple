@@ -33,6 +33,7 @@ import { SnackbarProvider } from './components/snackbar';
 import { LocalizationProvider } from './locales';
 import { InitialSettingProvider } from './initial-setting/context/initial-setting-provider';
 import { BalanceProvider } from './account-balance/context/balance-provider';
+import ErrorBoundary from './components/error-boundary';
 
 // ----------------------------------------------------------------------
 
@@ -74,7 +75,9 @@ export default function App() {
                   <ProgressBar />
                   <AuthConsumer>
                     <InitialSettingProvider>
-                      <Router />
+                      <ErrorBoundary>
+                        <Router />
+                      </ErrorBoundary>
                     </InitialSettingProvider>
                   </AuthConsumer>
                 </SnackbarProvider>
