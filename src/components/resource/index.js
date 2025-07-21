@@ -13,7 +13,7 @@ import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
 import { Grid } from '@mui/material';
 
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 import { isElectron } from 'src/utils/commom';
 import { enqueueSnackbar } from 'notistack';
 import { useAuthContext } from 'src/auth/hooks';

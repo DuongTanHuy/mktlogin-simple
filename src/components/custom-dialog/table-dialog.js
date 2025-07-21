@@ -1,4 +1,7 @@
-import { cloneDeep, map, omit, some } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
+import map from 'lodash/map';
+import omit from 'lodash/omit';
+import some from 'lodash/some';
 import { memo, useEffect, useState } from 'react';
 import PropTypes from 'prop-types';
 // mui

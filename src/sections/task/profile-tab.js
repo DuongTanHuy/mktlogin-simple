@@ -19,7 +19,7 @@ import {
 } from '@mui/material';
 import { TableHeadCustom, TableNoData, TableSelectedAction, useTable } from 'src/components/table';
 import Iconify from 'src/components/iconify';
-import { some } from 'lodash';
+import some from 'lodash/some';
 import TextMaxLine from 'src/components/text-max-line';
 import { useLocales } from 'src/locales';
 import useTooltipNecessity from 'src/hooks/use-tooltip-necessity';

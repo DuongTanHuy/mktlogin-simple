@@ -42,7 +42,7 @@ import { useDateRangePicker } from 'src/components/custom-date-range-picker';
 import CustomDateRangePicker from 'src/components/custom-date-range-picker/custom-date-range-picker';
 import { getListGroupProfileApi } from 'src/api/profile-group.api';
 import { getListTrashApi } from 'src/api/trash.api';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 import { useBoolean } from 'src/hooks/use-boolean';
 import TrashTableRow from '../trash-table-row';
 import RestoreMultiDialog from '../restore-multi-dialog';

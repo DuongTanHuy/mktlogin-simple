@@ -1,4 +1,4 @@
-import { merge } from 'lodash';
+import merge from 'lodash/merge';
 // pages
 import translationProfile from './profile.json';
 import translationLogin from './login.json';

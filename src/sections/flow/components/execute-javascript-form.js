@@ -22,7 +22,7 @@ import {
 import { useAuthContext } from 'src/auth/hooks';
 import { useBoolean } from 'src/hooks/use-boolean';
 import Iconify from 'src/components/iconify';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 
 // ----------------------------------------------------------------------
 

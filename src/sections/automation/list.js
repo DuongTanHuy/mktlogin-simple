@@ -32,7 +32,7 @@ import { paths } from 'src/routes/paths';
 import { useSettingsContext } from 'src/components/settings';
 import { format } from 'date-fns';
 import { useBoolean } from 'src/hooks/use-boolean';
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 import { deleteWorkflow } from 'src/api/workflow.api';
 import { enqueueSnackbar } from 'notistack';
 import { getStorage } from 'src/hooks/use-local-storage';

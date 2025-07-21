@@ -47,7 +47,7 @@ import { languages } from 'src/assets/data/languages';
 import { randomFingerPrintApi, randomUserAgentApi } from 'src/api/random.api';
 import { fonts } from 'src/assets/data/fonts';
 import { useGetKernelVersions } from 'src/api/cms.api';
-import { groupBy } from 'lodash';
+import groupBy from 'lodash/groupBy';
 import Scrollbar from 'src/components/scrollbar';
 import { crateProfileConfigApi, updateProfileConfigApi } from 'src/api/profile-config.api';
 import { generateRandomNumber } from 'src/utils/random';

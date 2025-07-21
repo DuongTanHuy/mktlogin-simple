@@ -1,4 +1,6 @@
-import { every, includes, map } from 'lodash';
+import every from 'lodash/every';
+import includes from 'lodash/includes';
+import map from 'lodash/map';
 import numeral from 'numeral';
 
 // ----------------------------------------------------------------------

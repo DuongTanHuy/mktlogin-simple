@@ -26,7 +26,7 @@ import { Fragment, useCallback, useEffect, useMemo, useState } from 'react';
 import { useAuthContext } from 'src/auth/hooks';
 import Iconify from 'src/components/iconify';
 import PositionedMenu from 'src/components/list-click';
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 import {
   LEFT_CONDITION_OPTIONS,
   OPERATOR_OPTIONS,

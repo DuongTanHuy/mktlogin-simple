@@ -11,7 +11,7 @@ import {
   Typography,
 } from '@mui/material';
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { concat } from 'lodash';
+import concat from 'lodash/concat';
 import { CustomTooltip } from 'src/components/custom-tooltip';
 import { useLocales } from 'src/locales';
 import { setStorage } from 'src/hooks/use-local-storage';

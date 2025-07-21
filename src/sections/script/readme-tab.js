@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 
 import { Fab, Stack, Zoom } from '@mui/material';
-import React, { useCallback, useEffect, useRef, useState } from 'react';
+import React, { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react';
 import Scrollbar from 'src/components/scrollbar';
-import Editor from 'src/components/editor';
 import Iconify from 'src/components/iconify';
 import { useLocales } from 'src/locales';
+
+const LazyEditor = lazy(() => import('src/components/editor'));
 
 export default function ReadmeTab({ readme }) {
   const { t } = useLocales();
@@ -48,21 +49,23 @@ export default function ReadmeTab({ readme }) {
           },
         }}
       >
-        <Editor
-          sx={{
-            backgroundColor: 'transparent',
-            '& .ql-editor': {
-              p: 0,
+        <Suspense fallback={<div>Loading...</div>}>
+          <LazyEditor
+            sx={{
               backgroundColor: 'transparent',
-              maxHeight: 'fit-content',
-            },
-            border: 'none',
-          }}
-          id="simple-editor"
-          value={readme}
-          readOnly
-          placeholder={t('workflow.script.tab.noContent')}
-        />
+              '& .ql-editor': {
+                p: 0,
+                backgroundColor: 'transparent',
+                maxHeight: 'fit-content',
+              },
+              border: 'none',
+            }}
+            id="simple-editor"
+            value={readme}
+            readOnly
+            placeholder={t('workflow.script.tab.noContent')}
+          />
+        </Suspense>
       </Scrollbar>
       <Zoom in={show} timeout={300} unmountOnExit>
         <Fab

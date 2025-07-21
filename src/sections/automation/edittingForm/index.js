@@ -18,7 +18,7 @@ import Alert from '@mui/material/Alert';
 import FormProvider, { RHFSelect, RHFTextField } from 'src/components/hook-form';
 import { formatErrors } from 'src/utils/format-errors';
 import { updateWorkFlow } from 'src/api/workflow.api';
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 import { enqueueSnackbar } from 'notistack';
 import { getStorage } from 'src/hooks/use-local-storage';
 import { WORKSPACE_ID } from 'src/utils/constance';

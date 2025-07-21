@@ -1,5 +1,5 @@
 import { useCallback } from 'react';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 import PropTypes from 'prop-types';
 // mui
 import {
@@ -74,9 +74,10 @@ const LogProfileTab = ({ logByProfiles, setLogByProfiles, refreshTaskLogData }) 
         if (value === '') {
           refreshTaskLogData();
         } else {
-          const logFiltered = logByProfiles.filter((row) =>
-            row.profile_name.toLowerCase().includes(value.toLowerCase())
-            || row.profile_id.toString().includes(value)
+          const logFiltered = logByProfiles.filter(
+            (row) =>
+              row.profile_name.toLowerCase().includes(value.toLowerCase()) ||
+              row.profile_id.toString().includes(value)
           );
           setLogByProfiles(logFiltered);
         }

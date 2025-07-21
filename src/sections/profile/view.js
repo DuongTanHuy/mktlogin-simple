@@ -1,6 +1,7 @@
 import { createPortal } from 'react-dom';
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { cloneDeep, debounce } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
+import debounce from 'lodash/debounce';
 import PropTypes from 'prop-types';
 // mui
 import {
@@ -682,7 +683,9 @@ const ProfilePage = React.memo(
             const { data } = response.data;
             setWorkflowGroup(data);
           }
-        } catch (error) { /* empty */ }
+        } catch (error) {
+          /* empty */
+        }
       };
 
       featWorkFlowData();

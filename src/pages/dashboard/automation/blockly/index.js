@@ -21,7 +21,7 @@ import {
 // icons
 import Iconify from 'src/components/iconify';
 import { LoadingButton } from '@mui/lab';
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 import {
   createWorkFlowGroup,
   getListWorkFlow,

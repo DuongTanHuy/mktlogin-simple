@@ -9,7 +9,8 @@ import MenuItem from '@mui/material/MenuItem';
 import Iconify from 'src/components/iconify';
 
 // components
-import { cloneDeep, debounce } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
+import debounce from 'lodash/debounce';
 import eventBus from 'src/sections/script/event-bus';
 import PositionedMenu from 'src/components/list-click';
 import Variables from 'src/components/variable';

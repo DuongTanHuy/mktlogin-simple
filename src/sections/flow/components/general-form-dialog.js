@@ -27,7 +27,7 @@ import { useBoolean } from 'src/hooks/use-boolean';
 import eventBus from 'src/sections/script/event-bus';
 import { useAuthContext } from 'src/auth/hooks';
 import { isElectron } from 'src/utils/commom';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 
 const TABS = [
   {

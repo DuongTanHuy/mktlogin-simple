@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { enqueueSnackbar } from 'notistack';
 import PropTypes from 'prop-types';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 // mui
 import { LoadingButton } from '@mui/lab';
 import { Stack, TextField, Typography } from '@mui/material';

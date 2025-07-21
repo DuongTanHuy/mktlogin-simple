@@ -13,8 +13,7 @@ import {
   Zoom,
   alpha,
 } from '@mui/material';
-import { useCallback, useEffect, useRef, useState } from 'react';
-import Editor from 'src/components/editor/editor';
+import { lazy, Suspense, useCallback, useEffect, useRef, useState } from 'react';
 import Iconify from 'src/components/iconify';
 import Image from 'src/components/image';
 import Label from 'src/components/label';
@@ -46,6 +45,8 @@ const TABS = [
     label: 'Changelog',
   },
 ];
+
+const LazyEditor = lazy(() => import('src/components/editor'));
 
 // ----------------------------------------------------------------------
 
@@ -341,11 +342,7 @@ export default function MarketplaceDetailView({ currentData, reloadWorkflowData 
                         boxShadow: 'none',
                       },
                     }}
-                    onClick={() =>
-                      router.push(
-                        `/automation/${currentData?.type}/createOrEdit`
-                      )
-                    }
+                    onClick={() => router.push(`/automation/${currentData?.type}/createOrEdit`)}
                   >
                     {t('marketplace.actions.view')}
                   </Button>
@@ -404,21 +401,23 @@ export default function MarketplaceDetailView({ currentData, reloadWorkflowData 
         </Tabs>
 
         {currentTab === 'readme' && (
-          <Editor
-            sx={{
-              backgroundColor: 'transparent',
-              '& .ql-editor': {
-                p: 0,
+          <Suspense fallback={<div>Loading...</div>}>
+            <LazyEditor
+              sx={{
                 backgroundColor: 'transparent',
-                maxHeight: 'fit-content',
-              },
-              border: 'none',
-            }}
-            id="simple-editor"
-            value={currentData?.readme}
-            readOnly
-            placeholder={t('workflow.script.tab.noContent')}
-          />
+                '& .ql-editor': {
+                  p: 0,
+                  backgroundColor: 'transparent',
+                  maxHeight: 'fit-content',
+                },
+                border: 'none',
+              }}
+              id="simple-editor"
+              value={currentData?.readme}
+              readOnly
+              placeholder={t('workflow.script.tab.noContent')}
+            />
+          </Suspense>
         )}
         {currentTab === 'changelog' &&
           currentData.public_workflow_versions?.length > 0 &&

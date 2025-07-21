@@ -22,7 +22,7 @@ import Variables from 'src/components/variable';
 import { useAuthContext } from 'src/auth/hooks';
 import { Autocomplete, FormControlLabel, alpha } from '@mui/material';
 import { LoadingButton } from '@mui/lab';
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 
 // ----------------------------------------------------------------------
 const CONFIG_EDITER = {

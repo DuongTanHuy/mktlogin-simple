@@ -1,5 +1,5 @@
 import React from 'react';
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 import PropTypes from 'prop-types';
 
 import { useAuthContext } from 'src/auth/hooks';

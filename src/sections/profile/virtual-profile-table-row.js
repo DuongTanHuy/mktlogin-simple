@@ -16,7 +16,7 @@ import {
   alpha,
 } from '@mui/material';
 import Iconify from 'src/components/iconify';
-import { some } from 'lodash';
+import some from 'lodash/some';
 import TextMaxLine from 'src/components/text-max-line';
 import { fDate } from 'src/utils/format-time';
 import { ERROR_CODE } from 'src/utils/constance';

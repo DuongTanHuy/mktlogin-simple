@@ -8,7 +8,7 @@ import eventBus from 'src/sections/script/event-bus';
 import { Button, Checkbox, FormControlLabel, MenuItem } from '@mui/material';
 import Iconify from 'src/components/iconify';
 import { RESOURCE_OPTIONS } from 'src/utils/constance';
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 import PositionedMenu from 'src/components/list-click';
 import { useEffect, useState } from 'react';
 import { useBoolean } from 'src/hooks/use-boolean';

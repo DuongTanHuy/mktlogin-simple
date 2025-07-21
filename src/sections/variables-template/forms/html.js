@@ -2,7 +2,7 @@ import { useCallback, useMemo } from 'react';
 import { Editor } from '@monaco-editor/react';
 import { useSettingsContext } from 'src/components/settings';
 import { LoadingScreen } from 'src/components/loading-screen';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 import Iconify from 'src/components/iconify';
 import { useBoolean } from 'src/hooks/use-boolean';
 import { getStorage } from 'src/hooks/use-local-storage';

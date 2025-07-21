@@ -27,7 +27,7 @@ import { createWorkFlowGroup, updateWorkFlowGroup } from 'src/api/workflow.api';
 import { enqueueSnackbar } from 'notistack';
 import { useLocales } from 'src/locales';
 import DeleteGroupMemberDialog from 'src/sections/member/action-dialog/delete-workgroup';
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 import WorkGroupButton from 'src/pages/dashboard/member/work-group-button';
 import ScriptListView from 'src/sections/script/list-view';
 import { getStorage, setStorage } from 'src/hooks/use-local-storage';

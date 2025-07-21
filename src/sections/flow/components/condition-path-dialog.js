@@ -19,7 +19,7 @@ import {
   alpha,
 } from '@mui/material';
 import Scrollbar from 'src/components/scrollbar';
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 import eventBus from 'src/sections/script/event-bus';
 import { useBoolean } from 'src/hooks/use-boolean';
 import Iconify from 'src/components/iconify';

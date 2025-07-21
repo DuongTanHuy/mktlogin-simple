@@ -34,7 +34,7 @@ import FormProvider from 'src/components/hook-form/form-provider';
 import { RHFCheckbox, RHFSelect, RHFTextField } from 'src/components/hook-form';
 import { ERROR_CODE, PROXY_CONNECTION_TYPES } from 'src/utils/constance';
 import { useAuthContext } from 'src/auth/hooks';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 import { createGroupProfileApi, getListGroupProfileApi } from 'src/api/profile-group.api';
 import { isValidBase64 } from 'src/utils/profile';
 import { batchCreateProfileApi } from 'src/api/profile.api';

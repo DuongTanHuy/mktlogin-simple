@@ -11,7 +11,7 @@ import { LoadingScreen } from 'src/components/loading-screen';
 import { Dialog, DialogContent, DialogTitle, Divider, IconButton } from '@mui/material';
 import { useBoolean } from 'src/hooks/use-boolean';
 import Iconify from 'src/components/iconify';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 
 // ----------------------------------------------------------------------
 

@@ -1,4 +1,4 @@
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 import PropTypes from 'prop-types';
 
 import {
@@ -25,7 +25,11 @@ const TextTab = ({ isSyncing, profilesOpened, textGroup, setTextGroup }) => {
   const { t } = useLocales();
 
   const LIST_BUTTON = [
-    { id: 'btn_clear_text', icon: 'icon-park-solid:clear', label: t('synchronizer.actions.clearText') },
+    {
+      id: 'btn_clear_text',
+      icon: 'icon-park-solid:clear',
+      label: t('synchronizer.actions.clearText'),
+    },
     { id: 'btn_past_text', icon: 'bxs:paste', label: t('synchronizer.actions.pastText') },
   ];
 

@@ -22,7 +22,8 @@ import {
   Zoom,
   alpha,
 } from '@mui/material';
-import { cloneDeep, debounce } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
+import debounce from 'lodash/debounce';
 import React, { useEffect, useMemo, useRef, useState } from 'react';
 import Iconify from 'src/components/iconify';
 import Scrollbar from 'src/components/scrollbar';
