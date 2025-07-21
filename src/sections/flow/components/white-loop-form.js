@@ -15,8 +15,8 @@ import {
   Typography,
   alpha,
 } from '@mui/material';
-import { cloneDeep } from 'lodash';
-import React, { Fragment, useCallback, useEffect, useState } from 'react';
+import cloneDeep from 'lodash/cloneDeep';
+import React, { Fragment, lazy, Suspense, useCallback, useEffect, useState } from 'react';
 import Iconify from 'src/components/iconify';
 import eventBus from 'src/sections/script/event-bus';
 import { useBoolean } from 'src/hooks/use-boolean';
@@ -28,11 +28,12 @@ import {
   RIGHT_CONDITION_OPTIONS,
 } from 'src/utils/constance';
 import { getStorage } from 'src/hooks/use-local-storage';
-import Editor from 'src/components/editor/editor';
 import { LoadingScreen } from 'src/components/loading-screen';
 import { useSettingsContext } from 'src/components/settings';
 import { useCopyToClipboard } from 'src/hooks/use-copy-to-clipboard';
 import { useLocales } from 'src/locales';
+
+const LazyEditor = lazy(() => import('src/components/editor/editor'));
 
 export default function WhileLoopForm({ formData, IdNode }) {
   const { themeMode } = useSettingsContext();
@@ -484,19 +485,21 @@ export default function WhileLoopForm({ formData, IdNode }) {
                                 borderRadius={1}
                                 mt={1}
                               >
-                                <Editor
-                                  language="javascript"
-                                  theme={`vs-${themeMode}`}
-                                  options={terminalSetting}
-                                  value={item.script_content}
-                                  // onMount={handleEditorDidMount}
-                                  onChange={(value) => {
-                                    handleUpdateCondition(condition.id, item.id, {
-                                      script_content: value,
-                                    });
-                                  }}
-                                  loading={<LoadingScreen />}
-                                />
+                                <Suspense fallback={<div>Loading...</div>}>
+                                  <LazyEditor
+                                    language="javascript"
+                                    theme={`vs-${themeMode}`}
+                                    options={terminalSetting}
+                                    value={item.script_content}
+                                    // onMount={handleEditorDidMount}
+                                    onChange={(value) => {
+                                      handleUpdateCondition(condition.id, item.id, {
+                                        script_content: value,
+                                      });
+                                    }}
+                                    loading={<LoadingScreen />}
+                                  />
+                                </Suspense>
                               </Stack>
                             ) : (
                               ['value', 'element_text', 'element_attribute_value'].includes(

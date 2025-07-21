@@ -6,7 +6,7 @@ import { LoadingButton } from '@mui/lab';
 
 import { ConfirmDialog } from 'src/components/custom-dialog';
 import Iconify from 'src/components/iconify';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 import { deleteListWorkspace, getListWorkspace, useGetWorkspace } from 'src/api/workspace.api';
 import { enqueueSnackbar } from 'notistack';
 import { setStorage } from 'src/hooks/use-local-storage';

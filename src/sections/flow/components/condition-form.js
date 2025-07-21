@@ -15,7 +15,7 @@ import React, { useEffect, useState } from 'react';
 import Iconify from 'src/components/iconify';
 import eventBus from 'src/sections/script/event-bus';
 import { useBoolean } from 'src/hooks/use-boolean';
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 import PositionedMenu from 'src/components/list-click';
 import Variables from 'src/components/variable';
 import ConditionPathDialog from './condition-path-dialog';

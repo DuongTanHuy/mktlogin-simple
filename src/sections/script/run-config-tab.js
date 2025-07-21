@@ -16,7 +16,8 @@ import {
   Zoom,
   alpha,
 } from '@mui/material';
-import { cloneDeep, debounce } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
+import debounce from 'lodash/debounce';
 import React, { useEffect, useRef, useState } from 'react';
 import { useAuthContext } from 'src/auth/hooks';
 import { usePopover } from 'src/components/custom-popover';

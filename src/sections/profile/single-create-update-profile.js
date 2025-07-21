@@ -2,7 +2,8 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import PropTypes from 'prop-types';
 import * as Yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
-import { debounce, groupBy } from 'lodash';
+import groupBy from 'lodash/groupBy';
+import debounce from 'lodash/debounce';
 // @mui
 import FormProvider, { RHFTextField, RHFSelect, RHFCheckbox } from 'src/components/hook-form';
 import { useForm } from 'react-hook-form';

@@ -28,7 +28,8 @@ import { timezones } from 'src/assets/data';
 import { GroupButton } from 'src/components/custom-button';
 import { useFormContext } from 'react-hook-form';
 import { useLocales } from 'src/locales';
-import { cloneDeep, debounce } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
+import debounce from 'lodash/debounce';
 import { useCopyToClipboard } from 'src/hooks/use-copy-to-clipboard';
 import {
   ALLOW_MODE,

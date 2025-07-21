@@ -10,7 +10,8 @@ import Label, { CustomLabel } from 'src/components/label';
 // apis
 import { ERROR_CODE, NUM_ID_DISPLAY } from 'src/utils/constance';
 import { useLocales } from 'src/locales';
-import { cloneDeep, debounce } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
+import debounce from 'lodash/debounce';
 import { useSettingsContext } from 'src/components/settings';
 import Iconify from 'src/components/iconify';
 import { addMultiTabApi } from 'src/api/profile.api';

@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useMemo, useState } from 'react';
+import { lazy, Suspense, useCallback, useEffect, useMemo, useState } from 'react';
 import { yupResolver } from '@hookform/resolvers/yup';
 import PropTypes from 'prop-types';
 import * as Yup from 'yup';
@@ -40,7 +40,6 @@ import { findItemById } from 'src/sections/variables-template/utils';
 import { contentMap, dfs } from 'src/sections/variables-template/create-template';
 import { getValueRuleset } from 'src/utils/profile';
 import { useBoolean } from 'src/hooks/use-boolean';
-import Editor from 'src/components/editor/editor';
 import { ConfirmDialog } from 'src/components/custom-dialog';
 import { toLocalTimeISOString } from '../../../utils/format-time';
 import { createScheduleApi } from '../../../api/schedule.api';
@@ -50,6 +49,8 @@ import OptionalTab from './tab/optional-tab';
 import InputTab from './tab/input-tab';
 
 //----------------------------------------------------------------
+
+const LazyEditor = lazy(() => import('src/components/editor/editor'));
 
 const RpaMultiFormDialog = ({
   open,
@@ -952,21 +953,23 @@ const RpaMultiFormDialog = ({
           },
         }}
         content={
-          <Editor
-            sx={{
-              backgroundColor: 'transparent',
-              '& .ql-editor': {
-                p: 0,
+          <Suspense fallback={<div>Loading...</div>}>
+            <LazyEditor
+              sx={{
                 backgroundColor: 'transparent',
-                maxHeight: 'fit-content',
-              },
-              border: 'none',
-            }}
-            id="simple-editor"
-            value={readme}
-            readOnly
-            placeholder={t('workflow.script.tab.noContent')}
-          />
+                '& .ql-editor': {
+                  p: 0,
+                  backgroundColor: 'transparent',
+                  maxHeight: 'fit-content',
+                },
+                border: 'none',
+              }}
+              id="simple-editor"
+              value={readme}
+              readOnly
+              placeholder={t('workflow.script.tab.noContent')}
+            />
+          </Suspense>
         }
       />
     </>

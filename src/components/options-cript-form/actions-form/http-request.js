@@ -17,7 +17,7 @@ import Iconify from 'src/components/iconify';
 
 // components
 import FormProvider, { RHFSelect, RHFTextField } from 'src/components/hook-form';
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 // import { formatErrors } from 'src/utils/format-errors';
 import { convertedArray, generateLogicScript } from 'src/utils/handle-bar-support';
 import PositionedMenu from 'src/components/list-click';

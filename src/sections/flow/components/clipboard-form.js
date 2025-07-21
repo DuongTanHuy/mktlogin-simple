@@ -13,7 +13,7 @@ import { Fragment, useEffect, useMemo, useState } from 'react';
 import { useAuthContext } from 'src/auth/hooks';
 import Iconify from 'src/components/iconify';
 import PositionedMenu from 'src/components/list-click';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 
 // ----------------------------------------------------------------------
 

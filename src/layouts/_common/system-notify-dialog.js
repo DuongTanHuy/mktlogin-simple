@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { lazy, Suspense, useEffect, useState } from 'react';
 import {
   Checkbox,
   Dialog,
@@ -13,10 +13,11 @@ import {
 import { getSystemNotifyApi, hideSystemNotifyApi } from 'src/api/system-notify.api';
 import Iconify from 'src/components/iconify';
 import { useLocales } from 'src/locales';
-import Editor from 'src/components/editor/editor';
 import Image from 'src/components/image';
 import { useRouter } from 'src/routes/hooks';
 import { isElectron } from 'src/utils/commom';
+
+const LazyEditor = lazy(() => import('src/components/editor/editor'));
 
 export default function SystemNotifyDialog() {
   const { t } = useLocales();
@@ -107,24 +108,26 @@ export default function SystemNotifyDialog() {
             <Typography variant="h3" color="primary" textAlign="center">
               {notify?.title}
             </Typography>
-            <Editor
-              sx={{
-                backgroundColor: 'transparent',
-                '& .ql-editor': {
-                  p: 0,
+            <Suspense fallback={<div>Loading...</div>}>
+              <LazyEditor
+                sx={{
                   backgroundColor: 'transparent',
-                  maxHeight: 'fit-content',
-                },
-                width: 1,
-                border: 'none',
-                height: 'calc(100% - 44px)',
-                overflow: 'auto',
-              }}
-              id="simple-editor"
-              value={notify?.content}
-              placeholder="Nội dung thông báo..."
-              readOnly
-            />
+                  '& .ql-editor': {
+                    p: 0,
+                    backgroundColor: 'transparent',
+                    maxHeight: 'fit-content',
+                  },
+                  width: 1,
+                  border: 'none',
+                  height: 'calc(100% - 44px)',
+                  overflow: 'auto',
+                }}
+                id="simple-editor"
+                value={notify?.content}
+                placeholder="Nội dung thông báo..."
+                readOnly
+              />
+            </Suspense>
           </Stack>
         </DialogContent>
       ) : (

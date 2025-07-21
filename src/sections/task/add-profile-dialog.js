@@ -34,7 +34,9 @@ import {
   useTable,
 } from 'src/components/table';
 import Iconify from 'src/components/iconify';
-import { concat, debounce, some } from 'lodash';
+import concat from 'lodash/concat';
+import debounce from 'lodash/debounce';
+import some from 'lodash/some';
 import { getNumSkeleton, objectToQueryString } from 'src/utils/commom';
 import { getListProfileApi } from 'src/api/profile.api';
 import { useAuthContext } from 'src/auth/hooks';

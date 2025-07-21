@@ -1,6 +1,5 @@
 import CryptoJS from 'crypto-js';
-import Chart, { useChart } from 'src/components/chart';
-import { useTheme } from '@mui/material/styles';
+import { Box, CircularProgress, Typography } from '@mui/material';
 import { languages } from '../assets/data/languages';
 import {
   ANDROID_VERSION,
@@ -432,58 +431,38 @@ export function transformKernelVersionToBrowserName(kernelVersion) {
 
 // eslint-disable-next-line react/prop-types
 export function CircularProgressWithLabel({ value }) {
-  const theme = useTheme();
-
-  const CHART_SIZE = { width: 160, height: 160 };
-
-  const chartOptions = useChart({
-    chart: {
-      sparkline: {
-        enabled: true,
-      },
-    },
-    grid: {
-      padding: {
-        top: -9,
-        bottom: -9,
-      },
-    },
-    legend: {
-      show: false,
-    },
-    plotOptions: {
-      radialBar: {
-        hollow: { size: '70%' },
-        track: { margin: 0 },
-        dataLabels: {
-          name: { show: false },
-          value: {
-            offsetY: 6,
-            fontSize: theme.typography.subtitle2.fontSize,
-          },
-        },
-      },
-    },
-  });
-
   return (
-    <Chart
-      type="radialBar"
-      series={[value]}
-      options={{
-        ...chartOptions,
-        fill: {
-          type: 'gradient',
-          gradient: {
-            colorStops: [
-              { offset: 0, color: theme.palette.primary.light },
-              { offset: 100, color: theme.palette.primary.dark },
-            ],
-          },
-        },
-      }}
-      {...CHART_SIZE}
-    />
+    <Box sx={{ position: 'relative', display: 'inline-flex' }}>
+      <Box
+        component="span"
+        sx={{
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+          position: 'absolute',
+          border: '11px solid #333d49',
+          borderRadius: '50%',
+        }}
+      />
+      <CircularProgress variant="determinate" value={value} size={130} />
+      <Box
+        sx={{
+          top: 0,
+          left: 0,
+          bottom: 0,
+          right: 0,
+          position: 'absolute',
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        <Typography fontWeight={600} component="div">
+          {`${Math.round(value)}%`}
+        </Typography>
+      </Box>
+    </Box>
   );
 }
 

@@ -1,4 +1,5 @@
-import { concat, debounce } from 'lodash';
+import concat from 'lodash/concat';
+import debounce from 'lodash/debounce';
 import React, { useState, useCallback, useEffect } from 'react';
 import PropTypes from 'prop-types';
 

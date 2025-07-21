@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import Iconify from 'src/components/iconify';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 import CustomLabel from '../components/CustomLabel';
 
 const PropTypes = require('prop-types');

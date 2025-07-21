@@ -2,8 +2,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useTheme } from '@emotion/react';
 import { ReactSortable } from 'react-sortablejs';
-import { cloneDeep } from 'lodash';
-
+import cloneDeep from 'lodash/cloneDeep';
 import {
   alpha,
   Stack,

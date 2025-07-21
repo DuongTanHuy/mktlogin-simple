@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 // mui
 import { Button, Grid, InputAdornment, Link, Stack, TextField, Typography } from '@mui/material';
 // api

@@ -1,5 +1,6 @@
 import { useRef, useState } from 'react';
-import { cloneDeep, debounce } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
+import debounce from 'lodash/debounce';
 import PropTypes from 'prop-types';
 
 // mui

@@ -23,7 +23,7 @@ import { getStorage, setStorage } from 'src/hooks/use-local-storage';
 import { GROUP_INVISIBLE } from 'src/utils/constance';
 import { flowchartOptions } from 'src/utils/flow-chart-optoins';
 import { isElectron } from 'src/utils/commom';
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 import WaitForm from './wait-form';
 import HttpRequestForm from './http-request-form';
 import GetTextForm from './get-text-form';

@@ -22,7 +22,7 @@ import {
 import { Fragment, useEffect, useMemo, useState } from 'react';
 import Iconify from 'src/components/iconify';
 import { useAuthContext } from 'src/auth/hooks';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 
 // ----------------------------------------------------------------------
 

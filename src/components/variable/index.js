@@ -19,7 +19,8 @@ import Zoom from '@mui/material/Zoom';
 import eventBus from 'src/sections/script/event-bus';
 
 import { useLocales } from 'src/locales';
-import { cloneDeep, debounce } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
+import debounce from 'lodash/debounce';
 import { useAuthContext } from 'src/auth/hooks';
 import { isElectron } from 'src/utils/commom';
 import {

@@ -41,7 +41,7 @@ import { useDateRangePicker } from 'src/components/custom-date-range-picker';
 import { fDate } from 'src/utils/format-time';
 import Iconify from 'src/components/iconify';
 import CustomDateRangePicker from 'src/components/custom-date-range-picker/custom-date-range-picker';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 import GeneralLogTableHeader from '../generdal-log-table-header';
 import GeneralLogTableRow from '../general-log-table-row';
 

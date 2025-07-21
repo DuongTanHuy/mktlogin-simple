@@ -16,7 +16,7 @@ import { WORKSPACE_ID } from 'src/utils/constance';
 import { useSettingsContext } from 'src/components/settings';
 import AddNewWorkspace from 'src/sections/workspace/add-new-workspace';
 import { useBoolean } from 'src/hooks/use-boolean';
-import { cloneDeep } from 'lodash';
+import cloneDeep from 'lodash/cloneDeep';
 import { useSnackbar } from 'notistack';
 import { useAuthContext } from 'src/auth/hooks';
 import { useRouter } from 'src/routes/hooks';

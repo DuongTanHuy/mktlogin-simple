@@ -36,7 +36,7 @@ import { importProfileApi } from 'src/api/profile.api';
 import { useAuthContext } from 'src/auth/hooks';
 import { paths } from 'src/routes/paths';
 import { useBalanceContext } from 'src/account-balance/context/balance-context';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 import { createGroupProfileApi, getListGroupProfileApi } from 'src/api/profile-group.api';
 import CreateUpdateBrowserConfig from './create-update-browser-config';
 import { isElectron } from '../../utils/commom';

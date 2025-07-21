@@ -14,7 +14,7 @@ import Iconify from 'src/components/iconify';
 import { isElectron } from 'src/utils/commom';
 import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
 import { useAuthContext } from 'src/auth/hooks';
-import { debounce } from 'lodash';
+import debounce from 'lodash/debounce';
 
 // ----------------------------------------------------------------------
 

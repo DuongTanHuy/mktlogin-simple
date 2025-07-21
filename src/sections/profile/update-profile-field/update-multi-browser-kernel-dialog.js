@@ -11,7 +11,7 @@ import Label, { CustomLabel } from 'src/components/label';
 import { ERROR_CODE, NUM_ID_DISPLAY } from 'src/utils/constance';
 import { useLocales } from 'src/locales';
 import { useAuthContext } from 'src/auth/hooks';
-import { groupBy } from 'lodash';
+import groupBy from 'lodash/groupBy';
 import { useGetKernelVersions } from 'src/api/cms.api';
 import { updateMultiKernelApi } from 'src/api/profile.api';
 import BrowserKernelButton from './browser-kernel-button';
